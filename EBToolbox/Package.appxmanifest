@@ -11,7 +11,7 @@
   <Identity
     Name="EBOSToolbox-WinUI-3"
     Publisher="CN=EBOS"
-    Version="0.1.3" />
+    Version="0.1.15" />
 
   <mp:PhoneIdentity PhoneProductId="98ae3a68-e43b-4f70-9b72-db68291392f3" PhonePublisherId="0-0000-0000-0000-00000"/>
 

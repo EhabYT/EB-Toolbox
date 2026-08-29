@@ -3,7 +3,7 @@
 #include "CodeDependencies.iss"
 
 #define MyAppName "EB Toolbox"
-#define MyAppVersion "0.1.13"
+#define MyAppVersion "0.1.15"
 #define MyAppPublisher "EBOS"
 #define MyAppURL "https://www.ebos.net/"
 #define MyAppExeName "EBToolbox.exe"
