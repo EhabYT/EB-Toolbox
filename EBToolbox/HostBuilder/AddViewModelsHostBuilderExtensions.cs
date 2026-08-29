@@ -174,7 +174,7 @@ namespace EBToolbox.HostBuilder
             {
                 ["ExplorerPatcher"] = new("https://github.com/valinet/ExplorerPatcher", "ExplorerPatcher", ConfigurationType.StartMenuSubMenu),
                 ["StartAllBack"] = new("https://www.startallback.com/", "StartAllBack", ConfigurationType.StartMenuSubMenu),
-                ["OpenShellEBPreset"] = new(@"http://github.com/EB-OS/EB/blob/main/src/playbook/Executables/EBDesktop/4.%20Interface%20Tweaks/Start%20Menu/EB%20Open-Shell%20Preset.xml", App.GetValueFromItemList("OpenShellEBPreset"), ConfigurationType.StartMenuSubMenu),
+                ["OpenShellEBPreset"] = new(@"http://github.com/EhabYT/EB-Toolbox/blob/main/src/playbook/Executables/EBDesktop/4.%20Interface%20Tweaks/Start%20Menu/EB%20Open-Shell%20Preset.xml", App.GetValueFromItemList("OpenShellEBPreset"), ConfigurationType.StartMenuSubMenu),
                 ["InterfaceTweaksDocumentation"] = new(@"https://docs.ebos.net/getting-started/post-installation/eb-folder/interface-tweaks/", App.GetValueFromItemList("InterfaceTweaksDocumentation"), ConfigurationType.Interface),
 
                 ["ActivationPage"] = new(@"ms-settings:activation", App.GetValueFromItemList("ActivationPage"), ConfigurationType.Windows, "\uE713"),

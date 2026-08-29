@@ -32,21 +32,21 @@ jobs:
       run: msbuild EBToolbox-WinUI3.sln /p:Configuration=Release /p:Platform="x64"
 
     - name: Publish Application
-      run: msbuild EBToolbox-WinUI3.sln /t:Publish /p:Configuration=Release /p:Platform="x64" /p:PublishDir="D:\a\eb-toolbox\eb-toolbox\Deploy\src\"
+      run: msbuild EBToolbox-WinUI3.sln /t:Publish /p:Configuration=Release /p:Platform="x64" /p:PublishDir="D:\a\EB-Toolbox\EB-Toolbox\Deploy\src\"
 
     # - name: Build IsWiX Installer
-    #   run: dotnet build D:\a\eb-toolbox\eb-toolbox\Installer\ToolboxPackaging.wixproj --configuration Release -p:DefineConstants="MSIProductVersion=1.0.0" --output "D:\a\eb-toolbox\eb-toolbox\artifacts\"
+    #   run: dotnet build D:\a\EB-Toolbox\EB-Toolbox\Installer\ToolboxPackaging.wixproj --configuration Release -p:DefineConstants="MSIProductVersion=1.0.0" --output "D:\a\EB-Toolbox\EB-Toolbox\artifacts\"
 
     - name: Compile .ISS to .EXE Installer
       uses: robin24/inno-setup-action@v1
       with:
-        filepath: D:\a\eb-toolbox\eb-toolbox\Installer\setup.iss
+        filepath: D:\a\EB-Toolbox\EB-Toolbox\Installer\setup.iss
 
     - name: Create ZIP of MSI
-      run: powershell Compress-Archive -Path "D:\a\eb-toolbox\eb-toolbox\Installer\Output\*" -DestinationPath "D:\a\eb-toolbox\eb-toolbox\EBToolbox.zip"
+      run: powershell Compress-Archive -Path "D:\a\EB-Toolbox\EB-Toolbox\Installer\Output\*" -DestinationPath "D:\a\EB-Toolbox\EB-Toolbox\EBToolbox.zip"
 
     - name: Upload Build Artifacts
       uses: actions/upload-artifact@v4
       with:
         name: EBToolbox
-        path: D:\a\eb-toolbox\eb-toolbox\EBToolbox.zip
+        path: D:\a\EB-Toolbox\EB-Toolbox\EBToolbox.zip

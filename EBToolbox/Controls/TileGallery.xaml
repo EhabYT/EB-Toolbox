@@ -143,7 +143,7 @@
                     </local:HeaderTile>
                     <local:HeaderTile
                         x:Name="GithubTile"
-                        Link="https://github.com/EB-OS/">
+                        Link="https://github.com/EhabYT/">
                         <local:HeaderTile.Source>
                             <PathIcon Data="{StaticResource GitHubIconPath}" Foreground="{ThemeResource TextFillColorPrimaryBrush}">
                                 <PathIcon.RenderTransform>

@@ -87,7 +87,7 @@
                         Background="#30313E"
                         IsOpen="False">
                         <InfoBar.ActionButton>
-                            <HyperlinkButton x:Name="LearnMoreBtn" NavigateUri="https://github.com/eb-os/eb-toolbox/releases/latest" />
+                            <HyperlinkButton x:Name="LearnMoreBtn" NavigateUri="https://github.com/EhabYT/EB-Toolbox/releases/latest" />
                         </InfoBar.ActionButton>
                     </InfoBar>
                 </Grid>

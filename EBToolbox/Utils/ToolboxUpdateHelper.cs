@@ -8,7 +8,7 @@ namespace EBToolbox.Utils
 {
     public class ToolboxUpdateHelper
     {
-        const string RELEASE_URL = "https://data.jsdelivr.com/v1/packages/gh/eb-os/eb-toolbox";
+        const string RELEASE_URL = "https://data.jsdelivr.com/v1/packages/gh/EhabYT/EB-Toolbox";
         const string DOWNLOAD_URL = $"https://cdn.jsdelivr.net/eb/toolbox/";
         public static string commandUpdate;
         public static JsonDocument result;

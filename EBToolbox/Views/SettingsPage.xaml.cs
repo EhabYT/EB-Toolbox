@@ -82,7 +82,7 @@ namespace EBToolbox.Views
 
         private async void bugRequestCard_Click(object sender, RoutedEventArgs e)
         {
-            await Launcher.LaunchUriAsync(new Uri("https://github.com/EB-OS/eb-toolbox/issues/new?template=bug-report.md"));
+            await Launcher.LaunchUriAsync(new Uri("https://github.com/EhabYT/EB-Toolbox/issues/new?template=bug-report.md"));
         }
 
         private void ConfigSwitch_SelectionChanged(object sender, SelectionChangedEventArgs e)

@@ -1,6 +1,6 @@
 ﻿# EBOS Toolbox
 
-<a href="https://github.com/EB-OS/.github/blob/main/profile/CODE_OF_CONDUCT.md"><img alt="Code of Conduct" src="https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg?style=for-the-badge&color=1A91FF" /></a>
+<a href="https://github.com/EhabYT/.github/blob/main/profile/CODE_OF_CONDUCT.md"><img alt="Code of Conduct" src="https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg?style=for-the-badge&color=1A91FF" /></a>
 
 This repository contains the EBOS Toolbox made with C# and WinAppSDK.
 
@@ -23,5 +23,5 @@ You can now make all your changes and view them live!
 - [Windows Community Toolkit Gallery](https://apps.microsoft.com/detail/9NBLGGH4TLCQ) for aspects of the app such as settings cards and expanders
 
 ## ðŸ’™ Contributors
-<a href="https://github.com/EB-OS/eb-toolbox/graphs/contributors" target="_blank"><img src="https://contrib.rocks/image?repo=EB-OS/eb-toolbox&columns=18" alt="Avatars of all contributors"></a>
+<a href="https://github.com/EhabYT/EB-Toolbox/graphs/contributors" target="_blank"><img src="https://contrib.rocks/image?repo=EhabYT/EB-Toolbox&columns=18" alt="Avatars of all contributors"></a>
 # EB-Toolbox
