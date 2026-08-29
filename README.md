@@ -24,3 +24,4 @@ You can now make all your changes and view them live!
 
 ## ðŸ’™ Contributors
 <a href="https://github.com/EB-OS/eb-toolbox/graphs/contributors" target="_blank"><img src="https://contrib.rocks/image?repo=EB-OS/eb-toolbox&columns=18" alt="Avatars of all contributors"></a>
+# EB-Toolbox
