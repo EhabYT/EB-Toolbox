@@ -18,7 +18,7 @@
         <x:Double x:Key="BreadcrumbBarChevronFontSize">30</x:Double>
     </Page.Resources>
 
-    <Grid x:Name="MainGrid" Margin="55,0,0,0">
+    <Grid x:Name="MainGrid" Margin="36,0,24,0">
         <Grid.Resources>
             <DataTemplate x:Key="ConfigurationItemTemplate" x:DataType="viewmodel:ConfigurationItemViewModel">
                 <Grid>

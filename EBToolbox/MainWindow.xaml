@@ -32,35 +32,53 @@
             AutomationProperties.AutomationId="AppTitleBar"
             Canvas.ZIndex="1">
             <TitleBar.LeftHeader>
-                <StackPanel Orientation="Horizontal">
+                <StackPanel Orientation="Horizontal" Spacing="8">
                     <Button
                         x:Name="EBButton"
                         Background="Transparent"
                         BorderBrush="Transparent"
-                        Click="EBButton_Click">
+                        Click="EBButton_Click"
+                        CornerRadius="6"
+                        ToolTipService.ToolTip="EB Toolbox - 10 clicks for easter egg">
                         <Image
-                            Width="18"
+                            Width="20"
+                            Height="20"
                             VerticalAlignment="Center"
                             Source="ms-appx:///assets/logo/eb-logo.png" />
                     </Button>
-                    <TextBlock
-                        x:Name="AppTitle"
-                        Margin="12,-1,0,0"
-                        VerticalAlignment="Center"
-                        Style="{StaticResource CaptionTextBlockStyle}"
-                        Text="EBOS Toolbox" />
+                    <StackPanel Orientation="Vertical" VerticalAlignment="Center" Spacing="0">
+                        <TextBlock
+                            x:Name="AppTitle"
+                            Margin="8,-2,0,0"
+                            VerticalAlignment="Center"
+                            FontWeight="SemiBold"
+                            Style="{StaticResource CaptionTextBlockStyle}"
+                            Text="EB Toolbox" />
+                        <TextBlock
+                            Margin="8,0,0,0"
+                            FontSize="9"
+                            Foreground="{ThemeResource TextFillColorTertiaryBrush}"
+                            Opacity="0.8"
+                            Text="EBOS EDITION" />
                     </StackPanel>
+                </StackPanel>
             </TitleBar.LeftHeader>
             <TitleBar.Content>
                 <AutoSuggestBox
                     x:Name="SearchBox"
-                    AutomationProperties.Name="Basic AutoSuggestBox"
-                    QueryIcon="Find"
-                    SuggestionChosen="AutoSuggestBox_SuggestionChosen"
+                    Width="340"
                     HorizontalAlignment="Stretch"
                     VerticalAlignment="Center"
-                    Width="320"
-                    TextChanged="AutoSuggestBox_TextChanged" />
+                    AutomationProperties.Name="EB Search"
+                    CornerRadius="8"
+                    PlaceholderText="Search settings..."
+                    QueryIcon="Find"
+                    SuggestionChosen="AutoSuggestBox_SuggestionChosen"
+                    TextChanged="AutoSuggestBox_TextChanged">
+                    <AutoSuggestBox.Resources>
+                        <SolidColorBrush x:Key="TextControlBackground" Color="Transparent" />
+                    </AutoSuggestBox.Resources>
+                </AutoSuggestBox>
             </TitleBar.Content>
         </TitleBar>
         <NavigationView
@@ -70,10 +88,11 @@
             AlwaysShowHeader="True"
             BackRequested="NavigationViewControl_BackRequested"
             IsPaneToggleButtonVisible="False"
-            Header="Default Header"
+            Header="EB Toolbox"
             IsSettingsVisible="False"
             IsTabStop="False"
             IsTitleBarAutoPaddingEnabled="False"
+            PaneDisplayMode="Left"
             SelectionChanged="NavigationViewControl_SelectionChanged">
             <!--Main Content-->
             <NavigationView.Content>

@@ -19,9 +19,9 @@
             <Setter Property="Margin" Value="0,0,0,10" />
         </Style>
     </Page.Resources>
-    <ScrollViewer>
+    <ScrollViewer Padding="0,0,12,24">
 
-        <StackPanel Margin="55,0,0,0">
+        <StackPanel Margin="36,0,24,0" Spacing="16">
             <TextBlock
                 x:Name="TitleTxt"
                 Margin="0,24,36,24"
@@ -89,10 +89,10 @@
                         </controls:SettingsExpander.Items>
                     </controls:SettingsExpander>
                 </StackPanel>
-                <StackPanel>
+                <StackPanel Spacing="12">
                     <TextBlock x:Name="AboutHeader" Style="{StaticResource CategoryTitle}" />
                     <!--  About Section  -->
-                    <controls:SettingsExpander Header="EBOS Toolbox" Style="{StaticResource ConfigurationSettingsExpanderTemplate}">
+                    <controls:SettingsExpander Header="EB Toolbox" Description="EBOS Edition • v0.1.14" Style="{StaticResource ConfigurationSettingsExpanderTemplate}">
                         <controls:SettingsExpander.HeaderIcon>
                             <BitmapIcon ShowAsMonochrome="False" UriSource="/assets/logo/toolbox-icon.ico" />
                         </controls:SettingsExpander.HeaderIcon>

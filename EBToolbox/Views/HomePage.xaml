@@ -50,16 +50,34 @@
                         <StackPanel
                             Margin="75,0,0,0"
                             VerticalAlignment="Center"
-                            Orientation="Vertical">
-
-                            <TextBlock
-                                x:Name="subHeaderBlock"
-                                FontSize="18"
-                                Text="EBOS Toolbox" />
+                            Orientation="Vertical"
+                            Spacing="4">
+                            <Border
+                                Padding="8,3"
+                                HorizontalAlignment="Left"
+                                Background="{ThemeResource SystemAccentColor}"
+                                CornerRadius="6"
+                                Opacity="0.9">
+                                <TextBlock
+                                    x:Name="subHeaderBlock"
+                                    FontSize="11"
+                                    FontWeight="SemiBold"
+                                    Foreground="White"
+                                    Text="EBOS TOOLBOX" />
+                            </Border>
                             <TextBlock
                                 x:Name="HomeHeaderText"
-                                FontSize="45"
-                                FontWeight="SemiBold" />
+                                FontSize="42"
+                                FontWeight="Bold"
+                                TextWrapping="Wrap" />
+                            <TextBlock
+                                Margin="0,4,0,0"
+                                MaxWidth="480"
+                                FontSize="13"
+                                Foreground="{ThemeResource TextFillColorSecondaryBrush}"
+                                Opacity="0.85"
+                                Text="Tweak Windows, manage profiles and optimize your EBOS experience."
+                                TextWrapping="Wrap" />
                         </StackPanel>
                         <controls:TileGallery
                             x:Name="headerTileGallery"
@@ -72,9 +90,25 @@
                 x:Name="ProfilesPanel"
                 Grid.Row="1"
                 Grid.Column="1"
-                Margin="16,5,0,0">
-                <TextBlock x:Name="ProfilesHeader" FontSize="20" />
-                <Border CornerRadius="8" BorderThickness="1" BorderBrush="#15FFFFFF" Margin="0,10,36,10">
+                Margin="16,5,0,0"
+                Spacing="8">
+                <StackPanel Orientation="Horizontal" Spacing="8">
+                    <FontIcon
+                        FontSize="16"
+                        Foreground="{StaticResource EBAccentBrush}"
+                        Glyph="&#xE736;" />
+                    <TextBlock x:Name="ProfilesHeader" FontSize="18" FontWeight="SemiBold" />
+                </StackPanel>
+                <Border
+                    Padding="4"
+                    Background="{ThemeResource CardBackgroundFillColorDefaultBrush}"
+                    BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}"
+                    BorderThickness="1"
+                    CornerRadius="12"
+                    Margin="0,4,36,10">
+                    <Border.Shadow>
+                        <ThemeShadow />
+                    </Border.Shadow>
                     <ListView
                     x:Name="ProfilesListView"
                     Grid.Row="1"
@@ -110,18 +144,27 @@
                     VerticalAlignment="Top"
                     Click="Button_Click" />
             </StackPanel>
-            <TextBlock
-                x:Name="FavoritesHeader"
+            <StackPanel
                 Grid.Row="1"
                 Grid.Column="0"
                 Margin="36,5,0,0"
-                FontSize="20" />
+                Orientation="Horizontal"
+                Spacing="8">
+                <FontIcon
+                    FontSize="16"
+                    Foreground="{StaticResource EBAccentBrush}"
+                    Glyph="&#xEB51;" />
+                <TextBlock x:Name="FavoritesHeader" FontSize="18" FontWeight="SemiBold" />
+            </StackPanel>
             <Grid
                 x:Name="FavoritesPanel"
                 Grid.Row="1"
                 Grid.Column="0"
                 MinHeight="300"
                 Margin="0,36,0,0">
+                <Grid.Background>
+                    <SolidColorBrush Color="Transparent" />
+                </Grid.Background>
                 <Grid.Resources>
                     <DataTemplate x:Key="ControlItemTemplate" x:DataType="viewmodel:ConfigurationItemViewModel">
                         <control:SettingsCard
