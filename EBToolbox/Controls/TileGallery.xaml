@@ -157,7 +157,7 @@
                     </local:HeaderTile>
                     <local:HeaderTile
                         x:Name="DiscordTile"
-                        Link="https://discord.ebos.net">
+                        Link="https://discord.com/invite/3TdxfzrYwf">
                         <local:HeaderTile.Source>
                             <Image Source="..\assets\logo\discord-mark-blue.png" />
                         </local:HeaderTile.Source>
