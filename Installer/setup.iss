@@ -31,10 +31,7 @@ ArchitecturesInstallIn64BitMode=x64compatible
 ChangesAssociations=yes
 DisableProgramGroupPage=yes
 
-;Test
-;LicenseFile=C:\Users\TheyCreeper\Documents\dev\eb-toolbox\LICENSE
-;Prod
-LicenseFile=D:\a\eb-toolbox\eb-toolbox\LICENSE
+LicenseFile=..\LICENSE
 
 OutputBaseFilename=EBToolbox-Setup
 SolidCompression=yes
@@ -50,9 +47,8 @@ Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{
 ; Test code
 ;Source: "C:\Users\TheyCreeper\Documents\dev\eb-toolbox\EBToolbox\bin\x64\Release\net8.0-windows10.0.26100.0\win-x64\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
 ;Source: "C:\Users\TheyCreeper\Documents\dev\eb-toolbox\Installer\Toolbox\*"; DestDir: "C:\Windows\EBModules\Toolbox"; Flags: ignoreversion recursesubdirs
-; Prod code
-Source: "D:\a\eb-toolbox\eb-toolbox\Deploy\src\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
-Source: "D:\a\eb-toolbox\eb-toolbox\Installer\Toolbox\*"; DestDir: "{sd}\Windows\EBModules\Toolbox"; Flags: ignoreversion recursesubdirs
+Source: "..\Deploy\src\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "Toolbox\*"; DestDir: "{sd}\Windows\EBModules\Toolbox"; Flags: ignoreversion recursesubdirs
 
 [Registry]
 Root: HKA; Subkey: "Software\Classes\{#MyAppAssocExt}\OpenWithProgids"; ValueType: string; ValueName: "{#MyAppAssocKey}"; ValueData: ""; Flags: uninsdeletevalue
