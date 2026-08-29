@@ -1,0 +1,372 @@
+﻿{
+  "LangName": "FranÃ§ais (France)",
+  "LangKey": "fr_fr",
+
+  "ToBeTranslated": "Ã€ traduire",
+  "OpenShellEBPreset": "Profile EBOS Open Shell",
+  "InterfaceTweaksDocumentation": "Documentation des rÃ©glages d'interface",
+  "ActivationPage": "Page d'activation",
+  "ColorsPage": "Personnalisation des couleurs",
+  "DateAndTime": "ParamÃ¨tres date et heure",
+  "DefaultApps": "Applications par dÃ©faut",
+  "DefaultGraphicsSettings": "ParamÃ¨tres graphiques par dÃ©faut",
+  "RegionLanguage": "Langue et rÃ©gion",
+  "Privacy": "ParamÃ¨tres de confidentialitÃ© et sÃ©curitÃ©",
+  "RegionProperties": "Options rÃ©gionales",
+  "Taskbar": "ParamÃ¨tres de la barre des tÃ¢ches",
+  "CoreIsolation": "Isolation du noyau - SÃ©curitÃ© Windows",
+  "WindowsSettingsDocumentation": "Documentation des paramÃ¨tres windows",
+  "BootConfigExplanations": "Explications provenant de Microsoft",
+  "InterrupAffinityTool": "Outil d'affinitÃ© dâ€™interruption",
+  "ProcessExplorerApp": "Explorateur de processus",
+  "ProcessExplorerDocumentation": "Explorateur de processus documentation",
+  "NvidiaDisplayContainerMustReadFirst": "Ã€ lire premiÃ¨rement",
+  "AdvancedConfigMustRead": "Documentation utilisateur avancÃ©e",
+  "SecurityDocumentation": "Documentation sur la sÃ©curitÃ©",
+  "ResetPC": "Documentation sur la rÃ©initialisation de windows",
+  "RestartExplorerButton": "RedÃ©marrer Explorer.exe",
+  "RestartExplorerButtonDescription": "Certains paramÃ¨tres d'interface peuvent vous obliger Ã  redÃ©marrer Explorer.exe",
+  "ViewCurrentSettingsBootConfig": "Voir les valeurs actuelles",
+  "ViewCurrentSettingsBootConfigDescription": "Voir les valeurs de configuration du dÃ©marrage",
+  "VBSCurrentConfig": "Configuration actuelle du VBS",
+  "VBSCurrentConfigDescription": "Voir la configuration actuelle du VBS",
+  "ToggleDefender": "Activer/DÃ©sactiver",
+  "ToggleDefenderDescription": "Activer/DÃ©sactiver Windows Defender",
+  "ResetFTH": "RÃ©initialiser",
+  "ResetFTHDescription": "RÃ©initialiser les entrÃ©es FTH",
+  "InstallOpenShell": "Installer OpenShell",
+  "InstallOpenShellDescription": "Installer",
+  "FixErrors": "RÃ©solution de problÃ¨mes",
+  "FixErrorsDescription": "RÃ©parer les erreurs 2502 et 2503",
+  "RepairWinComponent": "RÃ©parer les composants Windows",
+  "TelemetryComponents": "Composants de tÃ©lÃ©mÃ©trie",
+  "EBDefault": "RÃ©initialiser le rÃ©seau aux paramÃ¨tres par dÃ©faut d'EB",
+  "WindowsDefault": "RÃ©initialiser les paramÃ¨tres par dÃ©faut du rÃ©seau de Windows",
+  "BootConfigAppearance": "Apparence au dÃ©marrage",
+  "BootConfigAppearanceDescription": "Tout ce qui concerne l'apparence du boot de Windows",
+  "BootConfigBehavior": "Comportement au dÃ©marrage",
+  "BootConfigBehaviorDescription": "Tout ce qui concerne le comportement au dÃ©marrage",
+  "NvidiaDisplayContainerSubMenu": "Conteneur d'affichage NVIDIA",
+  "NvidiaDisplayContainerSubMenuDescription": "Tout ce qui concerne le conteneur d'affichage NVIDIA",
+  "StartMenuSubMenu": "Menu DÃ©marrer",
+  "StartMenuSubMenuDescription": "Tout ce qui concerne la personnalisation du menu de dÃ©marrage de Windows",
+  "ContextMenuSubMenu": "Menu contextuel",
+  "ContextMenuSubMenuDescription": "Tout ce qui concerne le menu contextuel",
+  "AiSubMenu": "FonctionnalitÃ©s IA",
+  "AiSubMenuDescription": "Tout ce qui concerne les fonctionnalitÃ©s IA dans Windows 11",
+  "ServicesSubMenu": "Services",
+  "ServicesSubMenuDescription": "Tout ce qui concerne les services sous Windows",
+  "BootConfigurationSubMenu": "Configuration du dÃ©marrage",
+  "BootConfigurationSubMenuDescription": "Tout ce qui concerne le dÃ©marrage sous Windows",
+  "FileExplorerSubMenu": "Personnalisation de l'Explorateur de fichiers",
+  "FileExplorerSubMenuDescription": "Tout ce qui concerne la personnalisation de lâ€™Explorateur de fichiers Windows",
+  "DriverConfigurationSubMenu": "Configuration des pilotes",
+  "DriverConfigurationSubMenuDescription": "Tout ce qui concerne la configuration des pilotes",
+  "CoreIsolationSubMenu": "Isolation du noyau (VBS)",
+  "CoreIsolationSubMenuDescription": "Tout ce qui concerne l'isolation du noyau",
+  "DefenderSubMenu": "Windows Defender",
+  "DefenderSubMenuDescription": "Tout ce qui concerne Windows Defender",
+  "MitigationsSubMenu": "Exploitation",
+  "MitigationsSubMenuDescription": "Tout ce qui concerne le service de protections contre les exploits Windows",
+  "TroubleshootingNetwork": "RÃ©seau",
+  "TroubleshootingNetworkDescription": "Tout ce qui concerne le dÃ©pannage du rÃ©seau",
+  "FileSharingSubMenu": "Partage de fichiers",
+  "FileSharingSubMenuDescription": "Tout ce qui concerne le partage de fichiers sous Windows",
+  "ContextMenuTerminals": "Ajouter ou supprimer des terminaux dans le menu contextuel",
+  "ShortcutIcon": "Modifier l'icÃ´ne des raccourcis",
+  "Mitigations": "Changer le statut (Dangereux)",
+  "SafeMode": "Passer en mode sans Ã©chec au dÃ©marrage",
+
+
+  //Configuration toggles
+  "Animations": "Animations",
+  "AnimationsDescription": "ActivÃ© ou DÃ©sactivÃ© les animations Windows",
+
+  "ExtractContextMenu": "Option \"Extraire\" dans le menu contextuel",
+  "ExtractContextMenuDescription": "Ajouter l'option \"Extraire\" dans le menu contextuel pour les fichiers compressÃ©s",
+
+  "RunWithPriority": "Ajouter \"ExÃ©cuter en prioritÃ© (Run with priority)\" dans le menu contextuel",
+  "RunWithPriorityDescription": "Ajouter \"ExÃ©cuter en prioritÃ©\" dans le menu contextuel des applications",
+
+  "LanmanWorkstation": "Station de travail Lanman (SMB)",
+  "LanmanWorkstationDescription": "ActivÃ© ou DÃ©sactivÃ© le Lanmann service pour le partage de fichiers SMB",
+
+  "NetworkDiscovery": "DÃ©couverte des rÃ©seaux",
+  "NetworkDiscoveryDescription": "ActivÃ© ou DÃ©sactivÃ© la dÃ©couverte de rÃ©seau pour un partage de fichier plus simple",
+
+  "Printing": "Impression",
+  "PrintingDescription": "ActivÃ© ou DÃ©sactivÃ© le service d'impression",
+
+  "NvidiaDispayContainer": "Conteneur d'affichage NVIDIA",
+  "NvidiaDispayContainerDescription": "ActivÃ© ou DÃ©sactivÃ© le service Conteneur d'affichage NVIDIA",
+
+  "AddNvidiaDisplayContainerContextMenu": "Conteneur d'affichage NVIDIA dans le menu contextuel",
+  "AddNvidiaDisplayContainerContextMenuDescription": "AjoutÃ© le Conteneur d'affichage NVIDIA dans le menu contextuel",
+
+  "CpuIdleContextMenu": "Bascule du CPU inactif dans le menu contextuel",
+  "CpuIdleContextMenuDescription": "Ajouter la Bascule du CPU inactif dans le menu contextuel",
+
+  "LockScreen": "Activer l'Ã©cran de verrouillage",
+  "LockScreenDescription": "ActivÃ© ou DÃ©sactivÃ© l'Ã©cran de verrouillage",
+
+  "ShortcutText": "Texte de raccourci",
+  "ShortcutTextDescription": "Montrer ou Cacher le \"Raccourci\" texte dans raccourcis",
+
+  "BootLogo": "Logo de dÃ©marrage",
+  "BootLogoDescription": "ActivÃ© ou DÃ©sactivÃ© le logo de dÃ©marrage",
+
+  "BootMessages": "Messages de dÃ©marrage",
+  "BootMessagesDescription": "ActivÃ© ou DÃ©sactivÃ© le messages de dÃ©marrage",
+
+  "NewBootMenu": "Nouveau menu de dÃ©marrage",
+  "NewBootMenuDescription": "ActivÃ© ou DÃ©sactivÃ© le nouveau menu de dÃ©marrage",
+
+  "SpinningAnimation": "Animation de rotation",
+  "SpinningAnimationDescription": "ActivÃ© ou DÃ©sactivÃ© les animations de rotation au dÃ©marrage",
+
+  "AdvancedBootOptions": "Options avancÃ©es au dÃ©marrage de Windows",
+  "AdvancedBootOptionsDescription": "ActivÃ© ou DÃ©sactivÃ© les options avancÃ©es au dÃ©marrage de Windows",
+
+  "AutomaticRepair": "RÃ©paration Automatique",
+  "AutomaticRepairDescription": "ActivÃ© ou DÃ©sactivÃ© la rÃ©paration automatique en cas d'Ã©chec du dÃ©marrage",
+
+  "KernelParameters": "ParamÃ¨tres du noyau au dÃ©marrage",
+  "KernelParametersDescription": "ActivÃ© ou DÃ©sactivÃ© les paramÃ¨tres du noyau au dÃ©marrage",
+
+  "HighestMode": "Mode graphique le plus Ã©levÃ©",
+  "HighestModeDescription": "ActivÃ© ou DÃ©sactivÃ© le mode le plus Ã©levÃ© pour les Ã©crans",
+
+  "CompactView": "Vue compacte",
+  "CompactViewDescription": "ActivÃ© ou DÃ©sactivÃ© la vue compte dans l'explorateur de fichierr",
+
+  "RemovableDrivesInSidebar": "Lecteurs amovibles dans la barre latÃ©rale",
+  "RemovableDrivesInSidebarDescription": "Monter ou Cacher les pÃ©riphÃ©rique retirable dans le volet de navigationr",
+
+  "BackgroundApps": "Applications en arriÃ¨re-plan",
+  "BackgroundAppsDescription": "ActivÃ© ou DÃ©sactivÃ© les applications en arriÃ¨re-plan",
+
+  "SearchIndexing": "Indexation des recherches",
+  "SearchIndexingDescription": "ActivÃ© ou DÃ©sactivÃ© l'indexation des recherches",
+
+  "FsoAndGameBar": "FSO et Game Bar",
+  "FsoAndGameBarDescription": "ActivÃ© ou DÃ©sactivÃ© l'optimisation plein Ã©cran et Game Bar",
+
+  "AutomaticUpdates": "Mises Ã  jour automatiques",
+  "AutomaticUpdatesDescription": "ActivÃ© ou DÃ©sactivÃ© les mises Ã  jour automatiques",
+
+  "DeliveryOptimisation": "Optimisation de la distribution",
+  "DeliveryOptimisationDescription": "ActivÃ© ou DÃ©sactivÃ© l'optimisation de la distribution",
+
+  "Hibernation": "Mise en veille prolongÃ©e",
+  "HibernationDescription": "ActivÃ© ou DÃ©sactivÃ© la mise en veille prolongÃ©e",
+
+  "Location": "Localisation",
+  "LocationDescription": "ActivÃ© ou DÃ©sactivÃ© le service de localisation",
+
+  "PhoneLink": "Microsoft Mobile connectÃ©",
+  "PhoneLinkDescription": "ActivÃ© ou DÃ©sactivÃ© liaison tÃ©lÃ©phonique et appareils mobiles",
+
+  "PowerSaving": "Ã‰conomie d'Ã©nergie",
+  "PowerSavingDescription": "ActivÃ© ou DÃ©sactivÃ© fonctions d'Ã©conomie d'Ã©nergie",
+
+  "Sleep": "Mise en veille",
+  "SleepDescription": "ActivÃ© ou DÃ©sactivÃ© la mise en veille",
+
+  "SystemRestore": "Restauration du SystÃ¨me",
+  "SystemRestoreDescription": "ActivÃ© ou DÃ©sactivÃ© la restauration du systÃ¨me",
+
+  "UpdateNotifications": "Notifications de Mises Ã  Jour",
+  "UpdateNotificationsDescription": "ActivÃ© ou DÃ©sactivÃ© les notifications de mises Ã  jour",
+
+  "WebSearch": "Recherches Web dans le menu dÃ©marrer",
+  "WebSearchDescription": "ActivÃ© ou DÃ©sactivÃ© les recherches Web dans le menu dÃ©marrer",
+
+  "Widgets": "Widgets Bureau",
+  "WidgetsDescription": "ActivÃ© ou DÃ©sactivÃ© les windgets du bureau",
+
+  "WindowsSpotlight": "Windows Ã  la Une",
+  "WindowsSpotlightDescription": "ActivÃ© ou DÃ©sactivÃ© windows Ã  la une sur l'Ã©cran de verrouillage",
+
+  "AppStoreArchiving": "Archivage Microsoft Store",
+  "AppStoreArchivingDescription": "ActivÃ© ou DÃ©sactivÃ© l'archivage microsft store",
+
+  "TakeOwnership": "Ajouter \"Take Ownership\" dans le menu contextuel",
+  "TakeOwnershipDescription": "Ajouter \"Take Ownership\" dans le menu contextuel pour les fichiers et dossiers",
+
+  "OldContextMenu": "Menu contextuel (version antÃ©rieure Ã  Windows 11)",
+  "OldContextMenuDescription": "ActivÃ© ou DÃ©sactivÃ© le menu contextuel legacy de pre-Windows 11",
+
+  "EdgeSwipe": "Balayage des bords",
+  "EdgeSwipeDescription": "ActivÃ© ou DÃ©sactivÃ© le balayage des bords",
+
+  "AppIconsThumbnail": "IcÃ´nes d'application par dÃ©faut sur les vignettes",
+  "AppIconsThumbnailDescription": "Monter ou Cacher les icÃ´nes d'application par dÃ©faut sur les vignettes",
+
+  "AutomaticFolderDiscovery": "DÃ©couverte automatique des dossiers",
+  "AutomaticFolderDiscoveryDescription": "ActivÃ© ou DÃ©sactivÃ© la dÃ©couverte automatique des dossiers dans l'explorateur de fichier",
+
+  "Gallery": "Activer la galerie",
+  "GalleryDescription": "ActivÃ© ou DÃ©sactivÃ© la galerie dans l'explorateur de fichier",
+
+  "SnapLayout": "Active l'ancrage des fenÃªtres",
+  "SnapLayoutDescription": "ActivÃ© ou DÃ©sactivÃ© l'ancrage des fenÃªtres",
+
+  "RecentItems": "Afficher les Ã©lÃ©ments rÃ©cents dans l'explorateur de fichier",
+  "RecentItemsDescription": "ActivÃ© ou DÃ©sactivÃ© les Ã©lÃ©ments rÃ©cents dans l'explorateur de fichier",
+
+  "VerboseStatusMessage": "Messages d'Ã©tat dÃ©taillÃ©",
+  "VerboseStatusMessageDescription": "ActivÃ© ou DÃ©sactivÃ© les messages d'Ã©tat lors du dÃ©marrage et arrÃªt de windows",
+
+  "SuperFetch": "SuperFetch",
+  "SuperFetchDescription": "ActivÃ© ou DÃ©sactivÃ© le service SuperFetch (SysMain)",
+
+  "StaticIp": "DÃ©finir automatiquement l'IP statique",
+  "StaticIpDescription": "Configure automatiquement une adresse IP statique pour votre carte rÃ©seau",
+
+  "HideAppBrowserControl": "ContrÃ´le de navigateur & d'application",
+  "HideAppBrowserControlDescription": "Masque/Affiche le contrÃ´le du navigateur dans SÃ©curitÃ© Windows",
+
+  "SecurityHealthTray": "Bouton SÃ©curitÃ© dans la barre des tÃ¢ches",
+  "SecurityHealthTrayDescription": "Monter ou Cacher le bouton SÃ©curitÃ© dans la barre des tÃ¢ches",
+
+  "FaultTolerantHeap": "TolÃ©rance aux pannes",
+  "FaultTolerantHeapDescription": "ActivÃ© ou DÃ©sactivÃ© le Tas Ã  tolÃ©rance de panne",
+
+  "Copilot": "Activer Microsoft Copilot",
+  "CopilotDescription": "ActivÃ© ou DÃ©sactivÃ© l'intÃ©gration de Microsoft Copilot",
+
+  "Recall": "Activer Windows Recall",
+  "RecallDescription": "ActivÃ© ou DÃ©sactivÃ© Windows Recall",
+
+  "CpuIdle": "Activer CPU Idling",
+  "CpuIdleDescription": "ActivÃ© ou DÃ©sactivÃ© le CPU idling",
+
+  "ProcessExplorer": "Installer lâ€™Explorateur de Processus",
+  "ProcessExplorerDescription": "Installer lâ€™Explorateur de Processus depuis Microsoft Sysinternals",
+
+  "VbsState": "Activer VBS",
+  "VbsStateDescription": "ActivÃ© ou DÃ©sactivÃ© Virtualization Based Security (VBS)",
+
+  "GiveAccessToMenu": "Menu \"Donner accÃ¨s Ã \"",
+  "GiveAccessToMenuDescription": "Ajouter \"Donner accÃ¨s Ã \" dans le menu contextuel pour les fichiers et dossiers",
+
+  "NetworkNavigationPane": "Panneau de navigation rÃ©seau",
+  "NetworkNavigationPaneDescription": "Monter ou Cacher le panneau de navigation rÃ©seau dans l'explorateur de fichier",
+
+  "FileSharing": "Partage de fichiers",
+  "FileSharingDescription": "ActivÃ© ou DÃ©sactivÃ© le partage de fichier",
+
+  "WindowsHello": "Windows Hello",
+  "WindowsHelloDescription": "ActivÃ© ou DÃ©sactivÃ© l'authentification biomÃ©trique Windows Hello",
+
+  // End of configuration toggle
+
+  // Settings and Home texts
+  "Home_WinVer": "Version de Windows",
+  "Home_PlaybookVer": "Version du Playbook",
+  "Home_HeaderText": "Accueil",
+  "Home_ProfilesText": "Profiles",
+  "Home_Favorites": "Favoris",
+  "NewProfilesButton": "CrÃ©er un nouveau profil",
+  "IncompatibleVer": "L'installation actuelle d'EBOS/Windows est incompatible avec cette version du Toolbox. Veuillez mettre Ã  jour votre version d'EBOS !",
+  "StatingServices": "DÃ©marrage des services...",
+
+  // Dialog text
+  "CurrentConfigIsSavedMessage": "Votre configuration actuelle sera enregistrÃ©e dans ce profil",
+  "DeleteProfileConfirmation": "Voulez-vous vraiment supprimer ce profil ?",
+  "TryDeleteDefaultProfile": "Vous ne pouvez pas supprimer le profil par dÃ©faut",
+  "Home_SetProfileConfig": "Voulez-vous vraiment dÃ©finir ce profil ?",
+  "RestartPCPromptHeader": "Pour appliquer pleinement les modifications, veuillez redÃ©marrer votre PC",
+  "RelogApplyDesc": "Pour que les modifications soient pleinement prises en compte, veuillez vous dÃ©connecter.",
+  "Yes": "Oui",
+  "No": "Non",
+  "Cancel": "Annuler",
+  "Ok": "Ok",
+  "Restart": "RedÃ©marrer",
+  "Later": "Plus tard",
+  "Create": "CrÃ©er",
+  "Home_SetProfileBtn": "DÃ©finir ce profil",
+  "Home_DeleteProfileBtn": "Supprimer ce profil",
+  "Settings": "RÃ©glages",
+  "Behavior": "GÃ©nÃ©ral",
+  "Settings_BackgroundDesc": "Garder Toolbox ouvert en arriÃ¨re-plan",
+  "About": "Ã€ propos",
+  "CloneRepoCard": "Cloner le repo",
+  "BugReportCard": "CrÃ©er un rapport de bug",
+  "WarningHeader": "Ce code est fourni par l'Ã©quipe d'EBOS. Ce logiciel est destinÃ© Ã  Ãªtre utilisÃ© avec EBOS sur une version de Windows supportÃ©e SEULEMENT! Tout autre Playbook et/ou version de Windows non pris en charge n'est pas recommandÃ©.",
+  "InstallSoftware": "Logiciels",
+  "InstallButton": "Installer",
+  "Unstable": "Instable",
+  "UnstableDescription": "L'utilisation de cette application est actuellement uniquement Ã  des fins de test. Cette application peut contenir des bugs qui pourraient endommager votre installation Windows. Ã€ utiliser Ã  vos propres risques.",
+  "BetaVersion": "Version BÃªta",
+  "BetaVersionDescription": "Cette application est actuellement dans une version bÃªta. Si vous trouvez des bugs, ou si vous voulez suggÃ©rer une fonctionnalitÃ©, veuillez donner des commentaires sur Discord. Les fonctionnalitÃ©s sont sujettes Ã  modification.",
+  "RestartApp": "Relancer Toolbox pour appliquer",
+  "RestartAppDesc": "Pour appliquer ces changements, veuillez relancer Toolbox.",
+  "RestartAppBtn": "Relancer",
+  "RestartPC": "RedÃ©marrer le PC",
+  "RestartPCDesc": "Pour appliquer ces changements, veuillez redÃ©marrer votre ordinateur.",
+  "RestartBtn": "RedÃ©marrer maintenant",
+  "RelogApply": "Appliquer les changements",
+  "ReloadApplyDesc": "Pour appliquer ces changements, veuillez vous reconnecter",
+  "RelogBtn": "DÃ©connecter",
+  "CheckUpdates": "VÃ©rifiez si EBOS Toolbox est Ã  jour",
+  "CheckUpdatesBtn": "VÃ©rifier maintenant",
+  "LatestVer": "Vous Ãªtes sur la derniÃ¨re version disponible !",
+  "NewUpdate": "Mettre Ã  jour",
+  "NewUpdateDesc": "Une nouvelle mise Ã  jour disponible. Voulez-vous l'installer maintenant ?",
+  "InstallNow": "Installer maintenant",
+  "ToggleWindowsUpdates": "Activer/DÃ©sactiver Windows Update",
+  "WindowsUpdate": "Windows Update",
+  "WindowsUpdateDescription": "ParamÃ¨tres reliÃ© Ã  Windows Update",
+  "FeatureHeader": "M-Ã€-J de fonctionnalitÃ© :",
+  "QualityHeader": "M-Ã€-J de qualitÃ© :",
+  "Set": "Modifier",
+  "WindowsUpdateDeferral": "DÃ©sactiver temporairement les mises Ã  jour Windows (en jours)",
+  "UpdateDeferralPromptTitle": "Modifier le nombre de jours",
+  "ResetWindowsUpdateDeferral": "RÃ©tablir les paramÃ¨tres par dÃ©faut",
+  "MicrosoftStoreToggle": "Activer/DÃ©sactiver Microsoft Store",
+
+
+  // Home Tiles
+  "Tile_DocumentationTitle": "Documentation",
+  "Tile_DocumentationDescription": "Installer EBOS, FAQ, et bien plus encore",
+  "Tile_DiscordTitle": "Discord",
+  "Tile_DiscordDescription": "Demandez de lâ€™assistance et faites-vous des amis !",
+  "Tile_GithubTitle": "GitHub",
+  "Tile_GithubDescription": "Explorez le code d'EBOS et contribuez",
+  "Tile_KofiTitle": "Soutenez-nous sur Ko-Fi",
+  "Tile_KofiDescription": "Aidez-nous Ã  continuer ce projet !",
+
+  // Menu Items & other navigation item texts
+  "SearchPlaceholder": "Rechercher des paramÃ¨tre...",
+
+  "Home": "Accueil",
+  "Software": "Logiciels",
+  "GeneralConfig": "Configuration gÃ©nÃ©rale",
+  "Interface": "RÃ©glages de l'interface",
+  "Windows": "RÃ©glages Windows",
+  "Advanced": "Configuration avancÃ©e",
+  "Security": "SÃ©curitÃ©",
+  "Troubleshooting": "RÃ©solution des problÃ¨mes",
+
+  "Language": "Langue",
+
+  "NoFavorites": "Vous n'avez aucun profil Ã  votre liste de favoris.",
+  "SystemInfo": "Ã€ propos de ce systÃ¨me :",
+  "LearnMore": "En savoir plus",
+
+  "TroubleshootingDocumenation": "Documentation pour la rÃ©solution des problÃ¨mes",
+
+  //
+  // Experiments
+  //
+  "ExperimentsHeader": "ExpÃ©riences",
+  "ExperimentsCardHeader": "FonctionnalitÃ©s expÃ©rimentales",
+  "ExperimentsCardDescription": "Ces fonctionnalitÃ©s sont expÃ©rimentales et peuvent ne pas fonctionner correctement. Un redÃ©marrage est nÃ©cessaire pour appliquer les modifications.",
+  // Search experiment
+  "SearchExperiment": "Barre de recherche",
+  "SearchExperimentDescription": "Permet d'utiliser une barre de recherche pour trouver rapidement les paramÃ¨tres dans ToolBox.",
+  // Icons experiment
+  "IconsExperiment": "IcÃ´nes",
+  "IconsExperimentDescription": "Active les icÃ´nes Ã  cÃ´tÃ© de chaque paramÃ¨tre pour faciliter l'identification et amÃ©liorer l'attrait visuel."
+}

@@ -1,0 +1,53 @@
+﻿using EBToolbox.Stores;
+using EBToolbox.Utils;
+using Microsoft.Extensions.DependencyInjection;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Windows.ApplicationModel;
+using Windows.Foundation;
+using Windows.Management.Deployment;
+
+
+namespace EBToolbox.Services.ConfigurationServices
+{
+    internal class CopilotConfigurationService : IConfigurationService
+    {
+        private const string EB_STORE_KEY_NAME = @"HKLM\SOFTWARE\EBOS\Services\MicrosoftCopilot";
+        private const string STATE_VALUE_NAME = "state";
+
+
+        private readonly ConfigurationStore _copilotConfigurationStore;
+
+        public CopilotConfigurationService([FromKeyedServices("Copilot")] ConfigurationStore copilotConfigurationStore)
+        {
+            _copilotConfigurationStore = copilotConfigurationStore;
+        }
+
+        public void Disable()
+        {
+            RegistryHelper.SetValue(EB_STORE_KEY_NAME, STATE_VALUE_NAME, 0);
+            RegistryHelper.SetValue(EB_STORE_KEY_NAME, "path", @$"{Environment.GetEnvironmentVariable("windir")}\EBDesktop\3. General Configuration\AI Features\Microsoft Copilot\Disable Microsoft Copilot (default).cmd");
+            ProcessHelper.StartShellExecute(@$"{Environment.GetEnvironmentVariable("windir")}EBModules\Toolbox\Scripts\Copilot\DisableMicrosoftCopilot.cmd");
+
+            _copilotConfigurationStore.CurrentSetting = IsEnabled();
+        }
+
+        public void Enable()
+        {
+            RegistryHelper.SetValue(EB_STORE_KEY_NAME, STATE_VALUE_NAME, 1);
+            RegistryHelper.SetValue(EB_STORE_KEY_NAME, "path", @$"{Environment.GetEnvironmentVariable("windir")}\EBDesktop\3. General Configuration\AI Features\Microsoft Copilot\Enable Microsoft Copilot.cmd");
+
+            ProcessHelper.StartShellExecute(@$"{Environment.GetEnvironmentVariable("windir")}EBModules\Toolbox\Scripts\Copilot\EnableMicrosoftCopilot.cmd");
+
+            _copilotConfigurationStore.CurrentSetting = IsEnabled();
+        }
+
+        public bool IsEnabled()
+        {
+            return RegistryHelper.IsMatch(EB_STORE_KEY_NAME, STATE_VALUE_NAME, 1);
+        }
+    }
+}

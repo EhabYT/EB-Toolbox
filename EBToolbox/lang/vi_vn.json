@@ -1,0 +1,373 @@
+﻿{
+  "LangName": "Tiáº¿ng Viá»‡t (Viá»‡t Nam)",
+  "LangKey": "vi_vn",
+
+  
+  "ToBeTranslated": "Cáº§n Ä‘Æ°á»£c dá»‹ch",
+  "OpenShellEBPreset": "Cáº¥u hÃ¬nh Open Shell EBOS",
+  "InterfaceTweaksDocumentation": "TÃ i liá»‡u tinh chá»‰nh giao diá»‡n",
+  "ActivationPage": "Trang KÃ­ch hoáº¡t",
+  "ColorsPage": "CÃ i Ä‘áº·t cÃ¡ nhÃ¢n hÃ³a mÃ u sáº¯c",
+  "DateAndTime": "CÃ i Ä‘áº·t ngÃ y vÃ  giá»",
+  "DefaultApps": "á»¨ng dá»¥ng máº·c Ä‘á»‹nh",
+  "DefaultGraphicsSettings": "CÃ i Ä‘áº·t Ä‘á»“ há»a máº·c Ä‘á»‹nh",
+  "RegionLanguage": "NgÃ´n ngá»¯",
+  "Privacy": "CÃ i Ä‘áº·t Quyá»n riÃªng tÆ°",
+  "RegionProperties": "Thuá»™c tÃ­nh khu vá»±c",
+  "Taskbar": "CÃ i Ä‘áº·t thanh tÃ¡c vá»¥",
+  "CoreIsolation": "CÃ¡ch ly lÃµi - Báº£o máº­t Windows",
+  "WindowsSettingsDocumentation": "TÃ i liá»‡u CÃ i Ä‘áº·t Windows",
+  "BootConfigExplanations": "Giáº£i thÃ­ch tá»« Microsoft",
+  "InterrupAffinityTool": "CÃ´ng cá»¥ Interrupt Affinity",
+  "ProcessExplorerApp": "Process Explorer",
+  "ProcessExplorerDocumentation": "TÃ i liá»‡u Process Explorer",
+  "NvidiaDisplayContainerMustReadFirst": "Pháº£i Ä‘á»c trÆ°á»›c",
+  "AdvancedConfigMustRead": "TÃ i liá»‡u cáº¥u hÃ¬nh nÃ¢ng cao",
+  "SecurityDocumentation": "TÃ i liá»‡u báº£o máº­t",
+  "ResetPC": "Äáº·t láº¡i PC nÃ y (Ä‘á»c trÆ°á»›c)",
+  "RestartExplorerButton": "Khá»Ÿi Ä‘á»™ng láº¡i Explorer.exe",
+  "RestartExplorerButtonDescription": "Má»™t sá»‘ cÃ i Ä‘áº·t giao diá»‡n cÃ³ thá»ƒ yÃªu cáº§u báº¡n khá»Ÿi Ä‘á»™ng láº¡i explorer.exe",
+  "ViewCurrentSettingsBootConfig": "Xem cÃ¡c giÃ¡ trá»‹ hiá»‡n táº¡i",
+  "ViewCurrentSettingsBootConfigDescription": "Xem cÃ¡c giÃ¡ trá»‹ cáº¥u hÃ¬nh khá»Ÿi Ä‘á»™ng",
+  "VBSCurrentConfig": "Cáº¥u hÃ¬nh VBS hiá»‡n táº¡i",
+  "VBSCurrentConfigDescription": "Xem cáº¥u hÃ¬nh VBS hiá»‡n táº¡i",
+  "ToggleDefender": "Báº­t/Táº¯t",
+  "ToggleDefenderDescription": "Báº­t/Táº¯t Windows Defender",
+  "ResetFTH": "Äáº·t láº¡i",
+  "ResetFTHDescription": "Äáº·t láº¡i cÃ¡c má»¥c FTH",
+  "InstallOpenShell": "CÃ i Ä‘áº·t OpenShell",
+  "InstallOpenShellDescription": "CÃ i Ä‘áº·t",
+  "FixErrors": "Kháº¯c phá»¥c sá»± cá»‘",
+  "FixErrorsDescription": "Sá»­a lá»—i 2502 vÃ  2503",
+  "RepairWinComponent": "Sá»­a chá»¯a cÃ¡c thÃ nh pháº§n Windows",
+  "TelemetryComponents": "CÃ¡c thÃ nh pháº§n Tá»« xa (Telemetry)",
+  "EBDefault": "Äáº·t láº¡i Máº¡ng vá» Máº·c Ä‘á»‹nh cá»§a EB",
+  "WindowsDefault": "Äáº·t láº¡i Máº¡ng vá» Máº·c Ä‘á»‹nh cá»§a Windows",
+  "BootConfigAppearance": "Giao diá»‡n khá»Ÿi Ä‘á»™ng",
+  "BootConfigAppearanceDescription": "CÃ¡c thiáº¿t láº­p liÃªn quan Ä‘áº¿n giao diá»‡n khá»Ÿi Ä‘á»™ng Windows",
+  "BootConfigBehavior": "HÃ nh vi khá»Ÿi Ä‘á»™ng",
+  "BootConfigBehaviorDescription": "Má»i thá»© liÃªn quan Ä‘áº¿n hÃ nh vi khá»Ÿi Ä‘á»™ng",
+  "NvidiaDisplayContainerSubMenu": "CÃ i Ä‘áº·t NVIDIA Display Container",
+  "NvidiaDisplayContainerSubMenuDescription": "Má»i thá»© liÃªn quan Ä‘áº¿n NVIDIA Display Container",
+  "StartMenuSubMenu": "Menu Start",
+  "StartMenuSubMenuDescription": "TÃ¹y chá»‰nh Menu Start cá»§a Windows",
+  "ContextMenuSubMenu": "Menu Ngá»¯ cáº£nh",
+  "ContextMenuSubMenuDescription": "Má»i thá»© liÃªn quan Ä‘áº¿n menu ngá»¯ cáº£nh",
+  "AiSubMenu": "TÃ­nh nÄƒng AI",
+  "AiSubMenuDescription": "CÃ i Ä‘áº·t liÃªn quan Ä‘áº¿n cÃ¡c tÃ­nh nÄƒng AI trong Windows 11",
+  "ServicesSubMenu": "Dá»‹ch vá»¥",
+  "ServicesSubMenuDescription": "Má»i thá»© liÃªn quan Ä‘áº¿n cÃ¡c dá»‹ch vá»¥ trong Windows",
+  "BootConfigurationSubMenu": "Cáº¥u hÃ¬nh khá»Ÿi Ä‘á»™ng",
+  "BootConfigurationSubMenuDescription": "Má»i thá»© liÃªn quan Ä‘áº¿n quÃ¡ trÃ¬nh khá»Ÿi Ä‘á»™ng trong Windows",
+  "FileExplorerSubMenu": "TÃ¹y chá»‰nh File Explorer",
+  "FileExplorerSubMenuDescription": "Má»i thá»© liÃªn quan Ä‘áº¿n viá»‡c tÃ¹y chá»‰nh File Explorer cá»§a Windows",
+  "DriverConfigurationSubMenu": "Cáº¥u hÃ¬nh Driver",
+  "DriverConfigurationSubMenuDescription": "Má»i thá»© liÃªn quan Ä‘áº¿n cáº¥u hÃ¬nh driver",
+  "CoreIsolationSubMenu": "CÃ¡ch ly lÃµi (VBS)",
+  "CoreIsolationSubMenuDescription": "Má»i thá»© liÃªn quan Ä‘áº¿n tÃ­nh nÄƒng cÃ¡ch ly lÃµi",
+  "DefenderSubMenu": "Pháº§n má»m báº£o vá»‡ Windows",
+  "DefenderSubMenuDescription": "CÃ i Ä‘áº·t liÃªn quan Ä‘áº¿n Windows Defender",
+  "MitigationsSubMenu": "Giáº£m nháº¹ rá»§i ro (Mitigations)",
+  "MitigationsSubMenuDescription": "Má»i thá»© liÃªn quan Ä‘áº¿n cÃ¡c biá»‡n phÃ¡p giáº£m nháº¹ rá»§i ro",
+  "TroubleshootingNetwork": "Máº¡ng",
+  "TroubleshootingNetworkDescription": "Má»i thá»© liÃªn quan Ä‘áº¿n kháº¯c phá»¥c sá»± cá»‘ máº¡ng",
+  "FileSharingSubMenu": "Chia sáº» Tá»‡p",
+  "FileSharingSubMenuDescription": "Má»i thá»© liÃªn quan Ä‘áº¿n chia sáº» tá»‡p trong Windows",
+  "ContextMenuTerminals": "ThÃªm hoáº·c xÃ³a Terminal khá»i menu ngá»¯ cáº£nh",
+  "ShortcutIcon": "Thay Ä‘á»•i biá»ƒu tÆ°á»£ng cá»§a lá»‘i táº¯t (shortcuts)",
+  "Mitigations": "Thay Ä‘á»•i tráº¡ng thÃ¡i giáº£m nháº¹ rá»§i ro",
+  "SafeMode": "VÃ o cháº¿ Ä‘á»™ an toÃ n (Safe mode) khi khá»Ÿi Ä‘á»™ng",
+
+
+  // Configuration toggles (// CÃ¡c tÃ¹y chá»n cáº¥u hÃ¬nh)
+  "Animations": "Hiá»‡u á»©ng Ä‘á»™ng",
+  "AnimationsDescription": "Báº­t hoáº·c táº¯t hiá»‡u á»©ng Ä‘á»™ng cá»§a Windows",
+
+  "ExtractContextMenu": "TÃ¹y chá»n Giáº£i nÃ©n",
+  "ExtractContextMenuDescription": "ThÃªm tÃ¹y chá»n Giáº£i nÃ©n vÃ o menu chuá»™t pháº£i cho tá»‡p nÃ©n",
+
+  "RunWithPriority": "Cháº¡y vá»›i Má»©c Æ°u tiÃªn (Run With Priority) trong menu ngá»¯ cáº£nh",
+  "RunWithPriorityDescription": "ThÃªm tÃ¹y chá»n \"Cháº¡y vá»›i Má»©c Æ°u tiÃªn\" vÃ o menu ngá»¯ cáº£nh cho cÃ¡c á»©ng dá»¥ng",
+
+  "LanmanWorkstation": "Lanman Workstation (SMB)",
+  "LanmanWorkstationDescription": "Báº­t hoáº·c táº¯t dá»‹ch vá»¥ Lanman Workstation Ä‘á»ƒ chia sáº» tá»‡p SMB",
+
+  "NetworkDiscovery": "KhÃ¡m phÃ¡ máº¡ng",
+  "NetworkDiscoveryDescription": "Báº­t hoáº·c táº¯t tÃ­nh nÄƒng khÃ¡m phÃ¡ máº¡ng Ä‘á»ƒ chia sáº» tá»‡p dá»… dÃ ng hÆ¡n",
+
+  "Printing": "In áº¥n",
+  "PrintingDescription": "Báº­t hoáº·c táº¯t cÃ¡c dá»‹ch vá»¥ in áº¥n",
+
+  "NvidiaDispayContainer": "NVIDIA Display Container",
+  "NvidiaDispayContainerDescription": "Báº­t hoáº·c táº¯t dá»‹ch vá»¥ NVIDIA Display Container",
+
+  "AddNvidiaDisplayContainerContextMenu": "NVIDIA Display Container trong menu ngá»¯ cáº£nh",
+  "AddNvidiaDisplayContainerContextMenuDescription": "ThÃªm tÃ¹y chá»n báº­t/táº¯t NVIDIA Display Container vÃ o menu ngá»¯ cáº£nh",
+
+  "CpuIdleContextMenu": "Báº­t/táº¯t CPU Idle trong menu ngá»¯ cáº£nh",
+  "CpuIdleContextMenuDescription": "ThÃªm tÃ¹y chá»n báº­t/táº¯t CPU Idle vÃ o menu ngá»¯ cáº£nh",
+
+  "LockScreen": "Báº­t mÃ n hÃ¬nh khÃ³a",
+  "LockScreenDescription": "Báº­t hoáº·c táº¯t mÃ n hÃ¬nh khÃ³a cá»§a Windows",
+
+  "ShortcutText": "Chá»¯ \"Shortcut\"",
+  "ShortcutTextDescription": "Hiá»ƒn thá»‹ hoáº·c áº©n chá»¯ \"Shortcut\" trÃªn cÃ¡c lá»‘i táº¯t",
+
+  "BootLogo": "Logo Khá»Ÿi Ä‘á»™ng",
+  "BootLogoDescription": "Báº­t hoáº·c táº¯t logo khá»Ÿi Ä‘á»™ng cá»§a Windows",
+
+  "BootMessages": "ThÃ´ng bÃ¡o Khá»Ÿi Ä‘á»™ng",
+  "BootMessagesDescription": "Báº­t hoáº·c táº¯t cÃ¡c thÃ´ng bÃ¡o khá»Ÿi Ä‘á»™ng cá»§a Windows",
+
+  "NewBootMenu": "Menu Khá»Ÿi Ä‘á»™ng Má»›i",
+  "NewBootMenuDescription": "Báº­t hoáº·c táº¯t menu khá»Ÿi Ä‘á»™ng má»›i cá»§a Windows",
+
+  "SpinningAnimation": "Hoáº¡t áº£nh xoay",
+  "SpinningAnimationDescription": "Báº­t hoáº·c táº¯t hoáº¡t áº£nh vÃ²ng xoay khi khá»Ÿi Ä‘á»™ng",
+
+  "AdvancedBootOptions": "TÃ¹y chá»n Khá»Ÿi Ä‘á»™ng NÃ¢ng cao lÃºc Khá»Ÿi Ä‘á»™ng",
+  "AdvancedBootOptionsDescription": "Báº­t hoáº·c táº¯t cÃ¡c tÃ¹y chá»n khá»Ÿi Ä‘á»™ng nÃ¢ng cao lÃºc khá»Ÿi Ä‘á»™ng",
+
+  "AutomaticRepair": "Tá»± Ä‘á»™ng Sá»­a chá»¯a (Automatic Repair)",
+  "AutomaticRepairDescription": "Báº­t hoáº·c táº¯t tÃ­nh nÄƒng tá»± Ä‘á»™ng sá»­a chá»¯a khi lá»—i khá»Ÿi Ä‘á»™ng",
+
+  "KernelParameters": "Tham sá»‘ Kernel khi Khá»Ÿi Ä‘á»™ng",
+  "KernelParametersDescription": "Báº­t hoáº·c táº¯t cÃ¡c tham sá»‘ kernel khi khá»Ÿi Ä‘á»™ng",
+
+  "HighestMode": "Cháº¿ Ä‘á»™ Hiá»ƒn thá»‹ Cao nháº¥t",
+  "HighestModeDescription": "Báº­t hoáº·c táº¯t cháº¿ Ä‘á»™ hiá»ƒn thá»‹ cao nháº¥t cho mÃ n hÃ¬nh",
+
+  "CompactView": "Cháº¿ Ä‘á»™ xem thu gá»n",
+  "CompactViewDescription": "Báº­t hoáº·c táº¯t cháº¿ Ä‘á»™ xem thu gá»n trong File Explorer",
+
+  "RemovableDrivesInSidebar": "á»” Ä‘Ä©a rá»i á»Ÿ Thanh bÃªn",
+  "RemovableDrivesInSidebarDescription": "Hiá»ƒn thá»‹ hoáº·c áº©n á»• Ä‘Ä©a rá»i á»Ÿ thanh bÃªn cá»§a File Explorer",
+
+  "BackgroundApps": "á»¨ng dá»¥ng ná»n",
+  "BackgroundAppsDescription": "Báº­t hoáº·c táº¯t cÃ¡c á»©ng dá»¥ng ná»n",
+
+  "SearchIndexing": "Láº­p chá»‰ má»¥c TÃ¬m kiáº¿m",
+  "SearchIndexingDescription": "Báº­t hoáº·c táº¯t tÃ­nh nÄƒng láº­p chá»‰ má»¥c tÃ¬m kiáº¿m",
+
+  "FsoAndGameBar": "Tá»‘i Æ°u hÃ³a ToÃ n mÃ n hÃ¬nh (FSO) vÃ  Game Bar",
+  "FsoAndGameBarDescription": "Báº­t hoáº·c táº¯t TÃ­nh nÄƒng Tá»‘i Æ°u hÃ³a ToÃ n mÃ n hÃ¬nh vÃ  Game Bar",
+
+  "AutomaticUpdates": "Cáº­p nháº­t tá»± Ä‘á»™ng",
+  "AutomaticUpdatesDescription": "Báº­t hoáº·c táº¯t tÃ­nh nÄƒng cáº­p nháº­t tá»± Ä‘á»™ng",
+
+  "DeliveryOptimisation": "Tá»‘i Æ°u hÃ³a PhÃ¢n phá»‘i (Delivery Optimization)",
+  "DeliveryOptimisationDescription": "Báº­t hoáº·c táº¯t tÃ­nh nÄƒng Tá»‘i Æ°u hÃ³a PhÃ¢n phá»‘i",
+
+  "Hibernation": "Ngá»§ Ä‘Ã´ng",
+  "HibernationDescription": "Báº­t hoáº·c táº¯t cháº¿ Ä‘á»™ ngá»§ Ä‘Ã´ng",
+
+  "Location": "Vá»‹ trÃ­",
+  "LocationDescription": "Báº­t hoáº·c táº¯t cÃ¡c dá»‹ch vá»¥ vá»‹ trÃ­",
+
+  "PhoneLink": "LiÃªn káº¿t Ä‘iá»‡n thoáº¡i vÃ  thiáº¿t bá»‹ di Ä‘á»™ng",
+  "PhoneLinkDescription": "Báº­t hoáº·c táº¯t liÃªn káº¿t Ä‘iá»‡n thoáº¡i vÃ  thiáº¿t bá»‹ di Ä‘á»™ng",
+
+  "PowerSaving": "Tiáº¿t kiá»‡m pin",
+  "PowerSavingDescription": "Báº­t hoáº·c táº¯t cÃ¡c tÃ­nh nÄƒng tiáº¿t kiá»‡m pin",
+
+  "Sleep": "Ngá»§ (Sleep)",
+  "SleepDescription": "Báº­t hoáº·c táº¯t cháº¿ Ä‘á»™ ngá»§",
+
+  "SystemRestore": "KhÃ´i phá»¥c Há»‡ thá»‘ng (System Restore)",
+  "SystemRestoreDescription": "Báº­t hoáº·c táº¯t tÃ­nh nÄƒng khÃ´i phá»¥c há»‡ thá»‘ng",
+
+  "UpdateNotifications": "ThÃ´ng bÃ¡o Cáº­p nháº­t",
+  "UpdateNotificationsDescription": "Báº­t hoáº·c táº¯t cÃ¡c thÃ´ng bÃ¡o cáº­p nháº­t",
+
+  "WebSearch": "TÃ¬m kiáº¿m Web trÃªn Menu Start",
+  "WebSearchDescription": "Báº­t hoáº·c táº¯t tÃ­nh nÄƒng tÃ¬m kiáº¿m web trong Menu Start",
+
+  "Widgets": "Tiá»‡n Ã­ch mÃ¡y tÃ­nh (Widgets)",
+  "WidgetsDescription": "Báº­t hoáº·c táº¯t cÃ¡c tiá»‡n Ã­ch (widgets) trÃªn mÃ n hÃ¬nh chÃ­nh",
+
+  "WindowsSpotlight": "Windows Spotlight",
+  "WindowsSpotlightDescription": "Báº­t hoáº·c táº¯t Windows Spotlight trÃªn mÃ n hÃ¬nh khÃ³a",
+
+  "AppStoreArchiving": "LÆ°u trá»¯ á»©ng dá»¥ng Microsoft Store",
+  "AppStoreArchivingDescription": "Báº­t hoáº·c táº¯t tÃ­nh nÄƒng lÆ°u trá»¯ á»©ng dá»¥ng cá»§a Microsoft Store",
+
+  "TakeOwnership": "ThÃªm \"Nháº­n quyá»n sá»Ÿ há»¯u\" (Take Ownership) vÃ o menu ngá»¯ cáº£nh",
+  "TakeOwnershipDescription": "ThÃªm tÃ¹y chá»n \"Nháº­n quyá»n sá»Ÿ há»¯u\" vÃ o menu ngá»¯ cáº£nh cho cÃ¡c tá»‡p vÃ  thÆ° má»¥c",
+
+  "OldContextMenu": "Menu ngá»¯ cáº£nh cÅ© (trÆ°á»›c Windows 11)",
+  "OldContextMenuDescription": "Báº­t hoáº·c táº¯t menu ngá»¯ cáº£nh cÅ© cá»§a cÃ¡c phiÃªn báº£n trÆ°á»›c Windows 11",
+
+  "EdgeSwipe": "Vuá»‘t tá»« cáº¡nh mÃ n hÃ¬nh",
+  "EdgeSwipeDescription": "Báº­t hoáº·c táº¯t cÃ¡c thao tÃ¡c vuá»‘t tá»« cáº¡nh mÃ n hÃ¬nh",
+
+  "AppIconsThumbnail": "Biá»ƒu tÆ°á»£ng á»©ng dá»¥ng trÃªn hÃ¬nh thu nhá»",
+  "AppIconsThumbnailDescription": "Hiá»ƒn thá»‹ hoáº·c áº©n biá»ƒu tÆ°á»£ng á»©ng dá»¥ng trÃªn hÃ¬nh thu nhá» (thumbnail) cá»§a tá»‡p",
+
+  "AutomaticFolderDiscovery": "Tá»± Ä‘á»™ng khÃ¡m phÃ¡ thÆ° má»¥c",
+  "AutomaticFolderDiscoveryDescription": "Báº­t hoáº·c táº¯t tÃ­nh nÄƒng tá»± Ä‘á»™ng khÃ¡m phÃ¡ thÆ° má»¥c trong File Explorer",
+
+  "Gallery": "Báº­t ThÆ° viá»‡n (Gallery)",
+  "GalleryDescription": "Báº­t hoáº·c táº¯t tÃ­nh nÄƒng ThÆ° viá»‡n trong File Explorer",
+
+  "SnapLayout": "Báº­t bá»‘ cá»¥c Snap cho cá»­a sá»•",
+  "SnapLayoutDescription": "Báº­t hoáº·c táº¯t tÃ­nh nÄƒng bá»‘ cá»¥c Snap (Snap layouts) cho cá»­a sá»•",
+
+  "RecentItems": "Má»Ÿ khÃ³a cÃ¡c má»¥c gáº§n Ä‘Ã¢y trÃªn File Explorer",
+  "RecentItemsDescription": "Báº­t hoáº·c táº¯t hiá»ƒn thá»‹ cÃ¡c má»¥c gáº§n Ä‘Ã¢y trÃªn File Explorer",
+
+  "VerboseStatusMessage": "ThÃ´ng bÃ¡o tráº¡ng thÃ¡i chi tiáº¿t",
+  "VerboseStatusMessageDescription": "Báº­t hoáº·c táº¯t cÃ¡c thÃ´ng bÃ¡o tráº¡ng thÃ¡i chi tiáº¿t trong quÃ¡ trÃ¬nh khá»Ÿi Ä‘á»™ng vÃ  táº¯t mÃ¡y",
+
+  "SuperFetch": "SuperFetch",
+  "SuperFetchDescription": "Báº­t hoáº·c táº¯t dá»‹ch vá»¥ SuperFetch (SysMain)",
+
+  "StaticIp": "Tá»± Ä‘á»™ng thiáº¿t láº­p IP tÄ©nh",
+  "StaticIpDescription": "Tá»± Ä‘á»™ng Ä‘á»‹nh cáº¥u hÃ¬nh Ä‘á»‹a chá»‰ IP tÄ©nh cho bá»™ Ä‘iá»u há»£p máº¡ng cá»§a báº¡n",
+
+  "HideAppBrowserControl": "Kiá»ƒm soÃ¡t á»©ng dá»¥ng vÃ  trÃ¬nh duyá»‡t",
+  "HideAppBrowserControlDescription": "Hiá»ƒn thá»‹/áº¨n tÃ­nh nÄƒng kiá»ƒm soÃ¡t á»©ng dá»¥ng vÃ  trÃ¬nh duyá»‡t trong Báº£o máº­t Windows",
+
+  "SecurityHealthTray": "NÃºt Security Health trÃªn khay há»‡ thá»‘ng",
+  "SecurityHealthTrayDescription": "Hiá»ƒn thá»‹ hoáº·c áº©n nÃºt Security Health trÃªn khay há»‡ thá»‘ng (taskbar tray)",
+
+  "FaultTolerantHeap": "Fault Tolerant Heap",
+  "FaultTolerantHeapDescription": "Báº­t hoáº·c táº¯t tÃ­nh nÄƒng giáº£m nháº¹ rá»§i ro Fault Tolerant Heap",
+
+  "Copilot": "Báº­t Microsoft Copilot",
+  "CopilotDescription": "Báº­t hoáº·c táº¯t tÃ­ch há»£p Microsoft Copilot trong Windows 11",
+
+  "Recall": "Báº­t Windows Recall",
+  "RecallDescription": "Báº­t hoáº·c táº¯t tÃ­nh nÄƒng Windows Recall",
+
+  "CpuIdle": "Báº­t CPU Idling",
+  "CpuIdleDescription": "Báº­t hoáº·c táº¯t tÃ­nh nÄƒng CPU Idling",
+
+  "ProcessExplorer": "CÃ i Ä‘áº·t Process Explorer",
+  "ProcessExplorerDescription": "CÃ i Ä‘áº·t Process Explorer tá»« Microsoft Sysinternals",
+
+  "VbsState": "Báº­t VBS",
+  "VbsStateDescription": "Báº­t hoáº·c táº¯t Virtualization Based Security (VBS)",
+
+  "GiveAccessToMenu": "Quyá»n truy cáº­p (Give access to)",
+  "GiveAccessToMenuDescription": "ThÃªm tÃ¹y chá»n 'Cáº¥p quyá»n truy cáº­p cho' vÃ o menu ngá»¯ cáº£nh Ä‘á»‘i vá»›i cÃ¡c tá»‡p vÃ  thÆ° má»¥c",
+
+  "NetworkNavigationPane": "NgÄƒn Ä‘iá»u hÆ°á»›ng máº¡ng",
+  "NetworkNavigationPaneDescription": "Hiá»ƒn thá»‹ hoáº·c áº©n ngÄƒn Ä‘iá»u hÆ°á»›ng máº¡ng trong File Explorer",
+
+  "FileSharing": "Chia sáº» Tá»‡p",
+  "FileSharingDescription": "Báº­t hoáº·c táº¯t cÃ¡c tÃ­nh nÄƒng chia sáº» tá»‡p",
+
+  "WindowsHello": "Windows Hello",
+  "WindowsHelloDescription": "Báº­t hoáº·c táº¯t xÃ¡c thá»±c sinh tráº¯c há»c Windows Hello",
+
+  // End of configuration toggles (// Káº¿t thÃºc cÃ¡c tÃ¹y chá»n cáº¥u hÃ¬nh)
+
+  // Settings and Home texts (// VÄƒn báº£n cho pháº§n CÃ i Ä‘áº·t vÃ  Trang chá»§)
+  "Home_WinVer": "PhiÃªn báº£n Windows",
+  "Home_PlaybookVer": "PhiÃªn báº£n Playbook",
+  "Home_HeaderText": "Trang chá»§",
+  "Home_ProfilesText": "Cáº¥u hÃ¬nh",
+  "Home_Favorites": "YÃªu thÃ­ch",
+  "NewProfilesButton": "Táº¡o má»™t cáº¥u hÃ¬nh má»›i",
+  "IncompatibleVer": "Báº£n cÃ i Ä‘áº·t EBOS/Windows hiá»‡n táº¡i khÃ´ng tÆ°Æ¡ng thÃ­ch vá»›i phiÃªn báº£n Toolbox nÃ y. Vui lÃ²ng nÃ¢ng cáº¥p lÃªn EBOS ",
+  "StatingServices": "Äang khá»Ÿi Ä‘á»™ng cÃ¡c dá»‹ch vá»¥...",
+
+ // Dialog text (// VÄƒn báº£n há»™p thoáº¡i)
+  "CurrentConfigIsSavedMessage": "Cáº¥u hÃ¬nh hiá»‡n táº¡i cá»§a báº¡n sáº½ Ä‘Æ°á»£c lÆ°u vÃ o cáº¥u hÃ¬nh (profile) nÃ y",
+  "DeleteProfileConfirmation": "Báº¡n cÃ³ thá»±c sá»± muá»‘n xÃ³a cáº¥u hÃ¬nh nÃ y khÃ´ng?",
+  "TryDeleteDefaultProfile": "Báº¡n khÃ´ng thá»ƒ xÃ³a cáº¥u hÃ¬nh máº·c Ä‘á»‹nh",
+  "Home_SetProfileConfig": "Báº¡n cÃ³ thá»±c sá»± muá»‘n Ã¡p dá»¥ng cáº¥u hÃ¬nh nÃ y khÃ´ng?",
+  "RestartPCPromptHeader": "Äá»ƒ Ã¡p dá»¥ng Ä‘áº§y Ä‘á»§ cÃ¡c thay Ä‘á»•i, vui lÃ²ng khá»Ÿi Ä‘á»™ng láº¡i PC cá»§a báº¡n",
+  "RelogApplyDesc": "Äá»ƒ Ã¡p dá»¥ng Ä‘áº§y Ä‘á»§ cÃ¡c thay Ä‘á»•i, vui lÃ²ng Ä‘Äƒng xuáº¥t.",
+  "Yes": "CÃ³",
+  "No": "KhÃ´ng",
+  "Cancel": "Há»§y",
+  "Ok": "OK",
+  "Restart": "Khá»Ÿi Ä‘á»™ng láº¡i",
+  "Later": "Äá»ƒ sau",
+  "Create": "Táº¡o",
+  "Home_SetProfileBtn": "Ãp dá»¥ng cáº¥u hÃ¬nh nÃ y",
+  "Home_DeleteProfileBtn": "XÃ³a cáº¥u hÃ¬nh nÃ y",
+  "Settings": "CÃ i Ä‘áº·t",
+  "Behavior": "Chung",
+  "Settings_BackgroundDesc": "Giá»¯ Toolbox cháº¡y ngáº§m",
+  "About": "Giá»›i thiá»‡u",
+  "CloneRepoCard": "Sao chÃ©p (clone) kho lÆ°u trá»¯ nÃ y",
+  "BugReportCard": "Táº¡o bÃ¡o cÃ¡o lá»—i",
+  "WarningHeader": "MÃ£ nÃ y Ä‘Æ°á»£c cung cáº¥p bá»Ÿi Ä‘á»™i ngÅ© EBOS. Pháº§n má»m nÃ y CHá»ˆ nháº±m má»¥c Ä‘Ã­ch sá»­ dá»¥ng vá»›i EBOS trÃªn cÃ¡c phiÃªn báº£n Windows Ä‘Æ°á»£c há»— trá»£. Báº¥t ká»³ playbook nÃ o khÃ¡c vÃ /hoáº·c phiÃªn báº£n Windows khÃ´ng Ä‘Æ°á»£c há»— trá»£ Ä‘á»u khÃ´ng Ä‘Æ°á»£c khuyáº¿n khÃ­ch.",
+  "InstallSoftware": "CÃ i Ä‘áº·t Pháº§n má»m",
+  "InstallButton": "CÃ i Ä‘áº·t",
+  "Unstable": "KhÃ´ng á»•n Ä‘á»‹nh",
+  "UnstableDescription": "Viá»‡c sá»­ dá»¥ng á»©ng dá»¥ng nÃ y hiá»‡n chá»‰ dÃ nh cho má»¥c Ä‘Ã­ch thá»­ nghiá»‡m. á»¨ng dá»¥ng cÃ³ thá»ƒ chá»©a cÃ¡c lá»—i cÃ³ nguy cÆ¡ lÃ m há»ng báº£n cÃ i Ä‘áº·t Windows cá»§a báº¡n. Tá»± chá»‹u rá»§i ro khi sá»­ dá»¥ng.",
+  "BetaVersion": "PhiÃªn báº£n Beta",
+  "BetaVersionDescription": "á»¨ng dá»¥ng nÃ y hiá»‡n Ä‘ang á»Ÿ phiÃªn báº£n Beta. Náº¿u báº¡n tÃ¬m tháº¥y lá»—i hoáº·c muá»‘n Ä‘á» xuáº¥t tÃ­nh nÄƒng, vui lÃ²ng gá»­i pháº£n há»“i trÃªn Discord. CÃ¡c tÃ­nh nÄƒng cÃ³ thá»ƒ thay Ä‘á»•i.",
+  "RestartApp": "Khá»Ÿi Ä‘á»™ng láº¡i Toolbox Ä‘á»ƒ Ã¡p dá»¥ng",
+  "RestartAppDesc": "Äá»ƒ Ã¡p dá»¥ng cÃ¡c thay Ä‘á»•i nÃ y, vui lÃ²ng khá»Ÿi Ä‘á»™ng láº¡i Toolbox.",
+  "RestartAppBtn": "Khá»Ÿi Ä‘á»™ng láº¡i Toolbox ngay",
+  "RestartPC": "Khá»Ÿi Ä‘á»™ng láº¡i PC cá»§a báº¡n Ä‘á»ƒ Ã¡p dá»¥ng.",
+  "RestartPCDesc": "Äá»ƒ Ã¡p dá»¥ng cÃ¡c thay Ä‘á»•i nÃ y, vui lÃ²ng khá»Ÿi Ä‘á»™ng láº¡i PC cá»§a báº¡n.",
+  "RestartBtn": "Khá»Ÿi Ä‘á»™ng láº¡i ngay",
+  "RelogApply": "ÄÄƒng xuáº¥t Ä‘á»ƒ Ã¡p dá»¥ng",
+  "ReloadApplyDesc": "Äá»ƒ Ã¡p dá»¥ng cÃ¡c thay Ä‘á»•i nÃ y, vui lÃ²ng Ä‘Äƒng xuáº¥t.",
+  "RelogBtn": "ÄÄƒng xuáº¥t",
+  "CheckUpdates": "Kiá»ƒm tra báº£n cáº­p nháº­t",
+  "CheckUpdatesBtn": "Kiá»ƒm tra ngay",
+  "LatestVer": "KhÃ´ng cÃ³ báº£n cáº­p nháº­t nÃ o",
+  "NewUpdate": "Cáº­p nháº­t",
+  "NewUpdateDesc": "CÃ³ má»™t báº£n cáº­p nháº­t má»›i. Báº¡n cÃ³ muá»‘n cÃ i Ä‘áº·t nÃ³ ngay bÃ¢y giá» khÃ´ng?",
+  "InstallNow": "CÃ i Ä‘áº·t ngay",
+  "ToggleWindowsUpdates": "Báº­t/Táº¯t Windows Update",
+  "WindowsUpdate": "Windows Update",
+  "WindowsUpdateDescription": "CÃ¡c cÃ i Ä‘áº·t liÃªn quan Ä‘áº¿n Windows Update",
+  "FeatureHeader": "Báº£n cáº­p nháº­t tÃ­nh nÄƒng:",
+  "QualityHeader": "Báº£n cáº­p nháº­t cháº¥t lÆ°á»£ng:",
+  "Set": "Ãp dá»¥ng",
+  "WindowsUpdateDeferral": "Äáº·t sá»‘ ngÃ y trÃ¬ hoÃ£n Windows Update",
+  "UpdateDeferralPromptTitle": "Thiáº¿t láº­p thá»i gian trÃ¬ hoÃ£n Windows Update",
+  "ResetWindowsUpdateDeferral": "Äáº·t láº¡i Ä‘á»™ trá»… Windows Update",
+  "MicrosoftStoreToggle": "Báº­t/Táº¯t Microsoft Store",
+
+
+ // Home tiles (// Ã” (tiles) trÃªn Trang chá»§)
+  "Tile_DocumentationTitle": "TÃ i liá»‡u",
+  "Tile_DocumentationDescription": "CÃ i Ä‘áº·t EBOS, FAQ, vÃ  nhiá»u hÆ¡n ná»¯a",
+  "Tile_DiscordTitle": "Discord",
+  "Tile_DiscordDescription": "YÃªu cáº§u há»— trá»£ vÃ  káº¿t báº¡n!",
+  "Tile_GithubTitle": "GitHub",
+  "Tile_GithubDescription": "KhÃ¡m phÃ¡ mÃ£ nguá»“n EBOS vÃ  Ä‘Ã³ng gÃ³p",
+  "Tile_KofiTitle": "á»¦ng há»™ chÃºng tÃ´i trÃªn Ko-Fi",
+  "Tile_KofiDescription": "GiÃºp chÃºng tÃ´i tiáº¿p tá»¥c duy trÃ¬ dá»± Ã¡n nÃ y!",
+
+   // Menu Items & other navigation item texts (// Má»¥c Menu & cÃ¡c má»¥c Ä‘iá»u hÆ°á»›ng khÃ¡c)
+  "SearchPlaceholder": "TÃ¬m kiáº¿m cÃ i Ä‘áº·t EBOS...",
+
+  "Home": "Trang chá»§",
+  "Software": "Pháº§n má»m",
+  "GeneralConfig": "Cáº¥u hÃ¬nh Chung",
+  "Interface": "Tinh chá»‰nh Giao diá»‡n",
+  "Windows": "CÃ i Ä‘áº·t Windows",
+  "Advanced": "Cáº¥u hÃ¬nh NÃ¢ng cao",
+  "Security": "Báº£o máº­t",
+  "Troubleshooting": "Kháº¯c phá»¥c sá»± cá»‘",
+
+  "Language": "NgÃ´n ngá»¯",
+
+  "NoFavorites": "Báº¡n chÆ°a thÃªm báº¥t ká»³ má»¥c yÃªu thÃ­ch nÃ o.",
+  "SystemInfo": "ThÃ´ng tin há»‡ thá»‘ng nÃ y:",
+  "LearnMore": "TÃ¬m hiá»ƒu thÃªm",
+
+  "TroubleshootingDocumenation": "TÃ i liá»‡u kháº¯c phá»¥c sá»± cá»‘",
+
+  //
+  // Experiments (// Thá»­ nghiá»‡m)
+  //
+  "ExperimentsHeader": "Thá»­ nghiá»‡m",
+  "ExperimentsCardHeader": "CÃ¡c tÃ­nh nÄƒng thá»­ nghiá»‡m",
+  "ExperimentsCardDescription": "CÃ¡c tÃ­nh nÄƒng nÃ y Ä‘ang trong quÃ¡ trÃ¬nh thá»­ nghiá»‡m vÃ  cÃ³ thá»ƒ hoáº¡t Ä‘á»™ng khÃ´ng Ä‘Ãºng nhÆ° dá»± kiáº¿n. Cáº§n khá»Ÿi Ä‘á»™ng láº¡i Ä‘á»ƒ Ã¡p dá»¥ng cÃ¡c thay Ä‘á»•i",
+    // Search experiment (// Thá»­ nghiá»‡m tÃ¬m kiáº¿m)
+  "SearchExperiment": "Thanh tÃ¬m kiáº¿m",
+  "SearchExperimentDescription": "Báº­t thanh tÃ¬m kiáº¿m Ä‘á»ƒ nhanh chÃ³ng tÃ¬m tháº¥y cÃ¡c cÃ i Ä‘áº·t trong Toolbox",
+   // Icons experiment (// Thá»­ nghiá»‡m biá»ƒu tÆ°á»£ng)
+  "IconsExperiment": "Biá»ƒu tÆ°á»£ng",
+  "IconsExperimentDescription": "Báº­t cÃ¡c biá»ƒu tÆ°á»£ng bÃªn cáº¡nh má»—i cÃ i Ä‘áº·t Ä‘á»ƒ dá»… dÃ ng nháº­n dáº¡ng vÃ  cÃ³ giao diá»‡n trá»±c quan hÆ¡n"
+}

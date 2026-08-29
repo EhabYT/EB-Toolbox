@@ -1,0 +1,369 @@
+﻿{
+  "LangName": "ç®€ä½“ä¸­æ–‡ (Chinese Simplified)",
+  "LangKey": "zh_cn",
+
+  "OpenShellEBPreset": "æ‰“å¼€ Shell EBOS é¢„è®¾",
+  "InterfaceTweaksDocumentation": "ç•Œé¢è°ƒæ•´æ–‡æ¡£",
+  "ActivationPage": "æ¿€æ´»é¡µé¢",
+  "ColorsPage": "é¢œè‰²ä¸ªæ€§åŒ–è®¾ç½®",
+  "DateAndTime": "æ—¥æœŸå’Œæ—¶é—´è®¾ç½®",
+  "DefaultApps": "é»˜è®¤åº”ç”¨ç¨‹åº",
+  "DefaultGraphicsSettings": "é»˜è®¤å›¾å½¢è®¾ç½®",
+  "RegionLanguage": "è¯­è¨€",
+  "Privacy": "éšç§è®¾ç½®",
+  "RegionProperties": "åŒºåŸŸå±žæ€§",
+  "Taskbar": "ä»»åŠ¡æ è®¾ç½®",
+  "CoreIsolation": "æ ¸å¿ƒéš”ç¦» - Windows å®‰å…¨ä¸­å¿ƒ",
+  "WindowsSettingsDocumentation": "Windows è®¾ç½®æ–‡æ¡£",
+  "BootConfigExplanations": "Microsoft å®˜æ–¹è¯´æ˜Ž",
+  "InterrupAffinityTool": "ä¸­æ–­äº²å’Œæ€§å·¥å…·",
+  "ProcessExplorerApp": "è¿›ç¨‹æµè§ˆå™¨",
+  "ProcessExplorerDocumentation": "è¿›ç¨‹æµè§ˆå™¨æ–‡æ¡£",
+  "NvidiaDisplayContainerMustReadFirst": "å¿…è¯»",
+  "AdvancedConfigMustRead": "é«˜çº§é…ç½®æ–‡æ¡£",
+  "SecurityDocumentation": "å®‰å…¨æ–‡æ¡£",
+  "ResetPC": "é‡ç½®æ­¤ç”µè„‘ï¼ˆå¿…è¯»ï¼‰",
+  "RestartExplorerButton": "é‡å¯ Explorer.exe",
+  "RestartExplorerButtonDescription": "æŸäº›ç•Œé¢è®¾ç½®å¯èƒ½éœ€è¦æ‚¨é‡å¯ explorer.exe",
+  "ViewCurrentSettingsBootConfig": "æŸ¥çœ‹å½“å‰å€¼",
+  "ViewCurrentSettingsBootConfigDescription": "æŸ¥çœ‹å¯åŠ¨é…ç½®å€¼",
+  "VBSCurrentConfig": "VBS å½“å‰é…ç½®",
+  "VBSCurrentConfigDescription": "æŸ¥çœ‹å½“å‰ VBS é…ç½®",
+  "ToggleDefender": "åˆ‡æ¢",
+  "ToggleDefenderDescription": "åˆ‡æ¢ Windows Defender",
+  "ResetFTH": "é‡ç½®",
+  "ResetFTHDescription": "é‡ç½® FTH é¡¹",
+  "InstallOpenShell": "å®‰è£… OpenShell",
+  "InstallOpenShellDescription": "å®‰è£…",
+  "FixErrors": "æ•…éšœæŽ’é™¤",
+  "FixErrorsDescription": "ä¿®å¤é”™è¯¯ 2502 å’Œ 2503",
+  "RepairWinComponent": "ä¿®å¤ Windows ç»„ä»¶",
+  "TelemetryComponents": "é¥æµ‹ç»„ä»¶",
+  "EBDefault": "å°†ç½‘ç»œé‡ç½®ä¸º EB é»˜è®¤è®¾ç½®",
+  "WindowsDefault": "å°†ç½‘ç»œé‡ç½®ä¸º Windows é»˜è®¤è®¾ç½®",
+  "BootConfigAppearance": "å¯åŠ¨é…ç½®å¤–è§‚",
+  "BootConfigAppearanceDescription": "ä¸Ž Windows å¯åŠ¨å¤–è§‚ç›¸å…³çš„æ‰€æœ‰å†…å®¹",
+  "BootConfigBehavior": "å¯åŠ¨è¡Œä¸º",
+  "BootConfigBehaviorDescription": "ä¸Žå¯åŠ¨è¡Œä¸ºç›¸å…³çš„æ‰€æœ‰å†…å®¹",
+  "NvidiaDisplayContainerSubMenu": "NVIDIA æ˜¾ç¤ºå®¹å™¨è®¾ç½®",
+  "NvidiaDisplayContainerSubMenuDescription": "ä¸Ž NVIDIA æ˜¾ç¤ºå®¹å™¨ç›¸å…³çš„æ‰€æœ‰å†…å®¹",
+  "StartMenuSubMenu": "å¼€å§‹èœå•",
+  "StartMenuSubMenuDescription": "ä¸Žè‡ªå®šä¹‰ Windows å¼€å§‹èœå•ç›¸å…³çš„æ‰€æœ‰å†…å®¹",
+  "ContextMenuSubMenu": "ä¸Šä¸‹æ–‡èœå•",
+  "ContextMenuSubMenuDescription": "ä¸Žä¸Šä¸‹æ–‡èœå•ç›¸å…³çš„æ‰€æœ‰å†…å®¹",
+  "AiSubMenu": "äººå·¥æ™ºèƒ½åŠŸèƒ½",
+  "AiSubMenuDescription": "ä¸Ž Windows 11 ä¸­çš„äººå·¥æ™ºèƒ½åŠŸèƒ½ç›¸å…³çš„æ‰€æœ‰å†…å®¹",
+  "ServicesSubMenu": "æœåŠ¡",
+  "ServicesSubMenuDescription": "ä¸Ž Windows æœåŠ¡ç›¸å…³çš„æ‰€æœ‰å†…å®¹",
+  "BootConfigurationSubMenu": "å¯åŠ¨é…ç½®",
+  "BootConfigurationSubMenuDescription": "ä¸Ž Windows å¯åŠ¨ç›¸å…³çš„æ‰€æœ‰å†…å®¹",
+  "FileExplorerSubMenu": "æ–‡ä»¶æµè§ˆå™¨è‡ªå®šä¹‰",
+  "FileExplorerSubMenuDescription": "ä¸Žè‡ªå®šä¹‰ Windows æ–‡ä»¶æµè§ˆå™¨ç›¸å…³çš„æ‰€æœ‰å†…å®¹",
+  "DriverConfigurationSubMenu": "é©±åŠ¨ç¨‹åºé…ç½®",
+  "DriverConfigurationSubMenuDescription": "ä¸Žé©±åŠ¨ç¨‹åºé…ç½®ç›¸å…³çš„æ‰€æœ‰å†…å®¹",
+  "CoreIsolationSubMenu": "æ ¸å¿ƒéš”ç¦» (VBS)",
+  "CoreIsolationSubMenuDescription": "ä¸Žæ ¸å¿ƒéš”ç¦»ç›¸å…³çš„æ‰€æœ‰å†…å®¹",
+  "DefenderSubMenu": "Defender",
+  "DefenderSubMenuDescription": "ä¸Ž Windows Defender ç›¸å…³çš„æ‰€æœ‰å†…å®¹",
+  "MitigationsSubMenu": "ç¼“è§£æŽªæ–½",
+  "MitigationsSubMenuDescription": "ä¸Žç¼“è§£æŽªæ–½ç›¸å…³çš„æ‰€æœ‰å†…å®¹",
+  "TroubleshootingNetwork": "ç½‘ç»œ",
+  "TroubleshootingNetworkDescription": "ä¸Žç½‘ç»œæ•…éšœæŽ’é™¤ç›¸å…³çš„æ‰€æœ‰å†…å®¹",
+  "FileSharingSubMenu": "æ–‡ä»¶å…±äº«",
+  "FileSharingSubMenuDescription": "ä¸Ž Windows ä¸­çš„æ–‡ä»¶å…±äº«ç›¸å…³çš„æ‰€æœ‰å†…å®¹",
+  "ContextMenuTerminals": "åœ¨ä¸Šä¸‹æ–‡èœå•ä¸­æ·»åŠ æˆ–åˆ é™¤ç»ˆç«¯",
+  "ShortcutIcon": "æ›´æ”¹å¿«æ·æ–¹å¼çš„å›¾æ ‡",
+  "Mitigations": "æ›´æ”¹ç¼“è§£æŽªæ–½çŠ¶æ€",
+  "SafeMode": "å¯åŠ¨æ—¶è¿›å…¥å®‰å…¨æ¨¡å¼",
+
+  // é…ç½®å¼€å…³é€‰é¡¹
+  "Animations": "åŠ¨ç”»æ•ˆæžœ",
+  "AnimationsDescription": "å¯ç”¨æˆ–ç¦ç”¨ Windows åŠ¨ç”»",
+
+  "ExtractContextMenu": "ä¸Šä¸‹æ–‡èœå•ä¸­çš„\"è§£åŽ‹\"é€‰é¡¹",
+  "ExtractContextMenuDescription": "åœ¨åŽ‹ç¼©æ–‡ä»¶çš„ä¸Šä¸‹æ–‡èœå•ä¸­æ·»åŠ \"è§£åŽ‹\"é€‰é¡¹",
+
+  "RunWithPriority": "ä¸Šä¸‹æ–‡èœå•ä¸­çš„æŒ‰ä¼˜å…ˆçº§è¿è¡Œ",
+  "RunWithPriorityDescription": "åœ¨åº”ç”¨ç¨‹åºçš„ä¸Šä¸‹æ–‡èœå•ä¸­æ·»åŠ \"æŒ‰ä¼˜å…ˆçº§è¿è¡Œ\"é€‰é¡¹",
+
+  "LanmanWorkstation": "Lanman å·¥ä½œç«™ (SMB)",
+  "LanmanWorkstationDescription": "å¯ç”¨æˆ–ç¦ç”¨ Lanman å·¥ä½œç«™æœåŠ¡ä»¥è¿›è¡Œ SMB æ–‡ä»¶å…±äº«",
+
+  "NetworkDiscovery": "ç½‘ç»œå‘çŽ°",
+  "NetworkDiscoveryDescription": "å¯ç”¨æˆ–ç¦ç”¨ç½‘ç»œå‘çŽ°ä»¥ä¾¿äºŽæ–‡ä»¶å…±äº«",
+
+  "Printing": "æ‰“å°",
+  "PrintingDescription": "å¯ç”¨æˆ–ç¦ç”¨æ‰“å°æœåŠ¡",
+
+  "NvidiaDispayContainer": "NVIDIA æ˜¾ç¤ºå®¹å™¨",
+  "NvidiaDispayContainerDescription": "å¯ç”¨æˆ–ç¦ç”¨ NVIDIA æ˜¾ç¤ºå®¹å™¨æœåŠ¡",
+
+  "AddNvidiaDisplayContainerContextMenu": "ä¸Šä¸‹æ–‡èœå•ä¸­çš„ NVIDIA æ˜¾ç¤ºå®¹å™¨",
+  "AddNvidiaDisplayContainerContextMenuDescription": "åœ¨ä¸Šä¸‹æ–‡èœå•ä¸­æ·»åŠ  NVIDIA æ˜¾ç¤ºå®¹å™¨åˆ‡æ¢",
+
+  "CpuIdleContextMenu": "ä¸Šä¸‹æ–‡èœå•ä¸­çš„ CPU é—²ç½®åˆ‡æ¢",
+  "CpuIdleContextMenuDescription": "åœ¨ä¸Šä¸‹æ–‡èœå•ä¸­æ·»åŠ  CPU é—²ç½®åˆ‡æ¢",
+
+  "LockScreen": "å¯ç”¨é”å±",
+  "LockScreenDescription": "å¯ç”¨æˆ–ç¦ç”¨ Windows é”å±",
+
+  "ShortcutText": "å¿«æ·æ–¹å¼æ–‡æœ¬",
+  "ShortcutTextDescription": "æ˜¾ç¤ºæˆ–éšè—å¿«æ·æ–¹å¼ä¸Šçš„\"å¿«æ·æ–¹å¼\"æ–‡æœ¬",
+
+  "BootLogo": "å¯åŠ¨å¾½æ ‡",
+  "BootLogoDescription": "å¯ç”¨æˆ–ç¦ç”¨ Windows å¯åŠ¨å¾½æ ‡",
+
+  "BootMessages": "å¯åŠ¨æ¶ˆæ¯",
+  "BootMessagesDescription": "å¯ç”¨æˆ–ç¦ç”¨ Windows å¯åŠ¨æ¶ˆæ¯",
+
+  "NewBootMenu": "æ–°å¯åŠ¨èœå•",
+  "NewBootMenuDescription": "å¯ç”¨æˆ–ç¦ç”¨æ–°çš„ Windows å¯åŠ¨èœå•",
+
+  "SpinningAnimation": "æ—‹è½¬åŠ¨ç”»",
+  "SpinningAnimationDescription": "å¯ç”¨æˆ–ç¦ç”¨å¯åŠ¨æ—¶çš„æ—‹è½¬åŠ¨ç”»",
+
+  "AdvancedBootOptions": "å¯åŠ¨æ—¶çš„é«˜çº§å¯åŠ¨é€‰é¡¹",
+  "AdvancedBootOptionsDescription": "å¯ç”¨æˆ–ç¦ç”¨å¯åŠ¨æ—¶çš„é«˜çº§å¯åŠ¨é€‰é¡¹",
+
+  "AutomaticRepair": "è‡ªåŠ¨ä¿®å¤",
+  "AutomaticRepairDescription": "å¯ç”¨æˆ–ç¦ç”¨å¯åŠ¨å¤±è´¥æ—¶çš„è‡ªåŠ¨ä¿®å¤",
+
+  "KernelParameters": "å¯åŠ¨æ—¶çš„å†…æ ¸å‚æ•°",
+  "KernelParametersDescription": "å¯ç”¨æˆ–ç¦ç”¨å¯åŠ¨æ—¶çš„å†…æ ¸å‚æ•°",
+
+  "HighestMode": "æœ€é«˜æ¨¡å¼",
+  "HighestModeDescription": "å¯ç”¨æˆ–ç¦ç”¨æ˜¾ç¤ºå™¨çš„æœ€é«˜æ¨¡å¼",
+
+  "CompactView": "ç´§å‡‘è§†å›¾",
+  "CompactViewDescription": "å¯ç”¨æˆ–ç¦ç”¨æ–‡ä»¶æµè§ˆå™¨çš„ç´§å‡‘è§†å›¾",
+
+  "RemovableDrivesInSidebar": "ä¾§è¾¹æ ä¸­çš„å¯ç§»åŠ¨é©±åŠ¨å™¨",
+  "RemovableDrivesInSidebarDescription": "æ˜¾ç¤ºæˆ–éšè—æ–‡ä»¶æµè§ˆå™¨ä¾§è¾¹æ ä¸­çš„å¯ç§»åŠ¨é©±åŠ¨å™¨",
+
+  "BackgroundApps": "åŽå°åº”ç”¨ç¨‹åº",
+  "BackgroundAppsDescription": "å¯ç”¨æˆ–ç¦ç”¨åŽå°åº”ç”¨ç¨‹åº",
+
+  "SearchIndexing": "æœç´¢ç´¢å¼•",
+  "SearchIndexingDescription": "å¯ç”¨æˆ–ç¦ç”¨æœç´¢ç´¢å¼•",
+
+  "FsoAndGameBar": "å…¨å±ä¼˜åŒ–å’Œæ¸¸æˆæ ",
+  "FsoAndGameBarDescription": "å¯ç”¨æˆ–ç¦ç”¨å…¨å±ä¼˜åŒ–å’Œæ¸¸æˆæ ",
+
+  "AutomaticUpdates": "è‡ªåŠ¨æ›´æ–°",
+  "AutomaticUpdatesDescription": "å¯ç”¨æˆ–ç¦ç”¨è‡ªåŠ¨æ›´æ–°",
+
+  "DeliveryOptimisation": "ä¼ è¾“ä¼˜åŒ–",
+  "DeliveryOptimisationDescription": "å¯ç”¨æˆ–ç¦ç”¨ä¼ è¾“ä¼˜åŒ–",
+
+  "Hibernation": "ä¼‘çœ ",
+  "HibernationDescription": "å¯ç”¨æˆ–ç¦ç”¨ä¼‘çœ æ¨¡å¼",
+
+  "Location": "ä½ç½®",
+  "LocationDescription": "å¯ç”¨æˆ–ç¦ç”¨ä½ç½®æœåŠ¡",
+
+  "PhoneLink": "æ‰‹æœºé“¾æŽ¥å’Œç§»åŠ¨è®¾å¤‡",
+  "PhoneLinkDescription": "å¯ç”¨æˆ–ç¦ç”¨æ‰‹æœºé“¾æŽ¥å’Œç§»åŠ¨è®¾å¤‡",
+
+  "PowerSaving": "çœç”µ",
+  "PowerSavingDescription": "å¯ç”¨æˆ–ç¦ç”¨çœç”µåŠŸèƒ½",
+
+  "Sleep": "ç¡çœ ",
+  "SleepDescription": "å¯ç”¨æˆ–ç¦ç”¨ç¡çœ æ¨¡å¼",
+
+  "SystemRestore": "ç³»ç»Ÿè¿˜åŽŸ",
+  "SystemRestoreDescription": "å¯ç”¨æˆ–ç¦ç”¨ç³»ç»Ÿè¿˜åŽŸ",
+
+  "UpdateNotifications": "æ›´æ–°é€šçŸ¥",
+  "UpdateNotificationsDescription": "å¯ç”¨æˆ–ç¦ç”¨æ›´æ–°é€šçŸ¥",
+
+  "WebSearch": "å¼€å§‹èœå•ç½‘é¡µæœç´¢",
+  "WebSearchDescription": "å¯ç”¨æˆ–ç¦ç”¨å¼€å§‹èœå•ä¸­çš„ç½‘é¡µæœç´¢",
+
+  "Widgets": "æ¡Œé¢å°éƒ¨ä»¶",
+  "WidgetsDescription": "å¯ç”¨æˆ–ç¦ç”¨æ¡Œé¢å°éƒ¨ä»¶",
+
+  "WindowsSpotlight": "Windows Spotlight",
+  "WindowsSpotlightDescription": "å¯ç”¨æˆ–ç¦ç”¨é”å±ä¸Šçš„ Windows Spotlight",
+
+  "AppStoreArchiving": "Microsoft Store å­˜æ¡£",
+  "AppStoreArchivingDescription": "å¯ç”¨æˆ–ç¦ç”¨ Microsoft Store å­˜æ¡£",
+
+  "TakeOwnership": "ä¸Šä¸‹æ–‡èœå•ä¸­æ·»åŠ \"å–å¾—æ‰€æœ‰æƒ\"",
+  "TakeOwnershipDescription": "åœ¨æ–‡ä»¶å’Œæ–‡ä»¶å¤¹çš„ä¸Šä¸‹æ–‡èœå•ä¸­æ·»åŠ \"å–å¾—æ‰€æœ‰æƒ\"é€‰é¡¹",
+
+  "OldContextMenu": "æ—§ç‰ˆä¸Šä¸‹æ–‡èœå• (Windows 11 ä¹‹å‰)",
+  "OldContextMenuDescription": "å¯ç”¨æˆ–ç¦ç”¨ Windows 11 ä¹‹å‰çš„æ—§ç‰ˆä¸Šä¸‹æ–‡èœå•",
+
+  "EdgeSwipe": "è¾¹ç¼˜æ»‘åŠ¨",
+  "EdgeSwipeDescription": "å¯ç”¨æˆ–ç¦ç”¨è¾¹ç¼˜æ»‘åŠ¨æ‰‹åŠ¿",
+
+  "AppIconsThumbnail": "ç¼©ç•¥å›¾ä¸Šçš„åº”ç”¨ç¨‹åºå›¾æ ‡",
+  "AppIconsThumbnailDescription": "æ˜¾ç¤ºæˆ–éšè—æ–‡ä»¶ç¼©ç•¥å›¾ä¸Šçš„åº”ç”¨ç¨‹åºå›¾æ ‡",
+
+  "AutomaticFolderDiscovery": "è‡ªåŠ¨æ–‡ä»¶å¤¹å‘çŽ°",
+  "AutomaticFolderDiscoveryDescription": "å¯ç”¨æˆ–ç¦ç”¨æ–‡ä»¶æµè§ˆå™¨ä¸­çš„è‡ªåŠ¨æ–‡ä»¶å¤¹å‘çŽ°",
+
+  "Gallery": "å¯ç”¨åº“",
+  "GalleryDescription": "å¯ç”¨æˆ–ç¦ç”¨æ–‡ä»¶æµè§ˆå™¨ä¸­çš„åº“",
+
+  "SnapLayout": "å¯ç”¨çª—å£å¯¹é½å¸ƒå±€",
+  "SnapLayoutDescription": "å¯ç”¨æˆ–ç¦ç”¨çª—å£çš„å¯¹é½å¸ƒå±€",
+
+  "RecentItems": "æ–‡ä»¶æµè§ˆå™¨ä¸­è§£é”æœ€è¿‘é¡¹ç›®",
+  "RecentItemsDescription": "å¯ç”¨æˆ–ç¦ç”¨æ–‡ä»¶æµè§ˆå™¨ä¸­çš„æœ€è¿‘é¡¹ç›®",
+
+  "VerboseStatusMessage": "è¯¦ç»†çŠ¶æ€æ¶ˆæ¯",
+  "VerboseStatusMessageDescription": "å¯ç”¨æˆ–ç¦ç”¨å¯åŠ¨å’Œå…³é—­æ—¶çš„è¯¦ç»†çŠ¶æ€æ¶ˆæ¯",
+
+  "SuperFetch": "SuperFetch",
+  "SuperFetchDescription": "å¯ç”¨æˆ–ç¦ç”¨ SuperFetch (SysMain) æœåŠ¡",
+
+  "StaticIp": "è‡ªåŠ¨è®¾ç½®é™æ€ IP",
+  "StaticIpDescription": "ä¸ºç½‘ç»œé€‚é…å™¨è‡ªåŠ¨é…ç½®é™æ€ IP åœ°å€",
+
+  "HideAppBrowserControl": "éšè—åº”ç”¨ç¨‹åºæµè§ˆå™¨æŽ§ä»¶",
+  "HideAppBrowserControlDescription": "éšè—æŸäº›åº”ç”¨ç¨‹åºä¸­çš„åµŒå…¥å¼æµè§ˆå™¨æŽ§ä»¶ä»¥æ”¹å–„éšç§",
+
+  "SecurityHealthTray": "ä»»åŠ¡æ æ‰˜ç›˜ä¸­çš„å®‰å…¨ä¸­å¿ƒæŒ‰é’®",
+  "SecurityHealthTrayDescription": "æ˜¾ç¤ºæˆ–éšè—ä»»åŠ¡æ æ‰˜ç›˜ä¸­çš„å®‰å…¨ä¸­å¿ƒæŒ‰é’®",
+
+  "FaultTolerantHeap": "å®¹é”™å †",
+  "FaultTolerantHeapDescription": "å¯ç”¨æˆ–ç¦ç”¨å®¹é”™å †ç¼“è§£æŽªæ–½",
+
+  "Copilot": "å¯ç”¨ Microsoft Copilot",
+  "CopilotDescription": "å¯ç”¨æˆ–ç¦ç”¨ Windows 11 ä¸­çš„ Microsoft Copilot é›†æˆ",
+
+  "Recall": "å¯ç”¨ Windows Recall",
+  "RecallDescription": "å¯ç”¨æˆ–ç¦ç”¨ Windows Recall åŠŸèƒ½",
+
+  "CpuIdle": "å¯ç”¨ CPU ç©ºé—²",
+  "CpuIdleDescription": "å¯ç”¨æˆ–ç¦ç”¨ CPU ç©ºé—²åŠŸèƒ½",
+
+  "ProcessExplorer": "å®‰è£…è¿›ç¨‹æµè§ˆå™¨",
+  "ProcessExplorerDescription": "ä»Ž Microsoft Sysinternals å®‰è£…è¿›ç¨‹æµè§ˆå™¨",
+
+  "VbsState": "å¯ç”¨ VBS",
+  "VbsStateDescription": "å¯ç”¨æˆ–ç¦ç”¨åŸºäºŽè™šæ‹ŸåŒ–çš„å®‰å…¨æ€§ (VBS)",
+
+  "GiveAccessToMenu": "æŽˆæƒè®¿é—®èœå•",
+  "GiveAccessToMenuDescription": "ä¸ºæ–‡ä»¶å’Œæ–‡ä»¶å¤¹çš„ä¸Šä¸‹æ–‡èœå•æ·»åŠ \"æŽˆæƒè®¿é—®\"é€‰é¡¹",
+
+  "NetworkNavigationPane": "ç½‘ç»œå¯¼èˆªçª—æ ¼",
+  "NetworkNavigationPaneDescription": "æ˜¾ç¤ºæˆ–éšè—æ–‡ä»¶æµè§ˆå™¨ä¸­çš„ç½‘ç»œå¯¼èˆªçª—æ ¼",
+
+  "FileSharing": "æ–‡ä»¶å…±äº«",
+  "FileSharingDescription": "å¯ç”¨æˆ–ç¦ç”¨æ–‡ä»¶å…±äº«åŠŸèƒ½",
+
+  "WindowsHello": "Windows Hello",
+  "WindowsHelloDescription": "å¯ç”¨æˆ–ç¦ç”¨ Windows Hello ç”Ÿç‰©è¯†åˆ«èº«ä»½éªŒè¯",
+
+  // é…ç½®å¼€å…³ç»“æŸ
+  
+  // è®¾ç½®å’Œä¸»é¡µæ–‡æœ¬
+  "Home_WinVer": "Windows ç‰ˆæœ¬",
+  "Home_PlaybookVer": "Playbook ç‰ˆæœ¬",
+  "Home_HeaderText": "ä¸»é¡µ",
+  "Home_ProfilesText": "é…ç½®æ–‡ä»¶",
+  "Home_Favorites": "æ”¶è—",
+  "NewProfilesButton": "åˆ›å»ºæ–°é…ç½®æ–‡ä»¶",
+  "IncompatibleVer": "å½“å‰ EBOS/Windows å®‰è£…ä¸Žæ­¤å·¥å…·ç®±ç‰ˆæœ¬ä¸å…¼å®¹ã€‚è¯·å‡çº§åˆ° EBOS ",
+  "StatingServices": "æ­£åœ¨å¯åŠ¨æœåŠ¡...",
+
+  // å¯¹è¯æ¡†æ–‡æœ¬
+  "CurrentConfigIsSavedMessage": "æ‚¨çš„å½“å‰é…ç½®å°†è¢«ä¿å­˜åˆ°æ­¤é…ç½®æ–‡ä»¶",
+  "DeleteProfileConfirmation": "æ‚¨ç¡®å®žæƒ³è¦åˆ é™¤æ­¤é…ç½®æ–‡ä»¶å—ï¼Ÿ",
+  "TryDeleteDefaultProfile": "æ‚¨æ— æ³•åˆ é™¤é»˜è®¤é…ç½®æ–‡ä»¶",
+  "Home_SetProfileConfig": "æ‚¨ç¡®å®žæƒ³è¦è®¾ç½®æ­¤é…ç½®æ–‡ä»¶å—ï¼Ÿ",
+  "RestartPCPromptHeader": "ä¸ºäº†å®Œå…¨åº”ç”¨æ›´æ”¹ï¼Œè¯·é‡å¯æ‚¨çš„ç”µè„‘",
+  "RelogApplyDesc": "ä¸ºäº†å®Œå…¨åº”ç”¨æ›´æ”¹ï¼Œè¯·æ³¨é”€ã€‚",
+  "Yes": "æ˜¯",
+  "No": "å¦",
+  "Cancel": "å–æ¶ˆ",
+  "Ok": "ç¡®å®š",
+  "Restart": "é‡å¯",
+  "Later": "ç¨åŽ",
+  "Create": "åˆ›å»º",
+  "Home_SetProfileBtn": "è®¾ç½®æ­¤é…ç½®æ–‡ä»¶",
+  "Home_DeleteProfileBtn": "åˆ é™¤æ­¤é…ç½®æ–‡ä»¶",
+  "Settings": "è®¾ç½®",
+  "Behavior": "å¸¸è§„",
+  "Settings_BackgroundDesc": "ä¿æŒå·¥å…·ç®±åœ¨åŽå°è¿è¡Œ",
+  "About": "å…³äºŽ",
+  "CloneRepoCard": "å…‹éš†æ­¤å­˜å‚¨åº“",
+  "BugReportCard": "æäº¤é”™è¯¯æŠ¥å‘Š",
+  "WarningHeader": "æ­¤ä»£ç ç”± EBOS å›¢é˜Ÿæä¾›ã€‚æ­¤è½¯ä»¶ä»…é™äºŽåœ¨å—æ”¯æŒçš„ Windows ç‰ˆæœ¬ä¸Šä¸Ž EBOS é…åˆä½¿ç”¨ã€‚ä¸å»ºè®®ä½¿ç”¨å…¶ä»– Playbook å’Œ/æˆ–ä¸å—æ”¯æŒçš„ Windows ç‰ˆæœ¬ã€‚",
+  "InstallSoftware": "å®‰è£…è½¯ä»¶",
+  "InstallButton": "å®‰è£…",
+  "Unstable": "ä¸ç¨³å®š",
+  "UnstableDescription": "æ­¤åº”ç”¨ç¨‹åºç›®å‰ä»…ç”¨äºŽæµ‹è¯•ç›®çš„ã€‚è¯¥åº”ç”¨ç¨‹åºå¯èƒ½åŒ…å«å¯èƒ½ç ´åæ‚¨çš„ Windows å®‰è£…çš„é”™è¯¯ã€‚é£Žé™©è‡ªæ‰¿ã€‚",
+  "BetaVersion": "æµ‹è¯•ç‰ˆ",
+  "BetaVersionDescription": "æ­¤åº”ç”¨ç¨‹åºç›®å‰å¤„äºŽæµ‹è¯•ç‰ˆã€‚å¦‚æžœæ‚¨å‘çŽ°é”™è¯¯æˆ–æƒ³è¦å»ºè®®åŠŸèƒ½ï¼Œè¯·åœ¨ Discord ä¸Šæä¾›åé¦ˆã€‚åŠŸèƒ½å¯èƒ½ä¼šå‘ç”Ÿå˜åŒ–ã€‚",
+  "RestartApp": "é‡å¯å·¥å…·ç®±ä»¥åº”ç”¨æ›´æ”¹",
+  "RestartAppDesc": "ä¸ºäº†åº”ç”¨è¿™äº›æ›´æ”¹ï¼Œè¯·é‡å¯å·¥å…·ç®±ã€‚",
+  "RestartAppBtn": "ç«‹å³é‡å¯å·¥å…·ç®±",
+  "RestartPC": "é‡å¯æ‚¨çš„ç”µè„‘ä»¥åº”ç”¨ã€‚",
+  "RestartPCDesc": "ä¸ºäº†åº”ç”¨è¿™äº›æ›´æ”¹ï¼Œè¯·é‡å¯æ‚¨çš„ç”µè„‘ã€‚",
+  "RestartBtn": "ç«‹å³é‡å¯",
+  "RelogApply": "é‡æ–°ç™»å½•ä»¥åº”ç”¨",
+  "ReloadApplyDesc": "ä¸ºäº†åº”ç”¨è¿™äº›æ›´æ”¹ï¼Œè¯·é‡æ–°ç™»å½•ã€‚",
+  "RelogBtn": "æ³¨é”€",
+  "CheckUpdates": "æ£€æŸ¥æ›´æ–°",
+  "CheckUpdatesBtn": "ç«‹å³æ£€æŸ¥",
+  "LatestVer": "æ²¡æœ‰å¯ç”¨çš„æ›´æ–°",
+  "NewUpdate": "æ›´æ–°",
+  "NewUpdateDesc": "æœ‰æ–°çš„æ›´æ–°å¯ç”¨ã€‚æ‚¨çŽ°åœ¨æƒ³è¦å®‰è£…å—ï¼Ÿ",
+  "InstallNow": "ç«‹å³å®‰è£…",
+  "ToggleWindowsUpdates": "åˆ‡æ¢ Windows æ›´æ–°",
+  "WindowsUpdate": "Windows æ›´æ–°",
+  "WindowsUpdateDescription": "ä¸Ž Windows æ›´æ–°ç›¸å…³çš„è®¾ç½®",
+  "FeatureHeader": "åŠŸèƒ½æ›´æ–°ï¼š",
+  "QualityHeader": "è´¨é‡æ›´æ–°ï¼š",
+  "Set": "è®¾ç½®",
+  "WindowsUpdateDeferral": "è®¾ç½® Windows æ›´æ–°å»¶è¿Ÿå¤©æ•°",
+  "UpdateDeferralPromptTitle": "è®¾ç½® Windows æ›´æ–°å»¶è¿Ÿæ—¶é—´",
+  "ResetWindowsUpdateDeferral": "é‡ç½® Windows æ›´æ–°å»¶è¿Ÿ",
+  "MicrosoftStoreToggle": "åˆ‡æ¢ Microsoft Store",
+
+  // ä¸»é¡µç£è´´
+  "Tile_DocumentationTitle": "æ–‡æ¡£",
+  "Tile_DocumentationDescription": "å®‰è£… EBOSã€FAQ ç­‰",
+  "Tile_DiscordTitle": "Discord",
+  "Tile_DiscordDescription": "èŽ·å–æ”¯æŒå¹¶äº¤ä¸ªæœ‹å‹ï¼",
+  "Tile_GithubTitle": "GitHub",
+  "Tile_GithubDescription": "æŽ¢ç´¢ EBOS ä»£ç å¹¶åšå‡ºè´¡çŒ®",
+  "Tile_KofiTitle": "åœ¨ Ko-Fi ä¸Šæ”¯æŒæˆ‘ä»¬",
+  "Tile_KofiDescription": "å¸®åŠ©æˆ‘ä»¬ç»§ç»­è¿™ä¸ªé¡¹ç›®ï¼",
+
+  // èœå•é¡¹å’Œå…¶ä»–å¯¼èˆªæ–‡æœ¬
+  "SearchPlaceholder": "ï¼ˆå¼€å‘ä¸­ï¼‰æœç´¢è®¾ç½®...",
+
+  "Home": "ä¸»é¡µ",
+  "Software": "è½¯ä»¶",
+  "GeneralConfig": "å¸¸è§„é…ç½®",
+  "Interface": "ç•Œé¢è°ƒæ•´",
+  "Windows": "Windows è®¾ç½®",
+  "Advanced": "é«˜çº§é…ç½®",
+  "Security": "å®‰å…¨",
+  "Troubleshooting": "æ•…éšœæŽ’é™¤",
+
+  "Language": "è¯­è¨€",
+
+  "NoFavorites": "æ‚¨è¿˜æ²¡æœ‰æ·»åŠ ä»»ä½•æ”¶è—ã€‚",
+  "SystemInfo": "å…³äºŽæ­¤ç³»ç»Ÿï¼š",
+  "LearnMore": "äº†è§£è¯¦æƒ…",
+
+  "TroubleshootingDocumenation": "æ•…éšœæŽ’é™¤æ–‡æ¡£",
+
+  // å®žéªŒåŠŸèƒ½
+  "ExperimentsHeader": "å®žéªŒåŠŸèƒ½",
+  "ExperimentsCardHeader": "å®žéªŒæ€§åŠŸèƒ½",
+  "ExperimentsCardDescription": "è¿™äº›åŠŸèƒ½æ˜¯å®žéªŒæ€§çš„ï¼Œå¯èƒ½æ— æ³•å®Œå…¨æŒ‰é¢„æœŸå·¥ä½œã€‚éœ€è¦é‡å¯æ‰èƒ½åº”ç”¨æ›´æ”¹",
+
+  // æœç´¢å®žéªŒ
+  "SearchExperiment": "æœç´¢æ ",
+  "SearchExperimentDescription": "å¯ç”¨æœç´¢æ ä»¥å¿«é€Ÿåœ¨å·¥å…·ç®±ä¸­æŸ¥æ‰¾è®¾ç½®",
+
+  // å›¾æ ‡å®žéªŒ
+  "IconsExperiment": "å›¾æ ‡",
+  "IconsExperimentDescription": "åœ¨æ¯ä¸ªè®¾ç½®æ—è¾¹å¯ç”¨å›¾æ ‡ï¼Œä»¥ä¾¿æ›´å®¹æ˜“è¯†åˆ«å’Œè§†è§‰æ•ˆæžœæ›´å¥½"
+}

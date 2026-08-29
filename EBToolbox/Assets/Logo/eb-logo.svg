@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="0%">
+<stop offset="0%" stop-color="#5B8ED4"/>
+<stop offset="100%" stop-color="#1A3A7A"/>
+</linearGradient>
+<style>
+.text { font-family: &apos;Bodoni MT&apos;, serif; font-size: 520px; font-weight: bold; }
+</style>
+</defs>
+<text x="50%" y="58%" dominant-baseline="middle" text-anchor="middle" class="text" fill="url(#grad)" stroke="white" stroke-width="18" stroke-linejoin="round" paint-order="stroke">EB</text>
+<text x="50%" y="58%" dominant-baseline="middle" text-anchor="middle" class="text" fill="none" stroke="#0A2A5E" stroke-width="32" stroke-linejoin="round" opacity="1" paint-order="stroke">EB</text>
+</svg>
