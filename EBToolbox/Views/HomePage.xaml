@@ -262,12 +262,27 @@
                     x:Name="FavoritesControl"
                     ItemTemplateSelector="{StaticResource FavoriteItemDataTemplateSelector}"
                     ItemsSource="{x:Bind _configurationItems, Mode=OneWay}" />
-                <TextBlock
-                    x:Name="NoFavoritesText"
+                <StackPanel
                     HorizontalAlignment="Center"
                     VerticalAlignment="Center"
-                    FontSize="20"
-                    Foreground="{StaticResource TextFillColorTertiary}" />
+                    Spacing="10">
+                    <FontIcon
+                        HorizontalAlignment="Center"
+                        FontSize="28"
+                        Foreground="{ThemeResource TextFillColorTertiaryBrush}"
+                        Glyph="&#xEB51;"
+                        Opacity="0.5"
+                        Visibility="{Binding ElementName=NoFavoritesText, Path=Visibility}" />
+                    <TextBlock
+                        x:Name="NoFavoritesText"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        FontSize="14"
+                        Foreground="{ThemeResource TextFillColorTertiaryBrush}"
+                        Opacity="0.9"
+                        TextAlignment="Center"
+                        TextWrapping="Wrap" />
+                </StackPanel>
             </Grid>
         </Grid>
     </ScrollViewer>

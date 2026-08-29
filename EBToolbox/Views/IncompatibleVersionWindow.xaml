@@ -6,13 +6,48 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:local="using:EBToolbox"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    Title="IncompatibleVersionWindow"
+    Title="EB Toolbox - Incompatible Version"
     mc:Ignorable="d">
     <Window.SystemBackdrop>
-        <MicaBackdrop Kind="Base" />
+        <MicaBackdrop Kind="BaseAlt" />
     </Window.SystemBackdrop>
-    <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
-        <TextBlock x:Name="IncompatibleVer" FontSize="20" />
-        <HyperlinkButton HorizontalAlignment="Center" FontSize="20">https://docs.ebos.net/getting-started/</HyperlinkButton>
-    </StackPanel>
+    <Grid Padding="32">
+        <StackPanel
+            MaxWidth="520"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            Spacing="16">
+            <FontIcon
+                HorizontalAlignment="Center"
+                FontSize="48"
+                Foreground="{StaticResource EBAccentBrush}"
+                Glyph="&#xE783;" />
+            <TextBlock
+                HorizontalAlignment="Center"
+                FontSize="20"
+                FontWeight="SemiBold"
+                Text="Incompatible Version"
+                TextAlignment="Center" />
+            <TextBlock
+                x:Name="IncompatibleVer"
+                HorizontalAlignment="Center"
+                FontSize="14"
+                Foreground="{ThemeResource TextFillColorSecondaryBrush}"
+                TextAlignment="Center"
+                TextWrapping="Wrap" />
+            <InfoBar
+                IsOpen="True"
+                IsClosable="False"
+                Severity="Warning"
+                Message="Please upgrade to the latest EBOS version to use this Toolbox build." />
+            <HyperlinkButton
+                HorizontalAlignment="Center"
+                NavigateUri="https://docs.ebos.net/getting-started/">
+                <StackPanel Orientation="Horizontal" Spacing="6">
+                    <FontIcon FontSize="14" Glyph="&#xE8A7;" />
+                    <TextBlock Text="Open EBOS Docs" />
+                </StackPanel>
+            </HyperlinkButton>
+        </StackPanel>
+    </Grid>
 </Window>

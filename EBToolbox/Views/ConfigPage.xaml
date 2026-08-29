@@ -145,8 +145,19 @@
                 </DataTemplate>
             </BreadcrumbBar.ItemTemplate>
         </BreadcrumbBar>
-        <ScrollViewer x:Name="ConfigScrollViewer" Grid.Row="1">
-            <StackPanel>
+        <ScrollViewer
+            x:Name="ConfigScrollViewer"
+            Grid.Row="1"
+            Padding="0,0,12,0"
+            VerticalScrollBarVisibility="Auto">
+            <StackPanel Spacing="2">
+                <InfoBar
+                    Title="EB Tip"
+                    Margin="0,0,0,12"
+                    IsOpen="True"
+                    IsClosable="True"
+                    Severity="Informational"
+                    Message="Right-click a card to add it to Favorites. Changes require restart/relog where indicated." />
                 <ItemsControl x:Name="ConfigItemsControl" ItemTemplateSelector="{StaticResource DataTemplateSelector}" ItemsSource="{Binding ConfigurationItems}" />
             </StackPanel>
         </ScrollViewer>

@@ -6,18 +6,55 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:local="using:EBToolbox"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    Title="LoadingWindow"
+    Title="EB Toolbox"
     mc:Ignorable="d">
 
     <Window.SystemBackdrop>
-        <MicaBackdrop Kind="Base" />
+        <MicaBackdrop Kind="BaseAlt" />
     </Window.SystemBackdrop>
 
-    <Grid>
-        <ProgressRing IsActive="True" />
+    <Grid Padding="32">
+        <StackPanel
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            Spacing="20">
+            <Image
+                Width="96"
+                Height="96"
+                Source="ms-appx:///Assets/Logo/eb-logo.png"
+                Stretch="Uniform" />
+            <StackPanel Spacing="8" HorizontalAlignment="Center">
+                <TextBlock
+                    HorizontalAlignment="Center"
+                    FontSize="18"
+                    FontWeight="SemiBold"
+                    Text="EB Toolbox" />
+                <TextBlock
+                    HorizontalAlignment="Center"
+                    FontSize="12"
+                    Foreground="{ThemeResource TextFillColorSecondaryBrush}"
+                    Opacity="0.8"
+                    Text="Loading EBOS profiles..." />
+            </StackPanel>
+            <ProgressRing
+                Width="36"
+                Height="36"
+                HorizontalAlignment="Center"
+                IsActive="True" />
+            <TextBlock
+                x:Name="StartingServices"
+                HorizontalAlignment="Center"
+                FontSize="12"
+                Foreground="{ThemeResource TextFillColorTertiaryBrush}"
+                TextAlignment="Center"
+                TextWrapping="Wrap" />
+        </StackPanel>
         <TextBlock
-            x:Name="StartingServices"
-            Margin="0,175,0,0"
-            TextAlignment="Center" />
+            HorizontalAlignment="Center"
+            VerticalAlignment="Bottom"
+            FontSize="10"
+            Foreground="{ThemeResource TextFillColorTertiaryBrush}"
+            Opacity="0.6"
+            Text="EBOS Edition • v0.1.15" />
     </Grid>
 </Window>

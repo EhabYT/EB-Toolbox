@@ -22,13 +22,20 @@
     </Style>
 
     <Style x:Key="ConfigurationSettingsCardTemplate" TargetType="controls:SettingsCard">
-        <Setter Property="Margin" Value="0,0,36,10" />
-        <Setter Property="BorderBrush" Value="#0DFFFFFF" />
+        <Setter Property="Margin" Value="0,0,0,8" />
+        <Setter Property="BorderBrush" Value="{ThemeResource CardStrokeColorDefaultBrush}" />
+        <Setter Property="BorderThickness" Value="1" />
+        <Setter Property="CornerRadius" Value="8" />
+        <Setter Property="Background" Value="{ThemeResource CardBackgroundFillColorDefaultBrush}" />
+        <Setter Property="Padding" Value="12" />
     </Style>
 
     <Style x:Key="ConfigurationSettingsExpanderTemplate" TargetType="controls:SettingsExpander">
-        <Setter Property="Margin" Value="0,0,36,10" />
-        <Setter Property="BorderBrush" Value="#0DFFFFFF" />
+        <Setter Property="Margin" Value="0,0,0,8" />
+        <Setter Property="BorderBrush" Value="{ThemeResource CardStrokeColorDefaultBrush}" />
+        <Setter Property="BorderThickness" Value="1" />
+        <Setter Property="CornerRadius" Value="8" />
+        <Setter Property="Background" Value="{ThemeResource CardBackgroundFillColorDefaultBrush}" />
     </Style>
 
     <Style x:Key="ConfigurationSubSetting" TargetType="controls:SettingsCard">

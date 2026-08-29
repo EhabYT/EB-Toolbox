@@ -14,31 +14,65 @@
     <Page.Resources>
         <local:BitmapIconConverter x:Key="BitmapIconConverter" />
     </Page.Resources>
-    <Grid Margin="55,0,0,0">
+    <Grid Margin="36,0,24,0">
         <Grid.RowDefinitions>
             <RowDefinition Height="auto" />
-            <RowDefinition Height="9*" />
             <RowDefinition Height="*" />
+            <RowDefinition Height="auto" />
         </Grid.RowDefinitions>
-        <TextBlock
-            x:Name="TitleTxt"
-            Grid.Row="0"
-            Margin="0,24,36,24"
-            Style="{StaticResource TitleTextBlockStyle}" />
+        <StackPanel Grid.Row="0" Margin="0,16,0,16" Spacing="6">
+            <StackPanel Orientation="Horizontal" Spacing="10">
+                <FontIcon
+                    FontSize="20"
+                    Foreground="{StaticResource EBAccentBrush}"
+                    Glyph="&#xE896;" />
+                <TextBlock
+                    x:Name="TitleTxt"
+                    VerticalAlignment="Center"
+                    FontSize="24"
+                    FontWeight="SemiBold"
+                    Style="{StaticResource TitleTextBlockStyle}" />
+                <Border
+                    Padding="6,2"
+                    VerticalAlignment="Center"
+                    Background="{StaticResource EBPrimaryLightBrush}"
+                    CornerRadius="6">
+                    <TextBlock
+                        FontSize="10"
+                        FontWeight="SemiBold"
+                        Foreground="{StaticResource EBPrimaryBrush}"
+                        Text="WINGET" />
+                </Border>
+            </StackPanel>
+            <TextBlock
+                FontSize="13"
+                Foreground="{ThemeResource TextFillColorSecondaryBrush}"
+                Opacity="0.85"
+                Text="Select apps to install via WinGet. Checked items will be installed on next action."
+                TextWrapping="Wrap" />
+        </StackPanel>
         <Grid Grid.Row="1">
-            <ScrollViewer Height="auto" VerticalAlignment="Top">
-                <StackPanel>
+            <ScrollViewer
+                Padding="0,0,12,0"
+                VerticalScrollBarVisibility="Auto"
+                VerticalAlignment="Stretch">
+                <StackPanel Spacing="2">
                     <ItemsControl ItemsSource="{Binding SoftwareItemViewModels}">
                         <ItemsControl.ItemTemplate>
                             <DataTemplate>
                                 <controls:SettingsCard
                                     x:Name="SettingsCard"
+                                    Margin="0,0,0,6"
                                     HorizontalContentAlignment="Right"
+                                    Background="{ThemeResource CardBackgroundFillColorDefaultBrush}"
+                                    BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}"
                                     Header="{Binding Name}"
                                     HeaderIcon="{Binding BitMapIcon, Converter={StaticResource BitmapIconConverter}}"
+                                    CornerRadius="8"
                                     Style="{StaticResource ConfigurationSettingsCardTemplate}">
                                     <CheckBox
-                                        Margin="0,0,-75,0"
+                                        MinWidth="0"
+                                        Margin="0"
                                         Checked="CheckBox_Checked"
                                         Unchecked="CheckBox_Unchecked" />
                                 </controls:SettingsCard>
@@ -48,26 +82,39 @@
                 </StackPanel>
             </ScrollViewer>
         </Grid>
-        <StackPanel
-            x:Name="ProgressRingStackPanel"
+        <Grid
             Grid.Row="2"
-            Margin="0,0,0,40"
-            HorizontalAlignment="Left"
-            VerticalAlignment="Bottom"
-            Orientation="Vertical"
-            Visibility="Collapsed">
-            <TextBlock x:Name="CurrentlyInstalling" TextAlignment="Center" />
-            <ProgressBar
-                x:Name="DownloadingProgressBar"
-                Width="130"
-                HorizontalAlignment="Left" />
-        </StackPanel>
-        <Button
-            x:Name="InstallButton"
-            Grid.Row="2"
-            Margin="0,0,36,20"
-            HorizontalAlignment="Right"
-            VerticalAlignment="Bottom"
-            Click="Button_Click" />
+            Margin="0,12,0,16"
+            ColumnSpacing="12">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+            <StackPanel
+                x:Name="ProgressRingStackPanel"
+                Grid.Column="0"
+                VerticalAlignment="Center"
+                Orientation="Vertical"
+                Spacing="6"
+                Visibility="Collapsed">
+                <TextBlock
+                    x:Name="CurrentlyInstalling"
+                    FontSize="12"
+                    Foreground="{ThemeResource TextFillColorSecondaryBrush}"
+                    TextAlignment="Left"
+                    TextWrapping="Wrap" />
+                <ProgressBar
+                    x:Name="DownloadingProgressBar"
+                    MinWidth="200"
+                    HorizontalAlignment="Stretch" />
+            </StackPanel>
+            <Button
+                x:Name="InstallButton"
+                Grid.Column="1"
+                MinWidth="140"
+                VerticalAlignment="Center"
+                Click="Button_Click"
+                Style="{StaticResource AccentButtonStyle}" />
+        </Grid>
     </Grid>
 </Page>
