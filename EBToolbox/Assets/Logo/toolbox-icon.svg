@@ -6,117 +6,129 @@
       <stop offset="100%" stop-color="#1A3A7A"/>
     </linearGradient>
     <linearGradient id="bodyGrad" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#5098F5"/>
-      <stop offset="40%" stop-color="#3D7DE8"/>
+      <stop offset="0%" stop-color="#5A9FF7"/>
+      <stop offset="35%" stop-color="#3D7DE8"/>
       <stop offset="100%" stop-color="#2A62D1"/>
     </linearGradient>
-    <linearGradient id="bodySide" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#1E4FA8" stop-opacity="0.6"/>
+    <linearGradient id="bodyLeft" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#1E4FA8" stop-opacity="0.7"/>
       <stop offset="100%" stop-color="#1E4FA8" stop-opacity="0"/>
     </linearGradient>
     <linearGradient id="lidGrad" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#6AA8F8"/>
-      <stop offset="50%" stop-color="#4B8DF0"/>
+      <stop offset="0%" stop-color="#72B4FF"/>
+      <stop offset="40%" stop-color="#5098F5"/>
       <stop offset="100%" stop-color="#3575E0"/>
     </linearGradient>
     <linearGradient id="handleGrad" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0%" stop-color="#FFFFFF"/>
-      <stop offset="100%" stop-color="#C8DCFF"/>
+      <stop offset="60%" stop-color="#D8E8FF"/>
+      <stop offset="100%" stop-color="#B8D0F5"/>
     </linearGradient>
     <linearGradient id="latchGrad" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#254D8F"/>
+      <stop offset="0%" stop-color="#2E5A9E"/>
       <stop offset="100%" stop-color="#142D5F"/>
     </linearGradient>
-    <filter id="shadow" x="-15%" y="-15%" width="130%" height="140%">
-      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#0A1830" flood-opacity="0.45"/>
+    <linearGradient id="clipGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0C1E40"/>
+      <stop offset="100%" stop-color="#162E5A"/>
+    </linearGradient>
+    <filter id="shadow" x="-15%" y="-10%" width="130%" height="135%">
+      <feDropShadow dx="0" dy="5" stdDeviation="7" flood-color="#081428" flood-opacity="0.5"/>
     </filter>
-    <filter id="handleShadow" x="-20%" y="-20%" width="140%" height="150%">
-      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#0A1830" flood-opacity="0.35"/>
+    <filter id="handleShadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#081428" flood-opacity="0.4"/>
     </filter>
-    <filter id="innerGlow">
-      <feGaussianBlur in="SourceAlpha" stdDeviation="2" result="blur"/>
-      <feOffset dx="0" dy="1"/>
-      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
-    </filter>
+    <clipPath id="bgClip">
+      <rect x="4" y="4" width="248" height="248" rx="48"/>
+    </clipPath>
   </defs>
 
-  <!-- Background rounded rectangle -->
-  <rect x="4" y="4" width="248" height="248" rx="48" ry="48" fill="url(#bgGrad)"/>
+  <g clip-path="url(#bgClip)">
+    <!-- Background -->
+    <rect x="4" y="4" width="248" height="248" rx="48" fill="url(#bgGrad)"/>
 
-  <!-- Subtle background texture -->
-  <g opacity="0.04">
-    <circle cx="35" cy="35" r="25" fill="white"/>
-    <circle cx="220" cy="220" r="18" fill="white"/>
-    <circle cx="210" cy="45" r="12" fill="white"/>
-    <circle cx="45" cy="210" r="8" fill="white"/>
+    <!-- Background texture -->
+    <g opacity="0.03">
+      <circle cx="30" cy="30" r="28" fill="white"/>
+      <circle cx="225" cy="225" r="20" fill="white"/>
+      <circle cx="215" cy="40" r="14" fill="white"/>
+      <circle cx="40" cy="220" r="10" fill="white"/>
+    </g>
+
+    <!-- Toolbox body group -->
+    <g filter="url(#shadow)">
+      <!-- Main body -->
+      <rect x="38" y="105" width="180" height="110" rx="14" fill="url(#bodyGrad)"/>
+
+      <!-- Body left shadow -->
+      <rect x="38" y="105" width="22" height="110" rx="14" fill="url(#bodyLeft)"/>
+
+      <!-- Body bottom inner shadow -->
+      <rect x="38" y="192" width="180" height="23" fill="#1A4AAF" opacity="0.3"/>
+
+      <!-- Lid -->
+      <rect x="34" y="90" width="188" height="26" rx="8" fill="url(#lidGrad)"/>
+
+      <!-- Lid top highlight -->
+      <rect x="34" y="90" width="188" height="4" rx="2" fill="white" opacity="0.5"/>
+
+      <!-- Lid bottom edge -->
+      <rect x="34" y="112" width="188" height="4" fill="#2A5CC0" opacity="0.45"/>
+    </g>
+
+    <!-- Body horizontal detail line -->
+    <line x1="50" y1="158" x2="206" y2="158" stroke="white" stroke-width="1.2" opacity="0.1"/>
+
+    <!-- Body upper highlight -->
+    <rect x="56" y="126" width="144" height="16" rx="8" fill="white" opacity="0.1"/>
+
+    <!-- Handle group -->
+    <g filter="url(#handleShadow)">
+      <!-- Handle main -->
+      <path d="M128,44 C78,44 66,78 66,92" stroke="url(#handleGrad)" stroke-width="18" fill="none" stroke-linecap="round"/>
+      <path d="M128,44 C178,44 190,78 190,92" stroke="url(#handleGrad)" stroke-width="18" fill="none" stroke-linecap="round"/>
+    </g>
+
+    <!-- Handle grip -->
+    <path d="M128,52 C94,52 82,76 82,92" stroke="#E0ECFF" stroke-width="28" fill="none" stroke-linecap="round"/>
+    <path d="M128,52 C162,52 174,76 174,92" stroke="#E0ECFF" stroke-width="28" fill="none" stroke-linecap="round"/>
+
+    <!-- Handle highlight -->
+    <path d="M128,46 C86,46 74,76 74,90" stroke="white" stroke-width="5" fill="none" stroke-linecap="round" opacity="0.45"/>
+    <path d="M128,46 C170,46 182,76 182,90" stroke="white" stroke-width="5" fill="none" stroke-linecap="round" opacity="0.45"/>
+
+    <!-- Latch outer -->
+    <rect x="102" y="78" width="52" height="30" rx="8" fill="url(#latchGrad)"/>
+
+    <!-- Latch inner -->
+    <rect x="110" y="84" width="36" height="18" rx="5" fill="#0B1D3D"/>
+
+    <!-- Latch detail lines -->
+    <line x1="117" y1="89" x2="139" y2="89" stroke="#D0E2FF" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
+    <line x1="117" y1="93" x2="139" y2="93" stroke="#D0E2FF" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
+    <line x1="117" y1="97" x2="139" y2="97" stroke="#D0E2FF" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
+
+    <!-- Side clips -->
+    <rect x="24" y="124" width="18" height="52" rx="4" fill="url(#clipGrad)"/>
+    <rect x="214" y="124" width="18" height="52" rx="4" fill="url(#clipGrad)"/>
+
+    <!-- Clip highlights -->
+    <rect x="26" y="126" width="5" height="48" rx="2" fill="white" opacity="0.15"/>
+    <rect x="225" y="126" width="5" height="48" rx="2" fill="white" opacity="0.15"/>
+
+    <!-- Clip rivets -->
+    <circle cx="33" cy="134" r="2.5" fill="#0E2244"/>
+    <circle cx="33" cy="166" r="2.5" fill="#0E2244"/>
+    <circle cx="223" cy="134" r="2.5" fill="#0E2244"/>
+    <circle cx="223" cy="166" r="2.5" fill="#0E2244"/>
+
+    <!-- Rivet highlights -->
+    <circle cx="32" cy="133" r="1" fill="white" opacity="0.2"/>
+    <circle cx="32" cy="165" r="1" fill="white" opacity="0.2"/>
+    <circle cx="222" cy="133" r="1" fill="white" opacity="0.2"/>
+    <circle cx="222" cy="165" r="1" fill="white" opacity="0.2"/>
+
+    <!-- EB text -->
+    <text x="128" y="180" text-anchor="middle" font-family="'Segoe UI Variable', 'Segoe UI', Arial, sans-serif" font-size="30" font-weight="700" fill="white" opacity="0.85" letter-spacing="3">EB</text>
   </g>
-
-  <!-- Toolbox body with shadow -->
-  <g filter="url(#shadow)">
-    <!-- Main body -->
-    <rect x="38" y="105" width="180" height="110" rx="14" ry="14" fill="url(#bodyGrad)"/>
-    
-    <!-- Body left shadow -->
-    <rect x="38" y="105" width="20" height="110" rx="14" ry="14" fill="url(#bodySide)"/>
-    
-    <!-- Body bottom inner shadow -->
-    <rect x="38" y="190" width="180" height="25" rx="0" fill="#1E4FA8" opacity="0.35"/>
-    
-    <!-- Lid -->
-    <rect x="34" y="92" width="188" height="24" rx="8" ry="8" fill="url(#lidGrad)"/>
-    
-    <!-- Lid top highlight -->
-    <rect x="34" y="92" width="188" height="5" rx="2" fill="white" opacity="0.45"/>
-    
-    <!-- Lid bottom edge -->
-    <rect x="34" y="112" width="188" height="4" fill="#2A5CC0" opacity="0.5"/>
-  </g>
-
-  <!-- Body horizontal line detail -->
-  <line x1="48" y1="155" x2="208" y2="155" stroke="white" stroke-width="1.5" opacity="0.12"/>
-
-  <!-- Body highlight -->
-  <rect x="54" y="128" width="148" height="18" rx="6" fill="white" opacity="0.12"/>
-
-  <!-- Handle -->
-  <g filter="url(#handleShadow)">
-    <path d="M128,48 C82,48 70,78 70,92" stroke="url(#handleGrad)" stroke-width="18" fill="none" stroke-linecap="round"/>
-    <path d="M128,48 C174,48 186,78 186,92" stroke="url(#handleGrad)" stroke-width="18" fill="none" stroke-linecap="round"/>
-  </g>
-  
-  <!-- Handle grip thickening -->
-  <path d="M128,56 C96,56 84,76 84,92" stroke="#E8F0FF" stroke-width="26" fill="none" stroke-linecap="round"/>
-  <path d="M128,56 C160,56 172,76 172,92" stroke="#E8F0FF" stroke-width="26" fill="none" stroke-linecap="round"/>
-  
-  <!-- Handle highlight -->
-  <path d="M128,50 C90,50 78,76 78,90" stroke="white" stroke-width="5" fill="none" stroke-linecap="round" opacity="0.5"/>
-  <path d="M128,50 C166,50 178,76 178,90" stroke="white" stroke-width="5" fill="none" stroke-linecap="round" opacity="0.5"/>
-
-  <!-- Latch outer -->
-  <rect x="104" y="80" width="48" height="28" rx="8" ry="8" fill="url(#latchGrad)"/>
-  
-  <!-- Latch inner -->
-  <rect x="112" y="86" width="32" height="16" rx="4" ry="4" fill="#0D2247"/>
-  
-  <!-- Latch lines -->
-  <line x1="119" y1="90" x2="137" y2="90" stroke="#E8F0FF" stroke-width="2.5" stroke-linecap="round" opacity="0.8"/>
-  <line x1="119" y1="94" x2="137" y2="94" stroke="#E8F0FF" stroke-width="2.5" stroke-linecap="round" opacity="0.8"/>
-  <line x1="119" y1="98" x2="137" y2="98" stroke="#E8F0FF" stroke-width="2.5" stroke-linecap="round" opacity="0.6"/>
-
-  <!-- Side clips -->
-  <rect x="26" y="126" width="16" height="48" rx="4" ry="4" fill="#102A55"/>
-  <rect x="214" y="126" width="16" height="48" rx="4" ry="4" fill="#102A55"/>
-  
-  <!-- Clip highlights -->
-  <rect x="28" y="128" width="5" height="44" rx="2" fill="white" opacity="0.18"/>
-  <rect x="223" y="128" width="5" height="44" rx="2" fill="white" opacity="0.18"/>
-  
-  <!-- Clip rivets -->
-  <circle cx="34" cy="136" r="2" fill="#1A3A7A"/>
-  <circle cx="34" cy="168" r="2" fill="#1A3A7A"/>
-  <circle cx="222" cy="136" r="2" fill="#1A3A7A"/>
-  <circle cx="222" cy="168" r="2" fill="#1A3A7A"/>
-
-  <!-- EB text on body -->
-  <text x="128" y="178" text-anchor="middle" font-family="'Segoe UI Variable', 'Segoe UI', Arial, sans-serif" font-size="30" font-weight="700" fill="white" opacity="0.9" letter-spacing="2">EB</text>
 </svg>
