@@ -1,7 +1,7 @@
 ﻿# EB Toolbox
 
 <a href="https://github.com/EhabYT/.github/blob/main/profile/CODE_OF_CONDUCT.md"><img alt="Code of Conduct" src="https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg?style=for-the-badge&color=1A91FF" /></a>
-<img alt="Version" src="https://img.shields.io/badge/version-v0.1.16-blue?style=for-the-badge&color=1A3A7A" />
+<img alt="Version" src="https://img.shields.io/badge/version-v0.1.17-blue?style=for-the-badge&color=1A3A7A" />
 <img alt="Platform" src="https://img.shields.io/badge/platform-Windows%2010%2F11-0078D4?style=for-the-badge" />
 <img alt="Build" src="https://img.shields.io/badge/build-passing-brightgreen?style=for-the-badge" />
 
@@ -22,6 +22,13 @@ This repository contains the **EB Toolbox** (EBOS Edition) made with C# and WinU
 *UI v0.1.15: EB theme `#1A3A7A`, improved Home header, TileGallery, SettingsCards, Mica backdrop.*
 
 ## Changelog
+
+### v0.1.17 - Light/Dark Mode
+- Light/dark theme system with `ThemeHelper`, `ThemeDictionaries` in `App.xaml`
+- Theme toggle in Settings > Appearance (Light/Dark ComboBox)
+- Theme persists via Windows Registry, requires restart to apply
+- Mica backdrop restored on MainWindow, LoadingWindow, IncompatibleVersionWindow
+- Cleaned up `.gitignore`: excluded `Deploy/`, `DeployTest/`, `EBToolbox.zip`
 
 ### v0.1.16 - .NET 10 Upgrade
 - Upgrade `net8.0` → `net10.0` (`EBToolbox.csproj:5`), `setup-dotnet v3 8.0.x` → `v4 10.0.x` (`build.yml:21`)
