@@ -41,6 +41,8 @@ namespace EBToolbox.Views
 
             var savedTheme = ThemeHelper.GetSavedTheme();
             ThemeComboBox.SelectedIndex = ThemeHelper.ThemeToIndex(savedTheme);
+            _isLoadingTheme = false;
+            ThemeComboBox.SelectionChanged += ThemeComboBox_SelectionChanged;
         }
 
         public void LoadText()
@@ -78,13 +80,16 @@ namespace EBToolbox.Views
             SettingsBehaviorHelper.KeppBackground_Toggled(sender, e);
         }
 
+        private bool _isLoadingTheme = true;
+
         private void ThemeComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
+            if (_isLoadingTheme) return;
             if (sender is ComboBox comboBox && comboBox.SelectedIndex >= 0)
             {
                 var theme = ThemeHelper.IndexToTheme(comboBox.SelectedIndex);
                 ThemeHelper.SetTheme(theme);
-                ThemeHelper.ApplyTheme(theme);
+                App.ContentDialogCaller("restartApp");
             }
         }
 

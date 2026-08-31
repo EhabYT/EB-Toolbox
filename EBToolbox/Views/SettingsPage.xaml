@@ -35,8 +35,7 @@
                         </controls:SettingsCard.HeaderIcon>
                         <ComboBox
                             x:Name="ThemeComboBox"
-                            Width="200"
-                            SelectionChanged="ThemeComboBox_SelectionChanged">
+                            Width="200">
                             <ComboBoxItem Content="Light" Tag="0" />
                             <ComboBoxItem Content="Dark" Tag="1" />
                         </ComboBox>
