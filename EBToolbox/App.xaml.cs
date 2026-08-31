@@ -41,6 +41,7 @@ namespace EBToolbox
             ConfigureNLog();
             logger.Info("[APP]: App Started");
             LoadLangString();
+            ThemeHelper.ApplySavedTheme();
             _host = CreateHostBuilder().Build();
             logger.Info("[HOST]: Building host");
             _host.Start();

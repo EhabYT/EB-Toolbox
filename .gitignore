@@ -363,3 +363,6 @@ MigrationBackup/
 FodyWeavers.xsd
 EBOSToolbox-Setup
 Installer/Output/EBToolbox-Setup.exe
+Deploy/
+DeployTest/
+EBToolbox.zip

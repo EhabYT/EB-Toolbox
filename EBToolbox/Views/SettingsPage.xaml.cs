@@ -38,12 +38,17 @@ namespace EBToolbox.Views
             {
                 ConfigSwitch.SelectionChanged += ConfigSwitch_SelectionChanged;
             };
+
+            var savedTheme = ThemeHelper.GetSavedTheme();
+            ThemeComboBox.SelectedIndex = ThemeHelper.ThemeToIndex(savedTheme);
         }
 
         public void LoadText()
         {
             // Default text loading
             TitleTxt.Text = App.GetValueFromItemList("Settings");
+            AppearanceHeader.Text = "Appearance";
+            ThemeDescription.Header = "Theme";
             BehaviorHeader.Text = App.GetValueFromItemList("Behavior");
             BackgroundDescription.Header = App.GetValueFromItemList("Settings_BackgroundDesc");
             AboutHeader.Text = App.GetValueFromItemList("About");
@@ -71,6 +76,16 @@ namespace EBToolbox.Views
         private void KeepBackground_Toggled(object sender, RoutedEventArgs e)
         {
             SettingsBehaviorHelper.KeppBackground_Toggled(sender, e);
+        }
+
+        private void ThemeComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (sender is ComboBox comboBox && comboBox.SelectedIndex >= 0)
+            {
+                var theme = ThemeHelper.IndexToTheme(comboBox.SelectedIndex);
+                ThemeHelper.SetTheme(theme);
+                ThemeHelper.ApplyTheme(theme);
+            }
         }
 
         private void toCloneRepoCard_Click(object sender, RoutedEventArgs e)

@@ -27,6 +27,21 @@
                 Margin="0,24,36,24"
                 Style="{StaticResource TitleTextBlockStyle}" />
             <StackPanel x:Name="SettingToggles">
+                <StackPanel x:Name="AppearanceSettings">
+                    <TextBlock x:Name="AppearanceHeader" Style="{StaticResource CategoryTitle}" />
+                    <controls:SettingsCard x:Name="ThemeDescription" Style="{StaticResource ConfigurationSettingsCardTemplate}">
+                        <controls:SettingsCard.HeaderIcon>
+                            <FontIcon Glyph="&#xE771;" />
+                        </controls:SettingsCard.HeaderIcon>
+                        <ComboBox
+                            x:Name="ThemeComboBox"
+                            Width="200"
+                            SelectionChanged="ThemeComboBox_SelectionChanged">
+                            <ComboBoxItem Content="Light" Tag="0" />
+                            <ComboBoxItem Content="Dark" Tag="1" />
+                        </ComboBox>
+                    </controls:SettingsCard>
+                </StackPanel>
                 <StackPanel x:Name="BehaviorSettings">
                     <TextBlock x:Name="BehaviorHeader" Style="{StaticResource CategoryTitle}" />
                     <!--  Background toggle  -->
