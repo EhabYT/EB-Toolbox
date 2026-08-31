@@ -103,7 +103,7 @@
                         Margin="0,26,36,0"
                         HorizontalAlignment="Right"
                         VerticalAlignment="Top"
-                        Background="#30313E"
+                        Background="{ThemeResource CardBackgroundFillColorDefaultBrush}"
                         IsOpen="False">
                         <InfoBar.ActionButton>
                             <HyperlinkButton x:Name="LearnMoreBtn" NavigateUri="https://github.com/EhabYT/EB-Toolbox/releases/latest" />

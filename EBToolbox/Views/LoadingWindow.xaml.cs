@@ -33,6 +33,7 @@ namespace EBToolbox
         private void LoadText()
         {
             StartingServices.Text = App.GetValueFromItemList("StartingServices");
+            VersionText.Text = App.Version;
         }
 
         private void CenterWindowOnScreen()

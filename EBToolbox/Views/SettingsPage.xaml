@@ -106,7 +106,7 @@
                 <StackPanel Spacing="12">
                     <TextBlock x:Name="AboutHeader" Style="{StaticResource CategoryTitle}" />
                     <!--  About Section  -->
-                    <controls:SettingsExpander Header="EB Toolbox" Description="EBOS Edition • v0.1.14" Style="{StaticResource ConfigurationSettingsExpanderTemplate}">
+                    <controls:SettingsExpander Header="EB Toolbox" Description="{x:Bind Version}" Style="{StaticResource ConfigurationSettingsExpanderTemplate}">
                         <controls:SettingsExpander.HeaderIcon>
                             <BitmapIcon ShowAsMonochrome="False" UriSource="/assets/logo/toolbox-icon.ico" />
                         </controls:SettingsExpander.HeaderIcon>

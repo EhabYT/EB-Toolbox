@@ -50,11 +50,12 @@
                 TextWrapping="Wrap" />
         </StackPanel>
         <TextBlock
+            x:Name="VersionText"
             HorizontalAlignment="Center"
             VerticalAlignment="Bottom"
             FontSize="10"
             Foreground="{ThemeResource TextFillColorTertiaryBrush}"
             Opacity="0.6"
-            Text="EBOS Edition • v0.1.15" />
+            Text="EB Toolbox" />
     </Grid>
 </Window>

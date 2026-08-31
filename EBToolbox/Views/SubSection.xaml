@@ -16,7 +16,7 @@
         <Thickness x:Key="BreadcrumbBarChevronPadding">1,0</Thickness>
     </Page.Resources>
 
-    <Grid Margin="55,0,0,0">
+    <Grid Margin="36,0,24,0">
         <Grid.RowDefinitions>
             <RowDefinition Height="auto" />
             <RowDefinition Height="*" />

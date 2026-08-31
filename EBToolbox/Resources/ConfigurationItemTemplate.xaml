@@ -10,7 +10,7 @@
         <Setter Property="Header" Value="{Binding Name}" />
         <Setter Property="BorderThickness" Value="0" />
         <Setter Property="Margin" Value="0,0,36,5" />
-        <Setter Property="BorderBrush" Value="#0DFFFFFF" />
+        <Setter Property="BorderBrush" Value="{ThemeResource CardStrokeColorDefaultBrush}" />
     </Style>
 
 
@@ -25,7 +25,7 @@
         <Setter Property="Margin" Value="0,0,0,8" />
         <Setter Property="BorderBrush" Value="{ThemeResource CardStrokeColorDefaultBrush}" />
         <Setter Property="BorderThickness" Value="1" />
-        <Setter Property="CornerRadius" Value="8" />
+        <Setter Property="CornerRadius" Value="{StaticResource EBCardCornerRadius}" />
         <Setter Property="Background" Value="{ThemeResource CardBackgroundFillColorDefaultBrush}" />
         <Setter Property="Padding" Value="12" />
     </Style>
@@ -34,7 +34,7 @@
         <Setter Property="Margin" Value="0,0,0,8" />
         <Setter Property="BorderBrush" Value="{ThemeResource CardStrokeColorDefaultBrush}" />
         <Setter Property="BorderThickness" Value="1" />
-        <Setter Property="CornerRadius" Value="8" />
+        <Setter Property="CornerRadius" Value="{StaticResource EBCardCornerRadius}" />
         <Setter Property="Background" Value="{ThemeResource CardBackgroundFillColorDefaultBrush}" />
     </Style>
 
@@ -42,7 +42,7 @@
         <Setter Property="Header" Value="{Binding Name}" />
         <Setter Property="MinHeight" Value="60" />
         <Setter Property="Height" Value="60" />
-        <Setter Property="BorderBrush" Value="#0DFFFFFF" />
+        <Setter Property="BorderBrush" Value="{ThemeResource CardStrokeColorDefaultBrush}" />
         <Setter Property="Margin" Value="0,1,0,0" />
     </Style>
 

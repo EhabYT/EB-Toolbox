@@ -8,8 +8,7 @@
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
                 <XamlControlsResources xmlns="using:Microsoft.UI.Xaml.Controls" />
-                <ResourceDictionary Source="Resources\ConfigurationItemTemplate.xaml" />
-                <ResourceDictionary Source="Resources\HeaderTemplates.xaml" />
+            <ResourceDictionary Source="Resources\ConfigurationItemTemplate.xaml" />
                 <!--<ResourceDictionary Source="lang\en_us.json" />-->
             </ResourceDictionary.MergedDictionaries>
 

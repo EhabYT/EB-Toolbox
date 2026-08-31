@@ -44,7 +44,6 @@
     <None Remove="LoadingWindow.xaml" />
     <None Remove="MainWindow.xaml" />
     <None Remove="Resources\ConfigurationItemTemplate.xaml" />
-    <None Remove="Resources\HeaderTemplates.xaml" />
     <None Remove="SoftwarePage.xaml" />
     <None Remove="Views\ContentDialogView.xaml" />
     <None Remove="Views\CustomViews\EdgeRemoverPage.xaml" />
