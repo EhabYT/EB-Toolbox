@@ -1,0 +1,358 @@
+{
+  "LangName": "العربية (المملكة العربية السعودية)",
+  "LangKey": "ar_sa",
+
+  "ToBeTranslated": "قيد الترجمة",
+  "OpenShellEBPreset": "إعداد OpenShell EBOS المسبق",
+  "InterfaceTweaksDocumentation": "توثيق تعديلات الواجهة",
+  "ActivationPage": "صفحة التفعيل",
+  "ColorsPage": "إعدادات تخصيص الألوان",
+  "DateAndTime": "إعدادات التاريخ والوقت",
+  "DefaultApps": "التطبيقات الافتراضية",
+  "DefaultGraphicsSettings": "إعدادات الرسومات الافتراضية",
+  "RegionLanguage": "اللغة",
+  "Privacy": "إعدادات الخصوصية",
+  "RegionProperties": "خصائص المنطقة",
+  "Taskbar": "إعدادات شريط المهام",
+  "CoreIsolation": "عزل النواة - أمان ويندوز",
+  "WindowsSettingsDocumentation": "توثيق إعدادات ويندوز",
+  "BootConfigExplanations": "شروحات من مايكروسوفت",
+  "InterrupAffinityTool": "أداة تخصيص مقاطعات الدعامات",
+  "ProcessExplorerApp": "مستكشف العمليات",
+  "ProcessExplorerDocumentation": "توثيق مستكشف العمليات",
+  "NvidiaDisplayContainerMustReadFirst": "يجب القراءة أولاً",
+  "AdvancedConfigMustRead": "توثيق الإعدادات المتقدمة",
+  "SecurityDocumentation": "توثيق الأمان",
+  "ResetPC": "إعادة تعيين هذا الكمبيوتر (يجب القراءة أولاً)",
+  "RestartExplorerButton": "إعادة تشغيل مستكشف ويندوز",
+  "RestartExplorerButtonDescription": "قد تتطلب بعض إعدادات الواجهة إعادة تشغيل explorer.exe",
+  "ViewCurrentSettingsBootConfig": "عرض القيم الحالية",
+  "ViewCurrentSettingsBootConfigDescription": "عرض قيم إعدادات بدء التشغيل",
+  "VBSCurrentConfig": "الإعدادات الحالية لـ VBS",
+  "VBSCurrentConfigDescription": "عرض إعدادات VBS الحالية",
+  "ToggleDefender": "تبديل",
+  "ToggleDefenderDescription": "تبديل ويندوز ديفندر",
+  "ResetFTH": "إعادة تعيين",
+  "ResetFTHDescription": "إعادة تعيين إدخالات FTH",
+  "InstallOpenShell": "تثبيت OpenShell",
+  "InstallOpenShellDescription": "تثبيت",
+  "FixErrors": "استكشاف الأخطاء وإصلاحها",
+  "FixErrorsDescription": "إصلاح أخطاء 2502 و 2503",
+  "RepairWinComponent": "إصلاح مكونات ويندوز",
+  "TelemetryComponents": "مكونات القياس عن بعد",
+  "EBDefault": "إعادة تعيين الشبكة إلى إعدادات EB الافتراضية",
+  "WindowsDefault": "إعادة تعيين الشبكة إلى إعدادات ويندوز الافتراضية",
+  "BootConfigAppearance": "مظهر إعدادات بدء التشغيل",
+  "BootConfigAppearanceDescription": "كل ما يتعلق بمظهر بدء تشغيل ويندوز",
+  "BootConfigBehavior": "سلوك بدء التشغيل",
+  "BootConfigBehaviorDescription": "كل ما يتعلق بسلوك بدء التشغيل",
+  "NvidiaDisplayContainerSubMenu": "إعدادات حاوية عرض NVIDIA",
+  "NvidiaDisplayContainerSubMenuDescription": "كل ما يتعلق بحاوية عرض NVIDIA",
+  "StartMenuSubMenu": "قائمة ابدأ",
+  "StartMenuSubMenuDescription": "كل ما يتعلق بتخصيص قائمة ابدأ في ويندوز",
+  "ContextMenuSubMenu": "القائمة المنسدلة",
+  "ContextMenuSubMenuDescription": "كل ما يتعلق بالقائمة المنسدلة",
+  "AiSubMenu": "ميزات الذكاء الاصطناعي",
+  "AiSubMenuDescription": "كل ما يتعلق بميزات الذكاء الاصطناعي في ويندوز 11",
+  "ServicesSubMenu": "الخدمات",
+  "ServicesSubMenuDescription": "كل ما يتعلق بالخدمات في ويندوز",
+  "BootConfigurationSubMenu": "إعدادات بدء التشغيل",
+  "BootConfigurationSubMenuDescription": "كل ما يتعلق ببدء التشغيل في ويندوز",
+  "FileExplorerSubMenu": "تخصيص مستكشف الملفات",
+  "FileExplorerSubMenuDescription": "كل ما يتعلق بتخصيص مستكشف الملفات في ويندوز",
+  "DriverConfigurationSubMenu": "إعدادات التعريفات",
+  "DriverConfigurationSubMenuDescription": "كل ما يتعلق بإعدادات التعريفات",
+  "CoreIsolationSubMenu": "عزل النواة (VBS)",
+  "CoreIsolationSubMenuDescription": "كل ما يتعلق بعزل النواة",
+  "DefenderSubMenu": "ديفندر",
+  "DefenderSubMenuDescription": "كل ما يتعلق بويندوز ديفندر",
+  "MitigationsSubMenu": "التدابير",
+  "MitigationsSubMenuDescription": "كل ما يتعلق بالتدابير",
+  "TroubleshootingNetwork": "الشبكة",
+  "TroubleshootingNetworkDescription": "كل ما يتعلق باستكشاف أخطاء الشبكة",
+  "FileSharingSubMenu": "مشاركة الملفات",
+  "FileSharingSubMenuDescription": "كل ما يتعلق بمشاركة الملفات في ويندوز",
+  "ContextMenuTerminals": "إضافة أو إزالة الطرفيات من القائمة المنسدلة",
+  "ShortcutIcon": "تغيير أيقونة اختصارات",
+  "Mitigations": "تغيير حالة التدابير",
+  "SafeMode": "الدخول إلى وضع الأمان عند بدء التشغيل",
+
+  "Animations": "الحركات",
+  "AnimationsDescription": "تفعيل أو تعطيل حركات ويندوز",
+
+  "ExtractContextMenu": "خيار \"استخراج\" في القائمة المنسدلة",
+  "ExtractContextMenuDescription": "إضافة خيار \"استخراج\" في القائمة المنسدلة للملفات المضغوطة",
+
+  "RunWithPriority": "تشغيل بأولوية في القائمة المنسدلة",
+  "RunWithPriorityDescription": "إضافة خيار \"تشغيل بأولوية\" في القائمة المنسدلة للتطبيقات",
+
+  "LanmanWorkstation": "Lanman Workstation (SMB)",
+  "LanmanWorkstationDescription": "تفعيل أو تعطيل خدمة Lanman Workstation لمشاركة الملفات عبر SMB",
+
+  "NetworkDiscovery": "اكتشاف الشبكة",
+  "NetworkDiscoveryDescription": "تفعيل أو تعطيل اكتشاف الشبكة لمشاركة الملفات بسهولة",
+
+  "Printing": "الطباعة",
+  "PrintingDescription": "تفعيل أو تعطيل خدمات الطباعة",
+
+  "NvidiaDispayContainer": "حاوية عرض NVIDIA",
+  "NvidiaDispayContainerDescription": "تفعيل أو تعطيل خدمة حاوية عرض NVIDIA",
+
+  "AddNvidiaDisplayContainerContextMenu": "حاوية عرض NVIDIA في القائمة المنسدلة",
+  "AddNvidiaDisplayContainerContextMenuDescription": "إضافة تبديل حاوية عرض NVIDIA في القائمة المنسدلة",
+
+  "CpuIdleCPU": "تبديل خمول المعالج في القائمة المنسدلة",
+  "CpuIdleCPUDescription": "إضافة تبديل خمول المعالج في القائمة المنسدلة",
+
+  "LockScreen": "تفعيل شاشة القفل",
+  "LockScreenDescription": "تفعيل أو تعطيل شاشة قفل ويندوز",
+
+  "ShortcutText": "نص الاختصار",
+  "ShortcutTextDescription": "إظهار أو إخفاء نص \"الاختصار\" على الاختصارات",
+
+  "BootLogo": "شعار بدء التشغيل",
+  "BootLogoDescription": "تفعيل أو تعطيل شعار بدء تشغيل ويندوز",
+
+  "BootMessages": "رسائل بدء التشغيل",
+  "BootMessagesDescription": "تفعيل أو تعطيل رسائل بدء تشغيل ويندوز",
+
+  "NewBootMenu": "قائمة بدء التشغيل الجديدة",
+  "NewBootMenuDescription": "تفعيل أو تعطيل قائمة بدء التشغيل الجديدة في ويندوز",
+
+  "SpinningAnimation": "حركة الدوران",
+  "SpinningAnimationDescription": "تفعيل أو تعطيل حركة الدوران عند بدء التشغيل",
+
+  "AdvancedBootOptions": "خيارات بدء التشغيل المتقدمة عند التشغيل",
+  "AdvancedBootOptionsDescription": "تفعيل أو تعطيل خيارات بدء التشغيل المتقدمة عند التشغيل",
+
+  "AutomaticRepair": "الإصلاح التلقائي",
+  "AutomaticRepairDescription": "تفعيل أو تعطيل الإصلاح التلقائي عند فشل بدء التشغيل",
+
+  "KernelParameters": "معلمات النواة عند التشغيل",
+  "KernelParametersDescription": "تفعيل أو تعطيل معلمات النواة عند بدء التشغيل",
+
+  "HighestMode": "الوضع الأعلى",
+  "HighestModeDescription": "تفعيل أو تعطيل الوضع الأعلى للشاشات",
+
+  "CompactView": "العرض المدمج",
+  "CompactViewDescription": "تفعيل أو تعطيل العرض المدمج في مستكشف الملفات",
+
+  "RemovableDrivesInSidebar": "الأقراص القابلة للإزالة في الشريط الجانبي",
+  "RemovableDrivesInSidebarDescription": "إظهار أو إخفاء الأقراص القابلة للإزالة في الشريط الجانبي لمستكشف الملفات",
+
+  "BackgroundApps": "التطبيقات الخلفية",
+  "BackgroundAppsDescription": "تفعيل أو تعطيل التطبيقات الخلفية",
+
+  "SearchIndexing": "فهرسة البحث",
+  "SearchIndexingDescription": "تفعيل أو تعطيل فهرسة البحث",
+
+  "FsoAndGameBar": "التحسينات وضع ملء الشاشة وشريط الألعاب",
+  "FsoAndGameBarDescription": "تفعيل أو تعطيل تحسينات وضع ملء الشاشة وشريط الألعاب",
+
+  "AutomaticUpdates": "التحديثات التلقائية",
+  "AutomaticUpdatesDescription": "تفعيل أو تعطيل التحديثات التلقائية",
+
+  "DeliveryOptimisation": "تحسين التسليم",
+  "DeliveryOptimisationDescription": "تفعيل أو تعطيل تحسين التسليم",
+
+  "Hibernation": "السبات",
+  "HibernationDescription": "تفعيل أو تعطيل وضع السبات",
+
+  "Location": "الموقع",
+  "LocationDescription": "تفعيل أو تعطيل خدمات الموقع",
+
+  "PhoneLink": "ربط الهاتف والأجهزة المحمولة",
+  "PhoneLinkDescription": "تفعيل أو تعطيل ربط الهاتف والأجهزة المحمولة",
+
+  "PowerSaving": "توفير الطاقة",
+  "PowerSavingDescription": "تفعيل أو تعطيل ميزات توفير الطاقة",
+
+  "Sleep": "السبات",
+  "SleepDescription": "تفعيل أو تعطيل وضع السبات",
+
+  "SystemRestore": "استعادة النظام",
+  "SystemRestoreDescription": "تفعيل أو تعطيل استعادة النظام",
+
+  "UpdateNotifications": "إشعارات التحديث",
+  "UpdateNotificationsDescription": "تفعيل أو تعطيل إشعارات التحديث",
+
+  "WebSearch": "بحث الويب في قائمة ابدأ",
+  "WebSearchDescription": "تفعيل أو تعطيل بحث الويب في قائمة ابدأ",
+
+  "Widgets": "搜狐首页 سطح المكتب",
+  "WidgetsDescription": "تفعيل أو تعطيلadors سطح المكتب",
+
+  "WindowsSpotlight": "تمييز ويندوز",
+  "WindowsSpotlightDescription": "تفعيل أو تعطيل تمييز ويندوز على شاشة القفل",
+
+  "AppStoreArchiving": "أرشفة متجر مايكروسوفت",
+  "AppStoreArchivingDescription": "تفعيل أو تعطيل أرشفة متجر مايكروسوفت",
+
+  "TakeOwnership": "إضافة \"خس\" في القائمة المنسدلة",
+  "TakeOwnershipDescription": "إضافة خيار \"نيل الملكية\" في القائمة المنسدلة للملفات والمجلدات",
+
+  "OldContextMenu": "القائمة المنسدلة القديمة (ما قبل ويندوز 11)",
+  "OldContextMenuDescription": "تفعيل أو تعطيل القائمة المنسدلة القديمة من ما قبل ويندوز 11",
+
+  "EdgeSwipe": "السحب من الحافة",
+  "EdgeSwipeDescription": "تفعيل أو تعطيل إيماءات السحب من الحافة",
+
+  "AppIconsThumbnail": "أيقونات التطبيقات على المصغرات",
+  "AppIconsThumbnailDescription": "إظهار أو إخفاء أيقونات التطبيقات على مصغرات الملفات",
+
+  "AutomaticFolderDiscovery": "اكتشاف المجلدات التلقائي",
+  "AutomaticFolderDiscoveryDescription": "تفعيل أو تعطيل اكتشاف المجلدات التلقائي في مستكشف الملفات",
+
+  "Gallery": "تفعيل المعرض",
+  "GalleryDescription": "تفعيل أو تعطيل المعرض في مستكشف الملفات",
+
+  "SnapLayout": "تفعيل تخطيطات الإلصاق للنوافذ",
+  "SnapLayoutDescription": "تفعيل أو تعطيل تخطيطات الإلصاق للنوافذ",
+
+  "RecentItems": "فتح العناصر الأخيرة في مستكشف الملفات",
+  "RecentItemsDescription": "تفعيل أو تعطيل العناصر الأخيرة في مستكشف الملفات",
+
+  "VerboseStatusMessage": "رسائل الحالة المفصلة",
+  "VerboseStatusMessageDescription": "تفعيل أو تعطيل رسائل الحالة المفصلة أثناء بدء التشغيل وإيقاف التشغيل",
+
+  "SuperFetch": "SuperFetch",
+  "SuperFetchDescription": "تفعيل أو تعطيل خدمة SuperFetch (SysMain)",
+
+  "StaticIp": "تعيين عنوان IP ثابت تلقائياً",
+  "StaticIpDescription": "تكوين عنوان IP ثابت تلقائياً لمحول الشبكة الخاص بك",
+
+  "HideAppBrowserControl": "تحكم متصفح التطبيق",
+  "HideAppBrowserControlDescription": "إظهار/إخفاء تحكم المتصفح المضمن في أمان ويندوز",
+
+  "SecurityHealthTray": "زر صحة الأمان في صينية شريط المهام",
+  "SecurityHealthTrayDescription": "إظهار أو إخفاء زر صحة الأمان في صينية شريط المهام",
+
+  "FaultTolerantHeap": "الكومة المتحملة للأخطاء",
+  "FaultTolerantHeapDescription": "تفعيل أو تعطيل تدبير الكومة المتحملة للأخطاء",
+
+  "Copilot": "تفعيل Microsoft Copilot",
+  "CopilotDescription": "تفعيل أو تعطيل تكامل Microsoft Copilot في ويندوز 11",
+
+  "Recall": "تفعيل Windows Recall",
+  "RecallDescription": "تفعيل أو تعطيل ميزة Windows Recall",
+
+  "CpuIdle": "تفعيل خمول المعالج",
+  "CpuIdleDescription": "تفعيل أو تعطيل ميزة خمول المعالج",
+
+  "ProcessExplorer": "تثبيت مستكشف العمليات",
+  "ProcessExplorerDescription": "تثبيت مستكشف العمليات من Microsoft Sysinternals",
+
+  "VbsState": "تفعيل VBS",
+  "VbsStateDescription": "تفعيل أو تعطيل الأمان القائم على الافتراضية (VBS)",
+
+  "GiveAccessToMenu": "قائمة منح الوصول",
+  "GiveAccessToMenuDescription": "إضافة خيار \"منح الوصول إلى\" في القائمة المنسدلة للملفات والمجلدات",
+
+  "NetworkNavigationPane": "لوحة تنقل الشبكة",
+  "NetworkNavigationPaneDescription": "إظهار أو إخفاء لوحة تنقل الشبكة في مستكشف الملفات",
+
+  "FileSharing": "مشاركة الملفات",
+  "FileSharingDescription": "تفعيل أو تعطيل ميزات مشاركة الملفات",
+
+  "WindowsHello": "ويندوز هلو",
+  "WindowsHelloDescription": "تفعيل أو تعطيل المصادقة البيومترية لويندوز هلو",
+
+  "Home_WinVer": "إصدار ويندوز",
+  "Home_PlaybookVer": "إصدار دليل التشغيل",
+  "Home_HeaderText": "الرئيسية",
+  "Home_ProfilesText": "الملفات الشخصية",
+  "Home_Favorites": "المفضلة",
+  "NewProfilesButton": "إنشاء ملف شخصي جديد",
+  "IncompatibleVer": "تثبيت EBOS/ويندوز الحالي غير متوافق مع إصدار صندوق الأدوات هذا. يرجى الترقية إلى EBOS ",
+  "StatingServices": "بدء الخدمات...",
+
+  "CurrentConfigIsSavedMessage": "سيتم حفظ إعداداتك الحالية في هذا الملف الشخصي",
+  "DeleteProfileConfirmation": "هل تريد حقاً حذف هذا الملف الشخصي؟",
+  "TryDeleteDefaultProfile": "لا يمكنك حذف الملف الشخصي الافتراضي",
+  "Home_SetProfileConfig": "هل تريد حقاً تعيين هذا الملف الشخصي؟",
+  "RestartPCPromptHeader": "لتطبيق التغييرات بالكامل، يرجى إعادة تشغيل جهاز الكمبيوتر",
+  "RelogApplyDesc": "لتطبيق التغييرات بالكامل، يرجى تسجيل الخروج.",
+  "Yes": "نعم",
+  "No": "لا",
+  "Cancel": "إلغاء",
+  "Ok": "موافق",
+  "Restart": "إعادة التشغيل",
+  "Later": "لاحقاً",
+  "Create": "إنشاء",
+  "Home_SetProfileBtn": "تعيين هذا الملف الشخصي",
+  "Home_DeleteProfileBtn": "حذف هذا الملف الشخصي",
+  "Settings": "الإعدادات",
+  "Behavior": "عام",
+  "Settings_BackgroundDesc": "إبقاء صندوق الأدوات في الخلفية",
+  "About": "حول",
+  "CloneRepoCard": "استنساخ هذا المستودع",
+  "BugReportCard": "إنشاء تقرير عن خلل",
+  "WarningHeader": "هذا الكود مقدم من فريق EBOS. هذا البرنامج مخصص للاستخدام مع EBOS على إصدار ويندوز مدعوم فقط. لا يُنصح باستخدام أي دليل تشغيل آخر و/أو إصدار ويندوز غير مدعوم.",
+  "InstallSoftware": "تثبيت البرامج",
+  "InstallButton": "تثبيت",
+  "Unstable": "غير مستقر",
+  "UnstableDescription": "استخدام هذا التطبيق حالياً لأغراض الاختبار فقط. قد يحتوي التطبيق على أخطاء قد تؤدي إلى تلف تثبيت ويندوز. استخدمه على مسؤوليتك الخاصة.",
+  "BetaVersion": "إصدار تجريبي",
+  "BetaVersionDescription": "هذا التطبيق حالياً في إصدار تجريبي. إذا وجدت أخطاء أو أردت اقتراح ميزة، يرجى تقديم الملاحظات على Discord. الميزات عرضة للتغيير.",
+  "RestartApp": "إعادة تشغيل صندوق الأدوات للتطبيق",
+  "RestartAppDesc": "لتطبيق هذه التغييرات، يرجى إعادة تشغيل صندوق الأدوات.",
+  "RestartAppBtn": "إعادة تشغيل صندوق الأدوات الآن",
+  "RestartPC": "أعد تشغيل جهاز الكمبيوتر للتطبيق.",
+  "RestartPCDesc": "لتطبيق هذه التغييرات، يرجى إعادة تشغيل جهاز الكمبيوتر.",
+  "RestartBtn": "أعد التشغيل الآن",
+  "RelogApply": "إعادة تسجيل الدخول للتطبيق",
+  "ReloadApplyDesc": "لتطبيق هذه التغييرات، يرجى إعادة تسجيل الدخول.",
+  "RelogBtn": "تسجيل الخروج",
+  "CheckUpdates": "التحقق من التحديثات",
+  "CheckUpdatesBtn": "تحقق الآن",
+  "LatestVer": "لا توجد تحديثات متاحة",
+  "NewUpdate": "تحديث",
+  "NewUpdateDesc": "هناك تحديث جديد متاح. هل تريد تثبيته الآن؟",
+  "InstallNow": "تثبيت الآن",
+  "ToggleWindowsUpdates": "تبديل تحديث ويندوز",
+  "WindowsUpdate": "تحديث ويندوز",
+  "WindowsUpdateDescription": "الإعدادات المتعلقة بتحديث ويندوز",
+  "FeatureHeader": "تحديثات الميزات:",
+  "QualityHeader": "تحديثات الجودة:",
+  "Set": "تعيين",
+  "WindowsUpdateDeferral": "تعيين عدد أيام تأجيل تحديث ويندوز",
+  "UpdateDeferralPromptTitle": "تعيين وقت تأجيل تحديث ويندوز",
+  "ResetWindowsUpdateDeferral": "إعادة تعيين تأجيل تحديث ويندوز",
+  "MicrosoftStoreToggle": "تبديل متجر مايكروسوفت",
+
+  "Tile_DocumentationTitle": "التوثيق",
+  "Tile_DocumentationDescription": "تثبيت EBOS، الأسئلة الشائعة، والمزيد",
+  "Tile_DiscordTitle": "Discord",
+  "Tile_DiscordDescription": "اطلب الدعم واصنع أصدقاء!",
+  "Tile_GithubTitle": "GitHub",
+  "Tile_GithubDescription": "استكشف كود EBOS وساهم",
+  "Tile_KofiTitle": "ادعمنا على Ko-Fi",
+  "Tile_KofiDescription": "ساعدنا في متابعة هذا المشروع!",
+
+  "SearchPlaceholder": "البحث في إعدادات EBOS...",
+
+  "Home": "الرئيسية",
+  "Software": "البرامج",
+  "GeneralConfig": "الإعدادات العامة",
+  "Interface": "تعديلات الواجهة",
+  "Windows": "إعدادات ويندوز",
+  "Advanced": "الإعدادات المتقدمة",
+  "Security": "الأمان",
+  "Troubleshooting": "استكشاف الأخطاء وإصلاحها",
+
+  "Language": "اللغة",
+
+  "NoFavorites": "لم تضف أي شيء إلى مفضلاتك بعد.",
+  "SystemInfo": "حول هذا النظام:",
+  "LearnMore": "اعرف المزيد",
+
+  "TroubleshootingDocumenation": "توثيق استكشاف الأخطاء",
+
+  "ExperimentsHeader": "التجارب",
+  "ExperimentsCardHeader": "الميزات التجريبية",
+  "ExperimentsCardDescription": "هذه الميزات تجريبية وقد لا تعمل بالكامل كما هو مقصود. تتطلب إعادة تشغيل لتطبيق التغييرات",
+  "SearchExperiment": "شريط البحث",
+  "SearchExperimentDescription": "يتيح شريط البحث للعثور بسرعة على الإعدادات في صندوق الأدوات",
+  "IconsExperiment": "الأيقونات",
+  "IconsExperimentDescription": "يتيح الأيقونات بجانب كل إعداد لتسهيل الت识别 والمظهر البصري الأكثر جاذبية"
+}
