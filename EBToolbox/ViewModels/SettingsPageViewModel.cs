@@ -33,6 +33,7 @@ namespace EBToolbox.ViewModels
         protected void OnPropertyChanged([CallerMemberName] string propertyName = null)
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+            if (this.CurrentLanguage is null) return;
             RegistryHelper.SetValue(@"HKLM\SOFTWARE\EBOS\Services\Toolbox", "lang", this.CurrentLanguage.Key);
             App.LoadLangString();
         }
@@ -42,13 +43,22 @@ namespace EBToolbox.ViewModels
         public SettingsPageViewModel()
         {
             Languages = new();
-            Dictionary<string, string> langs = JsonConvert.DeserializeObject<Dictionary<string, string>>(File.ReadAllText(@$"lang\index.json"));
-            foreach (KeyValuePair<string, string> language in langs)
+            try
             {
-                Languages.Add(new (language.Value, language.Key));
+                Dictionary<string, string> langs = JsonConvert.DeserializeObject<Dictionary<string, string>>(File.ReadAllText(@$"lang\index.json"));
+                foreach (KeyValuePair<string, string> language in langs)
+                {
+                    Languages.Add(new (language.Value, language.Key));
+                }
+            }
+            catch
+            {
+                Languages.Add(new Language("English (United States)", "en_us"));
             }
             string lang = (string)RegistryHelper.GetValue(@"HKLM\SOFTWARE\EBOS\Services\Toolbox", "lang");
-            CurrentLanguage = Languages.Where(item => item.Key == lang).FirstOrDefault();
+            CurrentLanguage = Languages.Where(item => item.Key == lang).FirstOrDefault()
+                ?? Languages.Where(item => item.Key == "en_us").FirstOrDefault()
+                ?? Languages.FirstOrDefault();
         }
 
         public bool CheckUpdates()

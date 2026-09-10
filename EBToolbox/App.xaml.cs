@@ -238,12 +238,20 @@ namespace EBToolbox
             try
             {
                 string lang = (string)RegistryHelper.GetValue(@"HKLM\SOFTWARE\EBOS\Services\Toolbox", "lang");
-                StringList = JsonConvert.DeserializeObject<Dictionary<string, string>>(File.ReadAllText(@$"lang\{lang}.json"));
-            } catch
+                StringList = JsonConvert.DeserializeObject<Dictionary<string, string>>(File.ReadAllText(@$"lang\{lang}.json")) ?? new Dictionary<string, string>();
+            }
+            catch
             {
-                RegistryHelper.SetValue(@"HKLM\SOFTWARE\EBOS\Services\Toolbox", "lang", "en_us");
-                string lang = (string)RegistryHelper.GetValue(@"HKLM\SOFTWARE\EBOS\Services\Toolbox", "lang");
-                StringList = JsonConvert.DeserializeObject<Dictionary<string, string>>(File.ReadAllText(@$"lang\{lang}.json"));
+                try
+                {
+                    RegistryHelper.SetValue(@"HKLM\SOFTWARE\EBOS\Services\Toolbox", "lang", "en_us");
+                    StringList = JsonConvert.DeserializeObject<Dictionary<string, string>>(File.ReadAllText(@"lang\en_us.json")) ?? new Dictionary<string, string>();
+                }
+                catch (Exception ex)
+                {
+                    logger.Error(ex, "Failed to load language strings, using empty fallback");
+                    StringList = new Dictionary<string, string>();
+                }
             }
         }
 

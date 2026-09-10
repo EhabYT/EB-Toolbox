@@ -15,14 +15,23 @@ namespace EBToolbox.Utils
 
         public static void SetValue(string keyPath, string valueName, object value)
         {
-            using RegistryKey key = OpenKey(keyPath, true);
-            key?.SetValue(valueName, value);
-            App.logger.Info($"[REGHELPER] Set registry value: {keyPath}\\{valueName} to {value}");
+            try
+            {
+                using RegistryKey key = OpenKey(keyPath, true);
+                key?.SetValue(valueName, value);
+                App.logger.Info($"[REGHELPER] Set registry value: {keyPath}\\{valueName} to {value}");
+            }
+            catch (Exception ex)
+            {
+                App.logger.Error(ex, $"[REGHELPER] Failed to set registry value: {keyPath}\\{valueName}");
+            }
         }
 
         public static void SetValue(string keyPath, string valueName, object value, RegistryValueKind valueKind)
         {
-            using RegistryKey key = OpenKey(keyPath, true);
+            try
+            {
+                using RegistryKey key = OpenKey(keyPath, true);
 
             value = value switch
             {
@@ -34,12 +43,24 @@ namespace EBToolbox.Utils
             key?.SetValue(valueName, value, valueKind);
             App.logger.Info($"[REGHELPER] Set registry value: {keyPath}\\{valueName} to {value} ({valueKind})");
         }
+        catch (Exception ex)
+        {
+            App.logger.Error(ex, $"[REGHELPER] Failed to set registry value: {keyPath}\\{valueName}");
+        }
+        }
 
         public static void DeleteValue(string keyPath, string valueName)
         {
-            using RegistryKey key = OpenKey(keyPath, true);
-            key?.DeleteValue(valueName, false);
-            App.logger.Info($"[REGHELPER] Deleted registry value: {keyPath}\\{valueName}");
+            try
+            {
+                using RegistryKey key = OpenKey(keyPath, true);
+                key?.DeleteValue(valueName, false);
+                App.logger.Info($"[REGHELPER] Deleted registry value: {keyPath}\\{valueName}");
+            }
+            catch (Exception ex)
+            {
+                App.logger.Error(ex, $"[REGHELPER] Failed to delete registry value: {keyPath}\\{valueName}");
+            }
         }
 
         public static bool IsMatch(string keyPath, string valueName, object data)
@@ -95,9 +116,16 @@ namespace EBToolbox.Utils
             string parentKeyPath = string.Join('\\', split[..^1]);
             string targetKeyName = split[^1];
 
-            using RegistryKey key = OpenKey(parentKeyPath, true);
-            key?.DeleteSubKeyTree(targetKeyName, false);
-            App.logger.Info($"[REGHELPER] Deleted registry key: {keyPath}");
+            try
+            {
+                using RegistryKey key = OpenKey(parentKeyPath, true);
+                key?.DeleteSubKeyTree(targetKeyName, false);
+                App.logger.Info($"[REGHELPER] Deleted registry key: {keyPath}");
+            }
+            catch (Exception ex)
+            {
+                App.logger.Error(ex, $"[REGHELPER] Failed to delete registry key: {keyPath}");
+            }
         }
         public static bool KeyExists(string keyPath)
         {
@@ -107,20 +135,27 @@ namespace EBToolbox.Utils
 
         public static void MergeRegFile(string regFilePath)
         {
-            ProcessStartInfo processStartInfo = new ProcessStartInfo
+            try
             {
-                FileName = "regedit.exe",
-                Arguments = $"/s \"{regFilePath}\"",
-                RedirectStandardOutput = true,
-                UseShellExecute = false,
-                CreateNoWindow = true,
-            };
-        
-            using (Process process = Process.Start(processStartInfo))
-            {
-                process.WaitForExit();
+                ProcessStartInfo processStartInfo = new ProcessStartInfo
+                {
+                    FileName = "regedit.exe",
+                    Arguments = $"/s \"{regFilePath}\"",
+                    RedirectStandardOutput = true,
+                    UseShellExecute = false,
+                    CreateNoWindow = true,
+                };
+            
+                using (Process process = Process.Start(processStartInfo))
+                {
+                    process.WaitForExit();
+                }
+                App.logger.Info($"[REGHELPER] Merged registry file: \"{regFilePath}\"");
             }
-            App.logger.Info($"[REGHELPER] Merged registry file: \"{regFilePath}\"");
+            catch (Exception ex)
+            {
+                App.logger.Error(ex, $"[REGHELPER] Failed to merge registry file: \"{regFilePath}\"");
+            }
         }
 
 }
