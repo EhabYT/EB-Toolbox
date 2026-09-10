@@ -15,7 +15,7 @@ jobs:
 
     steps:
     - name: Checkout Code
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
 
     - name: Setup .NET
       uses: actions/setup-dotnet@v4
@@ -23,7 +23,7 @@ jobs:
         dotnet-version: '10.0.x'
 
     - name: Setup MSBuild
-      uses: microsoft/setup-msbuild@v1
+      uses: microsoft/setup-msbuild@v2
 
     - name: Restore Dependencies
       run: msbuild EBToolbox-WinUI3.sln /t:restore /p:Platform="x64"
@@ -32,21 +32,21 @@ jobs:
       run: msbuild EBToolbox-WinUI3.sln /p:Configuration=Release /p:Platform="x64"
 
     - name: Publish Application
-      run: msbuild EBToolbox-WinUI3.sln /t:Publish /p:Configuration=Release /p:Platform="x64" /p:PublishDir="D:\a\EB-Toolbox\EB-Toolbox\Deploy\src\"
+      run: msbuild EBToolbox-WinUI3.sln /t:Publish /p:Configuration=Release /p:Platform="x64" /p:PublishDir="${{ github.workspace }}\Deploy\src\"
 
     # - name: Build IsWiX Installer
-    #   run: dotnet build D:\a\EB-Toolbox\EB-Toolbox\Installer\ToolboxPackaging.wixproj --configuration Release -p:DefineConstants="MSIProductVersion=1.0.0" --output "D:\a\EB-Toolbox\EB-Toolbox\artifacts\"
+    #   run: dotnet build ${{ github.workspace }}\Installer\ToolboxPackaging.wixproj --configuration Release -p:DefineConstants="MSIProductVersion=1.0.0" --output "${{ github.workspace }}\artifacts\"
 
     - name: Compile .ISS to .EXE Installer
       uses: robin24/inno-setup-action@v1
       with:
-        filepath: D:\a\EB-Toolbox\EB-Toolbox\Installer\setup.iss
+        filepath: ${{ github.workspace }}\Installer\setup.iss
 
     - name: Create ZIP of MSI
-      run: powershell Compress-Archive -Path "D:\a\EB-Toolbox\EB-Toolbox\Installer\Output\*" -DestinationPath "D:\a\EB-Toolbox\EB-Toolbox\EBToolbox.zip"
+      run: powershell Compress-Archive -Path "${{ github.workspace }}\Installer\Output\*" -DestinationPath "${{ github.workspace }}\EBToolbox.zip"
 
     - name: Upload Build Artifacts
       uses: actions/upload-artifact@v4
       with:
         name: EBToolbox
-        path: D:\a\EB-Toolbox\EB-Toolbox\EBToolbox.zip
+        path: ${{ github.workspace }}\EBToolbox.zip
