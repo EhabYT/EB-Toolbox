@@ -3,7 +3,7 @@
 <a href="https://github.com/EhabYT/.github/blob/main/profile/CODE_OF_CONDUCT.md"><img alt="Code of Conduct" src="https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg?style=for-the-badge&color=1A91FF" /></a>
 <img alt="Version" src="https://img.shields.io/badge/version-v0.1.17-blue?style=for-the-badge&color=1A3A7A" />
 <img alt="Platform" src="https://img.shields.io/badge/platform-Windows%2010%2F11-0078D4?style=for-the-badge" />
-<img alt="Build" src="https://img.shields.io/badge/build-passing-brightgreen?style=for-the-badge" />
+<img alt="Build" src="https://img.shields.io/github/actions/workflow/status/EhabYT/EB-Toolbox/build.yml?style=for-the-badge&label=build" />
 
 This repository contains the **EB Toolbox** (EBOS Edition) made with C# and WinUI 3 / WindowsAppSDK.
 
