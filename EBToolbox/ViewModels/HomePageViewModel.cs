@@ -26,26 +26,25 @@ namespace EBToolbox.ViewModels
 {
     public partial class HomePageViewModel : ObservableObject
     {
-        private IEnumerable<Profiles> _profiles;
         private IEnumerable<ConfigurationItemViewModel> ConfigurationItemViewModels { get; }
         private IEnumerable<MultiOptionConfigurationItemViewModel> MultiOptionConfigurationItemViewModels { get; }
 
         [ObservableProperty]
-        public ObservableCollection<Profiles> _profilesList;
+        public partial ObservableCollection<Profiles> ProfilesList { get; set; }
 
         [ObservableProperty]
-        public string _name;
+        public partial string Name { get; set; }
 
         [ObservableProperty]
-        public Profiles _profileSelected;
+        public partial Profiles ProfileSelected { get; set; }
 
         public HomePageViewModel(
             IEnumerable<Profiles> profiles,
             IEnumerable<ConfigurationItemViewModel> configurationItemViewModels)
         {
-            _name = "";
+            Name = "";
             ConfigurationItemViewModels = configurationItemViewModels;
-            _profilesList = new();
+            ProfilesList = new();
             foreach (Profiles profile in profiles) { ProfilesList.Add(profile); }
         }
 

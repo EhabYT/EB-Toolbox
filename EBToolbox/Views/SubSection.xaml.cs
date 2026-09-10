@@ -27,7 +27,6 @@ namespace EBToolbox.Views
 {
     public sealed partial class SubSection : Page
     {
-        private object configType;
         private ConfigurationSubMenuViewModel _viewModel;
 
         public SubSection()
