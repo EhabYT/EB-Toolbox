@@ -8,7 +8,14 @@ namespace EBToolbox.ViewModels
 {
     class ConfigPageViewModel : ObservableObject
     {
-        public ObservableCollection<IConfigurationItem> ConfigurationItems { get; set; }
+        private readonly List<IConfigurationItem> _allItems = new();
+        private ObservableCollection<IConfigurationItem> _configurationItems = new();
+
+        public ObservableCollection<IConfigurationItem> ConfigurationItems
+        {
+            get => _configurationItems;
+            set => SetProperty(ref _configurationItems, value);
+        }
 
         public ConfigPageViewModel(
             IEnumerable<ConfigurationItemViewModel> configurationItemViewModels,
@@ -17,13 +24,12 @@ namespace EBToolbox.ViewModels
             IEnumerable<LinksViewModel> linksViewModel,
             IEnumerable<ConfigurationButtonViewModel> configurationButtonViewModel)
         {
-            ConfigurationItems = new ObservableCollection<IConfigurationItem>();
-            configurationSubMenuViewModel.ToList().ForEach(item => ConfigurationItems.Add(item));
-            multiOptionConfigurationItemViewModels.ToList().ForEach(item => ConfigurationItems.Add(item));
-            configurationItemViewModels.ToList().ForEach(item => ConfigurationItems.Add(item));
-            configurationButtonViewModel.ToList().ForEach(item => ConfigurationItems.Add(item));
-            linksViewModel.ToList().ForEach(item => ConfigurationItems.Add(item));
-
+            configurationSubMenuViewModel.ToList().ForEach(_allItems.Add);
+            multiOptionConfigurationItemViewModels.ToList().ForEach(_allItems.Add);
+            configurationItemViewModels.ToList().ForEach(_allItems.Add);
+            configurationButtonViewModel.ToList().ForEach(_allItems.Add);
+            linksViewModel.ToList().ForEach(_allItems.Add);
+            ConfigurationItems = new ObservableCollection<IConfigurationItem>(_allItems);
         }
 
         /// <summary>
@@ -32,15 +38,7 @@ namespace EBToolbox.ViewModels
         /// <param name="configurationType">Type to get</param>
         public void ShowForType(ConfigurationType configurationType)
         {
-            ObservableCollection<IConfigurationItem> tempList = new();
-            foreach (var item in ConfigurationItems)
-            {
-                if (item.Type == configurationType)
-                {
-                    tempList.Add(item);
-                }
-            }
-            ConfigurationItems = tempList;
+            ConfigurationItems = new ObservableCollection<IConfigurationItem>(_allItems.Where(item => item.Type == configurationType));
         }
 
         /// <summary>

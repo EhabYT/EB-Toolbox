@@ -62,8 +62,8 @@ namespace EBToolbox.Views
             CheckUpdateButton.Content = App.GetValueFromItemList("CheckUpdatesBtn");
             NoUpdatesBar.Text = App.GetValueFromItemList("LatestVer");
             SystemInfo.Header = App.GetValueFromItemList("SystemInfo");
-            WinVer.Text = App.GetValueFromItemList("Home_WinVer") + ": " + RegistryHelper.GetValue("HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion", "DisplayVersion").ToString();
-            EBVer.Text = App.GetValueFromItemList("Home_PlaybookVer") + ": " + RegistryHelper.GetValue("HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion", "RegisteredOrganization").ToString();
+            WinVer.Text = App.GetValueFromItemList("Home_WinVer") + ": " + (RegistryHelper.GetValue("HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion", "DisplayVersion")?.ToString() ?? "Unknown");
+            EBVer.Text = App.GetValueFromItemList("Home_PlaybookVer") + ": " + (RegistryHelper.GetValue("HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion", "RegisteredOrganization")?.ToString() ?? "Unknown");
 
             // Experiments
             ExperimentalHeader.Text = App.GetValueFromItemList("ExperimentsHeader");

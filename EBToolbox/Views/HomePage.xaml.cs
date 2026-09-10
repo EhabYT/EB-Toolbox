@@ -200,7 +200,7 @@ namespace EBToolbox.Views
             {
                 _viewModel.AddProfileCommand.Execute(null);
             }
-            Name = "";
+            _viewModel.Name = "";
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -221,20 +221,20 @@ namespace EBToolbox.Views
         }
         private void ToggleSwitch_Loaded(object sender, RoutedEventArgs e)
         {
-            ToggleSwitch toggleSwitch = sender as ToggleSwitch;
+            if (sender is not ToggleSwitch toggleSwitch) return;
+            toggleSwitch.Toggled -= ToggleSwitchBehavior.OnToggled;
             toggleSwitch.Toggled += ToggleSwitchBehavior.OnToggled;
         }
 
         private async void LinkCard_Click(object sender, RoutedEventArgs e)
         {
-            SettingsCard linkCard = sender as SettingsCard;
-            LinksViewModel linkVM = linkCard.DataContext as LinksViewModel;
-            await Windows.System.Launcher.LaunchUriAsync(new Uri(linkVM.Link));
+            if (sender is not SettingsCard linkCard || linkCard.DataContext is not LinksViewModel linkVM || string.IsNullOrEmpty(linkVM.Link)) return;
+            if (Uri.TryCreate(linkVM.Link, UriKind.Absolute, out Uri uri)) await Windows.System.Launcher.LaunchUriAsync(uri);
         }
 
         private void MenuFlyoutItem_Click(object sender, RoutedEventArgs e)
         {
-            MenuFlyoutItem menuFlyoutItem = sender as MenuFlyoutItem;
+            if (sender is not MenuFlyoutItem menuFlyoutItem || menuFlyoutItem.Tag is null) return;
             try
             {
                 RegistryHelper.DeleteValue(@"HKLM\SOFTWARE\\EBOS\\Toolbox\\Favorites", menuFlyoutItem.Tag.ToString());

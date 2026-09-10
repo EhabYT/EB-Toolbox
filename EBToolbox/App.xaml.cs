@@ -259,11 +259,12 @@ namespace EBToolbox
         {
             try
             {
-                string toReturn = "";
-                if (!desc) toReturn = StringList.Where(item => item.Key == key).Select(item => item.Value).FirstOrDefault();
-                else toReturn = StringList.Where(item => item.Key == key + "Description").Select(item => item.Value).FirstOrDefault();
-                if (toReturn == "" || toReturn == null) return StringList.Where(item => item.Key == "ToBeTranslated").Select(item => item.Value).FirstOrDefault();
-                else return toReturn;
+                string lookup = desc ? key + "Description" : key;
+                if (StringList.TryGetValue(lookup, out string value) && !string.IsNullOrEmpty(value))
+                    return value;
+                if (StringList.TryGetValue("ToBeTranslated", out string fallback))
+                    return fallback;
+                return "To be translated";
             }
             catch
             {

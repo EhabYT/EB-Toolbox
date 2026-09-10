@@ -17,7 +17,6 @@ namespace EBToolbox.Views;
 public sealed partial class ConfigPage : Page
 {
     private readonly ConfigPageViewModel _viewModel;
-    private object configType;
 
     public ConfigPage()
     {
@@ -25,123 +24,46 @@ public sealed partial class ConfigPage : Page
 
         _viewModel = App._host.Services.GetRequiredService<ConfigPageViewModel>();
         // Gets all the items for the choosen category
-        Enum.TryParse(new ConfigurationType().GetType(), App.CurrentCategory, out configType);
-        _viewModel.ShowForType((ConfigurationType)configType);
+        Enum.TryParse(App.CurrentCategory, out ConfigurationType configType);
+        _viewModel.ShowForType(configType);
 
         this.DataContext = _viewModel;
 
-        ConfigurationType type = (ConfigurationType)configType;
         BreadcrumbBar.ItemsSource = new ObservableCollection<Folder> {
-            new Folder {Name = type.GetDescription()}
+            new Folder {Name = configType.GetDescription()}
         };
         BreadcrumbBar.ItemClicked += BreadcrumbBar_ItemClicked;
 
         this.Loaded += ConfigPage_Loaded;
     }
 
-    private async void ConfigPage_Loaded(object sender, RoutedEventArgs e)
-    {
-        // Check if there's an item to highlight from search
-        if (!string.IsNullOrEmpty(App.SearchHighlightItemKey))
+        private void ConfigPage_Loaded(object sender, RoutedEventArgs e)
         {
-            string targetKey = App.SearchHighlightItemKey;
-            App.SearchHighlightItemKey = null; 
-
-            await System.Threading.Tasks.Task.Delay(100);
-
-            ScrollToAndHighlightItem(targetKey);
+            SearchHighlightHelper.RunPendingHighlightAsync(FindConfigurationItem, ConfigScrollViewer);
         }
-    }
 
-    private void ScrollToAndHighlightItem(string itemKey)
-    {
-        // Find the index of the item in the vm
-        int index = -1;
-        for (int i = 0; i < _viewModel.ConfigurationItems.Count; i++)
+        private (ItemsControl itemsControl, int index)? FindConfigurationItem(string itemKey)
         {
-            if (_viewModel.ConfigurationItems[i].Key == itemKey)
+            for (int i = 0; i < _viewModel.ConfigurationItems.Count; i++)
             {
-                index = i;
-                break;
+                if (_viewModel.ConfigurationItems[i].Key == itemKey) return (ConfigItemsControl, i);
+            }
+            return null;
+        }
+
+        private void BreadcrumbBar_ItemClicked(BreadcrumbBar sender, BreadcrumbBarItemClickedEventArgs args)
+        {
+            var items = BreadcrumbBar.ItemsSource as ObservableCollection<Folder>;
+            if (items is null) return;
+            for (int i = items.Count - 1; i >= args.Index + 1; i--)
+            {
+                items.RemoveAt(i);
             }
         }
 
-        if (index < 0) return;
-
-        // Get the item SettingsCard
-        var container = ConfigItemsControl.ContainerFromIndex(index) as ContentPresenter;
-        if (container == null) return;
-
-        var settingsCard = FindDescendant<SettingsCard>(container);
-        if (settingsCard == null) return;
-
-        // Scroll to the item
-        var transform = settingsCard.TransformToVisual(ConfigScrollViewer);
-        var position = transform.TransformPoint(new Windows.Foundation.Point(0, 0));
-        
-        double scrollPosition = ConfigScrollViewer.VerticalOffset + position.Y - (ConfigScrollViewer.ActualHeight / 2) + (settingsCard.ActualHeight / 2);
-        ConfigScrollViewer.ChangeView(null, Math.Max(0, scrollPosition), null);
-
-        HighlightSettingsCard(settingsCard);
-    }
-
-    private void HighlightSettingsCard(SettingsCard settingsCard)
-    {
-        var originalBrush = settingsCard.BorderBrush;
-        var originalThickness = settingsCard.BorderThickness;
-
-        var highlightBrush = new SolidColorBrush(Microsoft.UI.Colors.Gold);
-        highlightBrush.Opacity = 0.3;
-        settingsCard.BorderBrush = highlightBrush;
-        settingsCard.BorderThickness = new Thickness(3);
-
-        // Create a timer to fade out the highlight
-        var timer = new DispatcherTimer();
-        timer.Interval = TimeSpan.FromMilliseconds(1500);
-        timer.Tick += (s, e) =>
+        private void OnCardClicked(object sender, RoutedEventArgs e)
         {
-            timer.Stop();
-            settingsCard.BorderBrush = originalBrush;
-            settingsCard.BorderThickness = originalThickness;
-        };
-        timer.Start();
-    }
-
-    private T FindDescendant<T>(DependencyObject parent) where T : DependencyObject
-    {
-        if (parent == null) return null;
-
-        int childCount = VisualTreeHelper.GetChildrenCount(parent);
-        for (int i = 0; i < childCount; i++)
-        {
-            var child = VisualTreeHelper.GetChild(parent, i);
-            if (child is T typedChild)
-            {
-                return typedChild;
-            }
-
-            var descendant = FindDescendant<T>(child);
-            if (descendant != null)
-            {
-                return descendant;
-            }
-        }
-        return null;
-    }
-
-    private void BreadcrumbBar_ItemClicked(BreadcrumbBar sender, BreadcrumbBarItemClickedEventArgs args)
-    {
-        var items = BreadcrumbBar.ItemsSource as ObservableCollection<string>;
-        for (int i = items.Count - 1; i >= args.Index + 1; i--)
-        {
-            items.RemoveAt(i);
-        }
-    }
-
-    private void OnCardClicked(object sender, RoutedEventArgs e)
-    {
-        SettingsCard settingCard = sender as SettingsCard;
-        ConfigurationSubMenuViewModel item = settingCard.DataContext as ConfigurationSubMenuViewModel;
+            if (sender is not SettingsCard settingCard || settingCard.DataContext is not ConfigurationSubMenuViewModel item) return;
 
         DataTemplate template = (DataTemplate)MainGrid.Resources["ConfigurationSubMenuTemplate"];
 
@@ -155,22 +77,22 @@ public sealed partial class ConfigPage : Page
         }
     }
 
-    private void ToggleSwitch_Loaded(object sender, RoutedEventArgs e)
-    {
-        ToggleSwitch toggleSwitch = sender as ToggleSwitch;
-        toggleSwitch.Toggled += ToggleSwitchBehavior.OnToggled;
-    }
+        private void ToggleSwitch_Loaded(object sender, RoutedEventArgs e)
+        {
+            if (sender is not ToggleSwitch toggleSwitch) return;
+            toggleSwitch.Toggled -= ToggleSwitchBehavior.OnToggled;
+            toggleSwitch.Toggled += ToggleSwitchBehavior.OnToggled;
+        }
 
-    private async void LinkCard_Click(object sender, RoutedEventArgs e)
-    {
-        SettingsCard linkCard = sender as SettingsCard;
-        LinksViewModel linkVM = linkCard.DataContext as LinksViewModel;
-        await Windows.System.Launcher.LaunchUriAsync(new Uri(linkVM.Link));
-    }
+        private async void LinkCard_Click(object sender, RoutedEventArgs e)
+        {
+            if (sender is not SettingsCard linkCard || linkCard.DataContext is not LinksViewModel linkVM || string.IsNullOrEmpty(linkVM.Link)) return;
+            if (Uri.TryCreate(linkVM.Link, UriKind.Absolute, out Uri uri)) await Windows.System.Launcher.LaunchUriAsync(uri);
+        }
 
-    private void MenuFlyoutItem_Click(object sender, RoutedEventArgs e)
-    {
-        MenuFlyoutItem menuFlyoutItem = sender as MenuFlyoutItem;
-        RegistryHelper.SetValue(@"HKLM\SOFTWARE\\EBOS\\Toolbox\\Favorites", menuFlyoutItem.Tag.ToString(), true);
-    }
+        private void MenuFlyoutItem_Click(object sender, RoutedEventArgs e)
+        {
+            if (sender is not MenuFlyoutItem menuFlyoutItem || menuFlyoutItem.Tag is null) return;
+            RegistryHelper.SetValue(@"HKLM\SOFTWARE\\EBOS\\Toolbox\\Favorites", menuFlyoutItem.Tag.ToString(), true);
+        }
 }

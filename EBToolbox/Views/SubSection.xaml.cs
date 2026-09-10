@@ -92,8 +92,7 @@ namespace EBToolbox.Views
 
         private void OnCardClicked(object sender, RoutedEventArgs e)
         {
-            var settingCard = sender as SettingsCard;
-            var item = settingCard.DataContext as ConfigurationSubMenuViewModel;
+            if (sender is not SettingsCard settingCard || settingCard.DataContext is not ConfigurationSubMenuViewModel item) return;
             var template = SubMenuItems.ItemTemplate;
 
             var breadcrumbItems = BreadcrumbBar.ItemsSource as ObservableCollection<Folder>;
@@ -107,128 +106,37 @@ namespace EBToolbox.Views
 
         private void ToggleSwitch_Loaded(object sender, RoutedEventArgs e)
         {
-            var toggleSwitch = sender as ToggleSwitch;
+            if (sender is not ToggleSwitch toggleSwitch) return;
+            toggleSwitch.Toggled -= ToggleSwitchBehavior.OnToggled;
             toggleSwitch.Toggled += ToggleSwitchBehavior.OnToggled;
         }
 
         private async void LinkCard_Click(object sender, RoutedEventArgs e)
         {
-            var linkCard = sender as SettingsCard;
-            var linkVM = linkCard.DataContext as LinksViewModel;
-
-            await Windows.System.Launcher.LaunchUriAsync(new Uri(linkVM.Link));
+            if (sender is not SettingsCard linkCard || linkCard.DataContext is not LinksViewModel linkVM || string.IsNullOrEmpty(linkVM.Link)) return;
+            if (Uri.TryCreate(linkVM.Link, UriKind.Absolute, out Uri uri)) await Windows.System.Launcher.LaunchUriAsync(uri);
         }
         private void MenuFlyoutItem_Click(object sender, RoutedEventArgs e)
         {
-            MenuFlyoutItem menuFlyoutItem = sender as MenuFlyoutItem;
+            if (sender is not MenuFlyoutItem menuFlyoutItem || menuFlyoutItem.Tag is null) return;
             RegistryHelper.SetValue(@"HKLM\SOFTWARE\\EBOS\\Toolbox\\Favorites", menuFlyoutItem.Tag.ToString(), true);
         }
 
-        private async void ConfigPage_Loaded(object sender, RoutedEventArgs e)
+        private void ConfigPage_Loaded(object sender, RoutedEventArgs e)
         {
-            // Check if there's an item to highlight from search
-            if (!string.IsNullOrEmpty(App.SearchHighlightItemKey))
-            {
-                string targetKey = App.SearchHighlightItemKey;
-                App.SearchHighlightItemKey = null;
-
-                await System.Threading.Tasks.Task.Delay(100);
-
-                ScrollToAndHighlightItem(targetKey);
-            }
+            SearchHighlightHelper.RunPendingHighlightAsync(FindConfigurationItem, ConfigScrollViewer);
         }
 
-        private void ScrollToAndHighlightItem(string itemKey)
+        private (ItemsControl itemsControl, int index)? FindConfigurationItem(string itemKey)
         {
-            if (_viewModel == null) return;
-
-            // Find the index of the item in ConfigurationItems
-            int index = -1;
-            Microsoft.UI.Xaml.Controls.ItemsControl targetItemsControl = null;
-
+            if (_viewModel is null) return null;
             for (int i = 0; i < _viewModel.ConfigurationItems.Count; i++)
             {
-                if (_viewModel.ConfigurationItems[i].Key == itemKey)
-                {
-                    index = i;
-                    targetItemsControl = ItemsControl;
-                    break;
-                }
+                if (_viewModel.ConfigurationItems[i].Key == itemKey) return (ItemsControl, i);
             }
-
-            // If not found, check MultiOptionConfigurationItems
-            if (index < 0)
+            for (int i = 0; i < _viewModel.MultiOptionConfigurationItems.Count; i++)
             {
-                for (int i = 0; i < _viewModel.MultiOptionConfigurationItems.Count; i++)
-                {
-                    if (_viewModel.MultiOptionConfigurationItems[i].Key == itemKey)
-                    {
-                        index = i;
-                        targetItemsControl = MultiOptionItemsControl;
-                        break;
-                    }
-                }
-            }
-
-            if (index < 0 || targetItemsControl == null) return;
-
-            // Get the item SettingsCard
-            var container = targetItemsControl.ContainerFromIndex(index) as ContentPresenter;
-            if (container == null) return;
-
-            var settingsCard = FindDescendant<SettingsCard>(container);
-            if (settingsCard == null) return;
-
-            // Scroll to the item
-            var transform = settingsCard.TransformToVisual(ConfigScrollViewer);
-            var position = transform.TransformPoint(new Windows.Foundation.Point(0, 0));
-
-            double scrollPosition = ConfigScrollViewer.VerticalOffset + position.Y - (ConfigScrollViewer.ActualHeight / 2) + (settingsCard.ActualHeight / 2);
-            ConfigScrollViewer.ChangeView(null, Math.Max(0, scrollPosition), null);
-
-            HighlightSettingsCard(settingsCard);
-        }
-
-        private void HighlightSettingsCard(SettingsCard settingsCard)
-        {
-            var originalBrush = settingsCard.BorderBrush;
-            var originalThickness = settingsCard.BorderThickness;
-
-            var highlightBrush = new SolidColorBrush(Microsoft.UI.Colors.Gold);
-            highlightBrush.Opacity = 0.3;
-            settingsCard.BorderBrush = highlightBrush;
-            settingsCard.BorderThickness = new Thickness(3);
-
-            // Create a timer to fade out the highlight
-            var timer = new DispatcherTimer();
-            timer.Interval = TimeSpan.FromMilliseconds(1500);
-            timer.Tick += (s, e) =>
-            {
-                timer.Stop();
-                settingsCard.BorderBrush = originalBrush;
-                settingsCard.BorderThickness = originalThickness;
-            };
-            timer.Start();
-        }
-
-        private T FindDescendant<T>(DependencyObject parent) where T : DependencyObject
-        {
-            if (parent == null) return null;
-
-            int childCount = VisualTreeHelper.GetChildrenCount(parent);
-            for (int i = 0; i < childCount; i++)
-            {
-                var child = VisualTreeHelper.GetChild(parent, i);
-                if (child is T typedChild)
-                {
-                    return typedChild;
-                }
-
-                var descendant = FindDescendant<T>(child);
-                if (descendant != null)
-                {
-                    return descendant;
-                }
+                if (_viewModel.MultiOptionConfigurationItems[i].Key == itemKey) return (MultiOptionItemsControl, i);
             }
             return null;
         }
