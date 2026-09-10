@@ -261,7 +261,7 @@
                 <ItemsControl
                     x:Name="FavoritesControl"
                     ItemTemplateSelector="{StaticResource FavoriteItemDataTemplateSelector}"
-                    ItemsSource="{x:Bind _configurationItems, Mode=OneWay}" />
+                    ItemsSource="{x:Bind _configurationItems, Mode=OneTime}" />
                 <StackPanel
                     HorizontalAlignment="Center"
                     VerticalAlignment="Center"
