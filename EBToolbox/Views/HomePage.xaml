@@ -96,7 +96,7 @@
                     <FontIcon
                         FontSize="16"
                         Foreground="{StaticResource EBAccentBrush}"
-                        Glyph="&#xE736;" />
+                        Glyph="&#xE716;" />
                     <TextBlock x:Name="ProfilesHeader" FontSize="18" FontWeight="SemiBold" />
                 </StackPanel>
                 <Border

@@ -15,7 +15,7 @@ namespace EBToolbox.Views
         public object Convert(object value, Type targetType, object parameter, string language)
         {
             FontIcon icon = new();
-            icon.Glyph = (string)value;
+            icon.Glyph = value as string ?? "\uE897";
             return icon;
         }
 
