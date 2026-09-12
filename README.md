@@ -1,7 +1,7 @@
 ﻿# EB Toolbox
 
 <a href="https://github.com/EhabYT/.github/blob/main/profile/CODE_OF_CONDUCT.md"><img alt="Code of Conduct" src="https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg?style=for-the-badge&color=1A91FF" /></a>
-<img alt="Version" src="https://img.shields.io/badge/version-v0.1.18-blue?style=for-the-badge&color=1A3A7A" />
+<img alt="Version" src="https://img.shields.io/badge/version-v0.1.19-blue?style=for-the-badge&color=1A3A7A" />
 <img alt="Platform" src="https://img.shields.io/badge/platform-Windows%2010%2F11-0078D4?style=for-the-badge" />
 <img alt="Build" src="https://img.shields.io/github/actions/workflow/status/EhabYT/EB-Toolbox/build.yml?style=for-the-badge&label=build" />
 
@@ -22,6 +22,11 @@ This repository contains the **EB Toolbox** (EBOS Edition) made with C# and WinU
 *UI v0.1.15: EB theme `#1A3A7A`, improved Home header, TileGallery, SettingsCards, Mica backdrop.*
 
 ## Changelog
+
+### v0.1.19 - UI Polish
+- Compact Home hero: smaller banner, aligned margins, banner asset case fix (`HomePage.xaml`)
+- Unified config card heights (`MinHeight 74`) across Config/SubSection templates
+- Interface nav icon `E932` → `E771` (personalize), removed dead XAML
 
 ### v0.1.18 - Stability
 - Crash hardening: null-safe language init (`SettingsPageViewModel`), guarded registry writes (`RegistryHelper`), lang fallback chain (`App.xaml`)
