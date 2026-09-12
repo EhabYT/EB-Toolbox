@@ -118,16 +118,6 @@
                 <CornerRadius x:Key="NavigationViewContentGridCornerRadius">8,0,0,0</CornerRadius>
             </NavigationView.Resources>
 
-            <!--  Currently an experiment  -->
-            <!--<NavigationView.AutoSuggestBox>
-                <AutoSuggestBox
-                    x:Name="SearchBox"
-                    AutomationProperties.Name="Basic AutoSuggestBox"
-                    QueryIcon="Find"
-                    SuggestionChosen="AutoSuggestBox_SuggestionChosen"
-                    TextChanged="AutoSuggestBox_TextChanged" />
-            </NavigationView.AutoSuggestBox>-->
-
             <NavigationView.MenuItems>
                 <NavigationViewItem
                     x:Name="Home"
@@ -146,7 +136,7 @@
                 </NavigationViewItem>
                 <NavigationViewItem x:Name="Interface" Tag="Interface">
                     <NavigationViewItem.Icon>
-                        <FontIcon Glyph="&#xE932;" />
+                        <FontIcon Glyph="&#xE771;" />
                     </NavigationViewItem.Icon>
                 </NavigationViewItem>
                 <NavigationViewItem x:Name="Windows" Tag="Windows">
