@@ -46,7 +46,7 @@
                 toolkit:VisualExtensions.NormalizedCenterPoint="0.5"
                 ImageOpened="OnImageOpened"
                 Opacity="{ThemeResource ImageOpacity}"
-                Source="/Assets/EB-banner.png"
+                Source="/Assets/EB-Banner.png"
                 Stretch="UniformToFill" />
         </Grid>
         <Rectangle x:Name="ImageGridSurfaceRec" Fill="Transparent" />
