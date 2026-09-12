@@ -1,7 +1,7 @@
 ﻿# EB Toolbox
 
 <a href="https://github.com/EhabYT/.github/blob/main/profile/CODE_OF_CONDUCT.md"><img alt="Code of Conduct" src="https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg?style=for-the-badge&color=1A91FF" /></a>
-<img alt="Version" src="https://img.shields.io/badge/version-v0.1.17-blue?style=for-the-badge&color=1A3A7A" />
+<img alt="Version" src="https://img.shields.io/badge/version-v0.1.18-blue?style=for-the-badge&color=1A3A7A" />
 <img alt="Platform" src="https://img.shields.io/badge/platform-Windows%2010%2F11-0078D4?style=for-the-badge" />
 <img alt="Build" src="https://img.shields.io/github/actions/workflow/status/EhabYT/EB-Toolbox/build.yml?style=for-the-badge&label=build" />
 
@@ -22,6 +22,12 @@ This repository contains the **EB Toolbox** (EBOS Edition) made with C# and WinU
 *UI v0.1.15: EB theme `#1A3A7A`, improved Home header, TileGallery, SettingsCards, Mica backdrop.*
 
 ## Changelog
+
+### v0.1.18 - Stability
+- Crash hardening: null-safe language init (`SettingsPageViewModel`), guarded registry writes (`RegistryHelper`), lang fallback chain (`App.xaml`)
+- Home/Config/Settings: shared `SearchHighlightHelper`, non-destructive `ShowForType` (`ConfigPageViewModel`), breadcrumb cast fix, `TryGetValue` lang lookup
+- Icons: Win10-safe glyphs (`E72E`, `E716`), `FontIconConverter` fallback, crisp `Toolbox_Logo` re-exports with real outline variant
+- Zero-warning Release build, modernized CI (`build.yml`), live CI status badge
 
 ### v0.1.17 - Light/Dark Mode
 - Light/dark theme system with `ThemeHelper`, `ThemeDictionaries` in `App.xaml`
