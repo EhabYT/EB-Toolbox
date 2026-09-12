@@ -44,6 +44,7 @@
                     <DataTemplate>
                         <controls:SettingsCard
                             Click="OnCardClicked"
+                            MinHeight="74"
                             Description="{Binding Description}"
                             Header="{Binding Name}"
                             HeaderIcon="{Binding Icon}"
@@ -56,7 +57,7 @@
                 <ItemsControl x:Name="MultiOptionItemsControl">
                     <ItemsControl.ItemTemplate>
                         <DataTemplate>
-                            <controls:SettingsCard Header="{Binding Name}" Style="{StaticResource ConfigurationSettingsCardTemplate}" HeaderIcon="{Binding Icon}">
+                            <controls:SettingsCard MinHeight="74" Header="{Binding Name}" Style="{StaticResource ConfigurationSettingsCardTemplate}" HeaderIcon="{Binding Icon}">
                                 <controls:SettingsCard.ContextFlyout>
                                     <MenuFlyout>
                                         <MenuFlyoutItem
@@ -81,6 +82,7 @@
                             <Grid>
                                 <controls:SettingsCard
                                     x:Name="SettingsCard"
+                                    MinHeight="74"
                                     Header="{Binding Name}"
                                     Description="{Binding Description}"
                                     Style="{StaticResource ConfigurationSettingsCardTemplate}">
@@ -107,6 +109,7 @@
                         <DataTemplate>
                             <controls:SettingsCard
                                 x:Name="SettingsCard"
+                                MinHeight="74"
                                 Header="{Binding Description}"
                                 Style="{StaticResource ConfigurationSettingsCardTemplate}"
                                 HeaderIcon="{Binding Icon}">
@@ -129,6 +132,7 @@
                         <DataTemplate>
                             <controls:SettingsCard
                                 x:Name="LinkCard"
+                                MinHeight="74"
                                 ActionIcon="{ui:FontIcon Glyph=&#xE8A7;}"
                                 ActionIconToolTip="Open in new window"
                                 Click="LinkCard_Click"

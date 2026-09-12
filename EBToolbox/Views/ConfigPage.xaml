@@ -24,6 +24,7 @@
                 <Grid>
                     <controls:SettingsCard
                         x:Name="SettingsCard"
+                        MinHeight="74"
                         Description="{Binding Description}"
                         Header="{Binding Name}"
                         Style="{StaticResource ConfigurationSettingsCardTemplate}">
@@ -46,6 +47,7 @@
             <DataTemplate x:Key="ConfigurationSubMenuTemplate" x:DataType="viewmodel:ConfigurationSubMenuViewModel">
                 <controls:SettingsCard
                     x:Name="SubMenuSettingsCard"
+                    MinHeight="74"
                     Click="OnCardClicked"
                     Description="{Binding Description}"
                     Header="{Binding Name}"
@@ -56,6 +58,7 @@
 
             <DataTemplate x:Key="MultiOptionTemplate" x:DataType="viewmodel:MultiOptionConfigurationItemViewModel">
                 <controls:SettingsCard
+                    MinHeight="74"
                     Header="{Binding Name}"
                     HeaderIcon="{Binding Icon}"
                     Style="{StaticResource ConfigurationSettingsCardTemplate}">
@@ -78,6 +81,7 @@
             <DataTemplate x:Key="ConfigurationButtonTemplate" x:DataType="viewmodel:ConfigurationButtonViewModel">
                 <controls:SettingsCard
                     x:Name="SettingsCardControl"
+                    MinHeight="74"
                     Header="{Binding Description}"
                     HeaderIcon="{Binding Icon}"
                     Style="{StaticResource ConfigurationSettingsCardTemplate}">
@@ -99,6 +103,7 @@
             <DataTemplate x:Key="LinksTemplate" x:DataType="viewmodel:LinksViewModel">
                 <controls:SettingsCard
                     x:Name="LinkCard"
+                    MinHeight="74"
                     ActionIcon="{ui:FontIcon Glyph=&#xE8A7;}"
                     ActionIconToolTip="Open in new window"
                     Click="LinkCard_Click"
